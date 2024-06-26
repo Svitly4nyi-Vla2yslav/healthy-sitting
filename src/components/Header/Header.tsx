@@ -1,12 +1,13 @@
+import React from 'react';
 import {
   HeaderContainer,
   Navigation,
   StyledLink,
   IconWrapper,
 } from './Header.styled';
-import sprite from 'assets/sprite.svg';
+import sprite from '../../assets/sprite.svg';
 
-export const Header = () => {
+export const Header: React.FC = () => {
 
   return (
     <HeaderContainer>
