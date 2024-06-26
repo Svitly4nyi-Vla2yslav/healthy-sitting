@@ -37,8 +37,8 @@ export const StyledLink = styled(Link)`
 `;
 
 export const IconWrapper = styled.svg`
-  width: ${(props) => props.size || '12px'};
-  height: ${(props) => props.size || '12px'};
+  width: ${(props) => props.fontSize || '12px'};
+  height: ${(props) => props.fontSize || '12px'};
   fill: ${(props) => props.color || '#ffffff'};
   display: inline-block;
   margin-right: 5px;
