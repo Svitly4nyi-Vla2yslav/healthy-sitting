@@ -1,6 +1,7 @@
+import React from 'react';
 import { Container, Title } from './ErrorPage.styled';
 
-const ErrorPage = () => {
+const ErrorPage: React.FC = () => {
   return (
     <Container>
       <Title>404</Title>
