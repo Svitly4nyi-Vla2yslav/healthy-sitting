@@ -1,6 +1,7 @@
+import React from 'react';
 import { Title } from './HalfPage.styled';
 
-const HalfPage = () => {
+const HalfPage: React.FC = () => {
   return <Title>Half Page</Title>;
 };
 
