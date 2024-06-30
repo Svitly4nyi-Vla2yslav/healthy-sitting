@@ -12,17 +12,17 @@ export const Header: React.FC = () => {
   return (
     <HeaderContainer>
       <Navigation>
-        <StyledLink to="/first">
+        <StyledLink to="/home">
           <IconWrapper>
             <use href={`${sprite}#icon-logo`} />
           </IconWrapper>
-          First
+          HOME
         </StyledLink>
-        <StyledLink to="/second">
+        <StyledLink to="/project">
           <IconWrapper>
             <use href={`${sprite}#icon-logo`} />
           </IconWrapper>
-          Second
+          PROJECT 
         </StyledLink>
       </Navigation>
     </HeaderContainer>
