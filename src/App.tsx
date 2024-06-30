@@ -1,28 +1,26 @@
 import { Route, Routes } from 'react-router-dom';
 import SharedLayout from './components/SharedLayout/SharedLayout';
-import FirstPage from './pages/FirstPage/FirstPage';
-import SecondPage from './pages/SecondPage/SecondPage';
-import HalfPage from './pages/HalfPage/HalfPage';
+import ProjectPage from './pages/ProjectPage/ProjectPage';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 import { AppWrapper } from './App.styled';
-import React from 'react';
+import Home from './pages/HomePage/HomePage';
+import RewardsPage from './pages/RewardsPage/RewardsPage';
+import ContactPage from './pages/ContactPage/ContactPage';
 
-const test = import.meta.env.VITE_API_TEST;
-
-function App() {
-  console.log(test);
+const App: React.FC = () => {
   return (
     <AppWrapper>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
-          <Route path="/first" element={<FirstPage />} />
-          <Route path="/second" element={<SecondPage />}>
-            <Route path=":half" element={<HalfPage />} />
+          <Route path="home" element={<Home />} />
+          <Route path="project" element={<ProjectPage />}>
+            <Route path="rewards" element={<RewardsPage />} />
+            <Route path="contact" element={<ContactPage />} />
           </Route>
           <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>
     </AppWrapper>
   );
-}
+};
 export default App;

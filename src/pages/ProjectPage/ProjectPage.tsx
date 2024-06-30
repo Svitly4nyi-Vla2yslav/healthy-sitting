@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container, Block, Title, StyledLink } from './SecondPage.styled';
+import { Container, Block, Title, StyledLink } from './ProjectPage.styled';
 
-const SecondPage: React.FC = () => {
+const ProjectPage: React.FC = () => {
   return (
     <Container>
       <Block>
@@ -12,4 +12,4 @@ const SecondPage: React.FC = () => {
   );
 };
 
-export default SecondPage;
+export default ProjectPage;
