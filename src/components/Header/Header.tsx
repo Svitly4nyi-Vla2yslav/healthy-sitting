@@ -3,27 +3,33 @@ import {
   HeaderContainer,
   Navigation,
   StyledLink,
-  IconWrapper,
+  // IconWrapper,
 } from './Header.styled';
-import sprite from '../../assets/sprite.svg';
+// import sprite from '../../assets/sprite.svg';
+// import MenuButton from './MunuButton';
 
 export const Header: React.FC = () => {
 
   return (
     <HeaderContainer>
       <Navigation>
+        {/* <MenuButton/> */}
         <StyledLink to="/home">
-          <IconWrapper>
-            <use href={`${sprite}#icon-logo`} />
-          </IconWrapper>
+       
           HOME
         </StyledLink>
         <StyledLink to="/project">
-          <IconWrapper>
-            <use href={`${sprite}#icon-logo`} />
-          </IconWrapper>
+       
           PROJECT 
         </StyledLink>
+        <StyledLink to="/rewards">
+       
+       REWARDS
+     </StyledLink>
+     <StyledLink to="/contact">
+       
+       CONTACT
+     </StyledLink>
       </Navigation>
     </HeaderContainer>
   );
