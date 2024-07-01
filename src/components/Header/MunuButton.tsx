@@ -41,8 +41,17 @@ const MenuButton: React.FC = () => {
     setCollapsed(!collapsed);
   };
 
+  // display: flex;
+  // align-items: flex-end;
+  // flex-direction: column;
   return (
-    <ButtonMenuContainer style={{ width: "100%", borderRadius: 12 }}>
+    <ButtonMenuContainer 
+    style={{ width: "100%",
+     borderRadius: 12,
+     display: 'flex',
+     alignItems: 'flex-end',
+     flexDirection: 'column'
+     }}>
       <Button
         type="primary"
         onClick={toggleCollapsed}
