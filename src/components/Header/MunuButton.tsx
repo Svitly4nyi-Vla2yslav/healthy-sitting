@@ -42,7 +42,7 @@ const MenuButton: React.FC = () => {
   };
 
   return (
-    <ButtonMenuContainer style={{ width: 256, borderRadius: 12 }}>
+    <ButtonMenuContainer style={{ width: "100%", borderRadius: 12 }}>
       <Button
         type="primary"
         onClick={toggleCollapsed}
