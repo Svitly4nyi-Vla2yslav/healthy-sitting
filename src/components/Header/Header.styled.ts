@@ -60,3 +60,7 @@ export const ButtonMenuContainer = styled.div`
     background: #00152900;
 }
 `;
+
+export const ImageLogo = styled.img`
+
+`;

@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   HeaderContainer,
+  ImageLogo,
   Navigation,
   // StyledLink,
   // IconWrapper,
@@ -10,10 +11,11 @@ import MenuButton from './MunuButton';
 
 export const Header: React.FC = () => {
 
-  
+
   return (
     <HeaderContainer>
       <Navigation>
+<ImageLogo />
         <MenuButton/>
         {/* <StyledLink to="/home">HOME</StyledLink>
         <StyledLink to="/project">PROJECT</StyledLink>
