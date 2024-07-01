@@ -13,12 +13,12 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route path="home" element={<Home />} />
-          <Route path="project" element={<ProjectPage />}>
-            <Route path="rewards" element={<RewardsPage />} />
-            <Route path="contact" element={<ContactPage />} />
+          <Route path="project" element={<ProjectPage />}/>
+          <Route path="rewards" element={<RewardsPage />}/>
+          <Route path="contact" element={<ContactPage />}/>
           </Route>
           <Route path="*" element={<ErrorPage />} />
-        </Route>
+        
       </Routes>
     </AppWrapper>
   );

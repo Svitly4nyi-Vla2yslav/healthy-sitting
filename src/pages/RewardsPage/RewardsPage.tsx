@@ -1,9 +1,14 @@
+import { Container, Block, Title } from "../ProjectPage/ProjectPage.styled"
 
 
 
 const RewardsPage: React.FC = () => {
   return (
-    <div>RewardsPage</div>
+    <Container>
+      <Block>
+        <Title>Rewards 😀</Title>
+      </Block>
+    </Container>
   )
 }
 
