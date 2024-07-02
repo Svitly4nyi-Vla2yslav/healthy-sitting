@@ -97,15 +97,7 @@ Error generating stack: `+i.message+`
       0 0 80px #00baff;
   }
 `,C$=oi.div`
-  // display: inline-block;
-  // margin-right: 5px;
-  // box-shadow:
-  //   0 0 5px #00baff,
-  //   0 0 10px #00baff,
-  //   0 0 20px #00baff,
-  //   0 0 40px #00baff,
-  //   0 0 80px #00baff;
-      position: fixed;
+ position: fixed;
     left: 10px;
     top: 10px;
       &:hover,
@@ -126,7 +118,17 @@ Error generating stack: `+i.message+`
 }
 `,x$=oi.img`
 width: 200px;
+transition:
+    color 0.3s,
+    filter 0.3s;
 
+  &:hover,
+  &:focus {
+    color: #00baff; /* Blue text color on hover/focus */
+    filter: drop-shadow(0 0 5px #00baff);
+  }
+
+ 
 `,E$="/healthy-sitting/assets/logo-transparent-png-1d476686.png";var $$=c.createContext({});const Um=$$;function pe(){return pe=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)({}).hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},pe.apply(null,arguments)}function CS(e){if(Array.isArray(e))return e}function P$(e,t){var n=e==null?null:typeof Symbol<"u"&&e[Symbol.iterator]||e["@@iterator"];if(n!=null){var r,o,i,a,l=[],s=!0,u=!1;try{if(i=(n=n.call(e)).next,t===0){if(Object(n)!==n)return;s=!1}else for(;!(s=(r=i.call(n)).done)&&(l.push(r.value),l.length!==t);s=!0);}catch(f){u=!0,o=f}finally{try{if(!s&&n.return!=null&&(a=n.return(),Object(a)!==a))return}finally{if(u)throw o}}return l}}function ap(e,t){(t==null||t>e.length)&&(t=e.length);for(var n=0,r=Array(t);n<t;n++)r[n]=e[n];return r}function Vm(e,t){if(e){if(typeof e=="string")return ap(e,t);var n={}.toString.call(e).slice(8,-1);return n==="Object"&&e.constructor&&(n=e.constructor.name),n==="Map"||n==="Set"?Array.from(e):n==="Arguments"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?ap(e,t):void 0}}function wS(){throw new TypeError(`Invalid attempt to destructure non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`)}function H(e,t){return CS(e)||P$(e,t)||Vm(e,t)||wS()}function Be(e){"@babel/helpers - typeof";return Be=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},Be(e)}function O$(e,t){if(Be(e)!="object"||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(Be(r)!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}function xS(e){var t=O$(e,"string");return Be(t)=="symbol"?t:t+""}function K(e,t,n){return(t=xS(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function I$(e,t){if(e==null)return{};var n={};for(var r in e)if({}.hasOwnProperty.call(e,r)){if(t.indexOf(r)>=0)continue;n[r]=e[r]}return n}function nt(e,t){if(e==null)return{};var n,r,o=I$(e,t);if(Object.getOwnPropertySymbols){var i=Object.getOwnPropertySymbols(e);for(r=0;r<i.length;r++)n=i[r],t.indexOf(n)>=0||{}.propertyIsEnumerable.call(e,n)&&(o[n]=e[n])}return o}var ES={exports:{}};/*!
 	Copyright (c) 2018 Jed Watson.
