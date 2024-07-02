@@ -36,18 +36,25 @@ export const StyledLink = styled(Link)`
   }
 `;
 
-export const IconWrapper = styled.svg`
-  width: ${(props) => props.fontSize || '12px'};
-  height: ${(props) => props.fontSize || '12px'};
-  fill: ${(props) => props.color || '#ffffff'};
-  display: inline-block;
-  margin-right: 5px;
-  box-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
+export const IconWrapper = styled.div`
+  // display: inline-block;
+  // margin-right: 5px;
+  // box-shadow:
+  //   0 0 5px #00baff,
+  //   0 0 10px #00baff,
+  //   0 0 20px #00baff,
+  //   0 0 40px #00baff,
+  //   0 0 80px #00baff;
+      position: fixed;
+    left: 10px;
+    top: 10px;
+      &:hover,
+  &:focus {
+    color: #00baff; /* Blue text color on hover/focus */
+  
+     
+  }
+}
 `;
 
 export const ButtonMenuContainer = styled.div`
@@ -62,5 +69,6 @@ export const ButtonMenuContainer = styled.div`
 `;
 
 export const ImageLogo = styled.img`
+width: 200px;
 
 `;

@@ -1,5 +1,5 @@
 import { Container, Title, StyledImage } from './HomePage.styled';
-import example from '../../assets/example.png';
+import example from '../../assets/image/example.png';
 import React from 'react';
 
 const Home: React.FC = () => {

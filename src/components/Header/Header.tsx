@@ -1,13 +1,12 @@
 import React from 'react';
 import {
   HeaderContainer,
-  ImageLogo,
-  Navigation,
-  // StyledLink,
-  // IconWrapper,
+  IconWrapper,
+  Navigation
 } from './Header.styled';
-// import sprite from '../../assets/sprite.svg';
+import Logo from '../../assets/image/logo-transparent-png.png';
 import MenuButton from './MunuButton';
+import { ImageLogo } from './Header.styled';
 
 export const Header: React.FC = () => {
 
@@ -15,7 +14,9 @@ export const Header: React.FC = () => {
   return (
     <HeaderContainer>
       <Navigation>
-<ImageLogo />
+<IconWrapper>
+  <ImageLogo src={Logo} alt='Logo'/>
+</IconWrapper>
         <MenuButton/>
         {/* <StyledLink to="/home">HOME</StyledLink>
         <StyledLink to="/project">PROJECT</StyledLink>
