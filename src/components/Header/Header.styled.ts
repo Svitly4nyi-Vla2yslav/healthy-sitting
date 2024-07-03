@@ -3,6 +3,11 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
   padding: 20px;
+      display: flex;
+    justify-content: flex-end;
+
+    
+       border-bottom: 1px solid #00baff; 
 `;
 
 export const Navigation = styled.nav`

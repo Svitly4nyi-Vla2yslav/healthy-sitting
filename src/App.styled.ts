@@ -6,6 +6,7 @@ import BiroScript from "./assets/fonts/BiroScriptPlus-Bold.ttf"
 import Messina from "./assets/fonts/MessinaSansMono-Black.ttf"
 import Formular from "./assets/fonts/Formular-Medium.ttf"
 import Roboto from "./assets/fonts/Roboto-Regular.ttf"
+// import example from './assets/image/Terminator-product-section_8-2380x850-3.jpg';
 
 export const AppWrapper = styled.div`
   width: 100%;

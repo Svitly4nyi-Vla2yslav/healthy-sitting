@@ -1,118 +1,60 @@
-// import React, { useEffect } from 'react';
-// import styled, { keyframes } from 'styled-components';
+import React from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-// const v1 = 'calc(max(2vw, 1vh))';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
-// const Container = styled.div`
-//   position: fixed;
-//   height: 100vh;
-//   overflow: hidden;
-//   z-index: 14;
-// `;
+// import required modules
+import { EffectFade, Navigation, Autoplay, Pagination } from 'swiper/modules';
 
-// const Row = styled.div`
-//   display: inline-flex;
-//   margin-top: calc(${v1} * -0.32);
-//   margin-left: calc(${v1} * -0.5);
+import bg1 from '../../assets/image/product-section-2_-2380x850-2.jpg';
+import bg2 from '../../assets/image/product-section-4_-2380x850-2.jpg';
+import bg3 from '../../assets/image/Terminator-product-section_8-2380x850-3.jpg';
+import bg4 from '../../assets/image/Terminator-product-section-7_-2380x850-3.jpg';
 
-//   &:nth-child(even) {
-//     margin-left: calc(${v1} * 0.02);
-//   }
-// `;
+export const Background: React.FC = () => {
+  return (
+    <>
+      <Swiper
+        style={{
+          height: '90%',
+          width: '100%',
+          position: 'relative',
+          objectFit: 'cover',
+        }}
+        spaceBetween={30}
+        effect={'fade'}
+        navigation={true}
+        pagination={{
+          clickable: true,
+        }}
+        autoplay={{
+          delay: 7500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay, EffectFade, Navigation, Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src={bg3} alt="3️⃣" style={{ width: '100%', height: '100%' }} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bg1} alt="1️⃣" style={{ width: '100%', height: '100%' }} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bg2} alt="2️⃣" style={{ width: '100%', height: '100%' }} />
+        </SwiperSlide>
 
-// const Hexagon = styled.div`
-//   position: relative;
-//   width: ${v1};
-//   height: calc(${v1} * 1.1);
-//   margin: calc(${v1} * 0.04) calc(${v1} * 0.02);
-//   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-//   background: #2c093a;
-//   text-align: center;
-//   color: rgba(15, 15, 15, 1);
-//   line-height: calc(${v1} * 1.1);
-//   font-size: 2vw;
-//   transition: 1s;
-
-//   &.blank {
-//     background: transparent;
-//   }
-// `;
-
-// const HexagonButton = styled.button`
-//   border: none;
-//   cursor: pointer;
-//   width: ${v1};
-//   height: calc(${v1} * 1.1);
-//   margin: calc(${v1} * 0.04) calc(${v1} * 0.02);
-//   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-//   background: #2c093aa9;
-//   text-align: center;
-//   color: rgba(15, 15, 15, 1);
-//   line-height: calc(${v1} * 1.1);
-//   font-size: 2vw;
-//   transition: 1s;
-
-//   &:hover {
-//     color: rgba(25, 25, 25, 1);
-//     background: #2c093a40;
-//   }
-// `;
-
-// const anim = keyframes`
-//   0% {
-//     filter: hue-rotate(0deg);
-//   }
-//   100% {
-//     filter: hue-rotate(360deg);
-//   }
-// `;
-
-// const Curser = styled.div`
-//   position: absolute;
-//   width: calc(${v1} * 2.5);
-//   height: calc(${v1} * 2.5);
-//   border-radius: 50%;
-//   animation: ${anim} 2s linear infinite;
-//   visibility: hidden;
-//   transform: translate(-50%, -50%);
-// `;
-
-// const Background: React.FC = () => {
-//   useEffect(() => {
-//     const curser = document.querySelector('.curser') as HTMLDivElement;
-//     const handleMouseMove = (e: MouseEvent) => {
-//       let X = e.clientX;
-//       let Y = e.clientY;
-
-//       if (curser) {
-//         curser.style.left = `${X}px`;
-//         curser.style.top = `${Y}px`;
-//       }
-//     };
-
-//     document.addEventListener('mousemove', handleMouseMove);
-
-//     return () => {
-//       document.removeEventListener('mousemove', handleMouseMove);
-//     };
-//   }, []);
-
-//   return (
-//     <Container>
-//       <Curser className="curser" />
-//       {Array.from({ length: 9 }).map((_, rowIndex) => (
-//         <Row key={rowIndex}>
-//           {Array.from({ length: 156 }).map((_, hexIndex) => (
-//             hexIndex === 5 && rowIndex === 4 ? (
-//               <HexagonButton key={hexIndex}>Hi</HexagonButton>
-//             ) : (
-//               <Hexagon key={hexIndex} />
-//             )
-//           ))}
-//         </Row>
-//       ))}
-//     </Container>
-//   );
-// };
-
-// export default Background;
+        <SwiperSlide
+          style={{ backgroundPosition: 'center', backgroundSize: 'cover' }}
+        >
+          <img src={bg4} alt="4️⃣" style={{ width: '100%', height: '100%' }} />
+        </SwiperSlide>
+      </Swiper>
+    </>
+  );
+};
