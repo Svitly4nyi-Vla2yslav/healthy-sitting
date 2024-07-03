@@ -41,9 +41,7 @@ const MenuButton: React.FC = () => {
     setCollapsed(!collapsed);
   };
 
-  // display: flex;
-  // align-items: flex-end;
-  // flex-direction: column;
+
   return (
     <ButtonMenuContainer 
     style={{ width: "100%",

@@ -59,11 +59,20 @@ export const GlobalStyles = css`
   }
 }
   
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --v1: calc(max(9vw, 11vh));
+  }
   body {
     font-family: 'Roboto', sans-serif;
     background-color: black;
     color: #efedee;
   transition-duration: 300ms;
+   background: #1d0027;
+    overflow: hidden;
+    min-height: 200vh;
   }
 
   button {

@@ -5,7 +5,7 @@ import {
   Navigation
 } from './Header.styled';
 import Logo from '../../assets/image/logo-transparent-png.png';
-import MenuButton from './MunuButton';
+import MenuButton from './MenuButton';
 import { ImageLogo } from './Header.styled';
 
 export const Header: React.FC = () => {
