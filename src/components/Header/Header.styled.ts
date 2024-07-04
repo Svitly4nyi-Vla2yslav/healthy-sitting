@@ -17,7 +17,7 @@ export const Navigation = styled.nav`
 `;
 
 export const StyledLink = styled(Link)`
-width: 20%;
+width: 40%;
     text-align: start;
   padding: 8px 16px;
   color: #ffffff; /* White text color */

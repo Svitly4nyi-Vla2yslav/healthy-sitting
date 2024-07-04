@@ -38,7 +38,7 @@ export const MenuButton: React.FC = () => {
 
   const links = [
     { to: '/home', text: 'HOME', icon: <HomeIcon /> },
-    { to: '/about', text: 'ABOUT US', icon: <InfoIcon /> },
+    { to: '/about', text: 'ABOUT', icon: <InfoIcon /> },
     { to: '/project', text: 'PROJECTS', icon: <ProjectIcon /> },
     { to: '/rewards', text: 'REWARDS', icon: <RewardsIcon /> },
     { to: '/contact', text: 'CONTACT', icon: <ContactIcon /> },
@@ -66,7 +66,7 @@ export const MenuButton: React.FC = () => {
                 flexDirection: 'row',
                 justifyContent: 'center',
                 alignItems: 'center',
-                width: 320
+                // width: 320
               }}
             >
               <ListItemIcon style={{ color: '#00baff' }}>

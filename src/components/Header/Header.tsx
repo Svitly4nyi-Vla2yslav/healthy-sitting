@@ -23,7 +23,7 @@ export const Header: React.FC = () => {
        {isMobile ? ( <MenuButton />) : (
         <>
           <StyledLink to="/home">HOME</StyledLink>
-          <StyledLink to="/about">ABOUT US</StyledLink>
+          <StyledLink to="/about">ABOUT</StyledLink>
           <StyledLink to="/project">PROJECT</StyledLink>
           <StyledLink to="/rewards">REWARDS</StyledLink>
           <StyledLink to="/contact">CONTACT</StyledLink>
