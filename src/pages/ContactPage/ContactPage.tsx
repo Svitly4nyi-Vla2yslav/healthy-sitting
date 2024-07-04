@@ -1,16 +1,16 @@
 import React from 'react';
 import { Container, Block, Title } from '../ProjectPage/ProjectPage.styled';
-// import Background from '../../components/Background/Background';
-// import Background from '../../components/Background/Background';
+import { ContactContainer } from './ContactPage.styled';
 
 const ContactPage: React.FC = () => {
   return (
-    <Container>
-      {/* <Background/> */}
-      <Block>
-        <Title> Contact 📱</Title>
-      </Block>
-    </Container>
+    <ContactContainer>
+      <Container>
+        <Block>
+          <Title> Contact 📱</Title>
+        </Block>
+      </Container>
+    </ContactContainer>
   );
 };
 

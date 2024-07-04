@@ -1,13 +1,15 @@
 import React from 'react';
-import { Container, Block, Title} from './ProjectPage.styled';
+import { Block, Container, ContainerProject, Title } from './ProjectPage.styled';
 
 const ProjectPage: React.FC = () => {
   return (
-    <Container>
-      <Block>
-        <Title>Second Page</Title>
-      </Block>
-    </Container>
+    <ContainerProject>
+       <Container>
+        <Block>
+          <Title>Projects 😀</Title>
+        </Block>
+      </Container>
+    </ContainerProject>
   );
 };
 

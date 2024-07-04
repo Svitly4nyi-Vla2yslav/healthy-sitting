@@ -1,18 +1,16 @@
-// import Background from "../../components/Background/Background"
-// import HexagonBackground from "../../components/Background/Background"
-import { Container, Block, Title } from "../ProjectPage/ProjectPage.styled"
-
-
+import { Container, Block, Title } from '../ProjectPage/ProjectPage.styled';
+import { RewardsContainer } from './RewardsPage.styled';
 
 const RewardsPage: React.FC = () => {
   return (
-    <Container>
-      {/* <HexagonBackground/> */}
-      <Block>
-        <Title>Rewards 😀</Title>
-      </Block>
-    </Container>
-  )
-}
+    <RewardsContainer>
+      <Container>
+        <Block>
+          <Title>Rewards 😀</Title>
+        </Block>
+      </Container>
+    </RewardsContainer>
+  );
+};
 
-export default RewardsPage
+export default RewardsPage;

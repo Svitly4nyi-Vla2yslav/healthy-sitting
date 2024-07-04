@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const HeaderContainer = styled.div`
-  padding: 20px;
-      display: flex;
-    justify-content: flex-end;
-
-    
-       border-bottom: 1px solid #00baff; 
+export const HeaderContainer = styled.div` 
+padding: 20px;
+ display: flex;
+justify-content: flex-end;  
+ border-bottom: 1px solid #00baff; 
+ width: 100%;
 `;
 
 export const Navigation = styled.nav`
+
   display: flex;
   justify-content: center;
   align-items: center;
