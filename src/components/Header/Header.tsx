@@ -6,10 +6,10 @@ import {
   StyledLink,
 } from './Header.styled';
 import Logo from '../../assets/image/logo-transparent-png.png';
-import MenuButton from './MenuButton';
 import { ImageLogo } from './Header.styled';
 import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-router-dom';
+import { MenuButton } from './MenuButton';
 
 export const Header: React.FC = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 768px' });
