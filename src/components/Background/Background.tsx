@@ -48,8 +48,8 @@ export const Background: React.FC = () => {
         <SwiperSlide>
           <img
             src={bg3_large}
-            srcSet={`${bg3_small} 700w, ${bg3_large} 1800w`}
-            sizes="(max-width: 700px) 700px, 1800px"
+            srcSet={`${bg3_small} 700w, ${bg3_large} 1000w`}
+            sizes="(max-width: 700px) 700px, (min-width: 701px) 1000px"
             alt="3️⃣"
             style={{ width: '100%', height: 'auto' }}
           />
@@ -57,8 +57,8 @@ export const Background: React.FC = () => {
         <SwiperSlide>
           <img
             src={bg1_large}
-            srcSet={`${bg1_small} 700w, ${bg1_large} 1800w`}
-            sizes="(max-width: 700px) 700px, 1800px"
+            srcSet={`${bg1_small} 700w, ${bg1_large} 1000w`}
+            sizes="(max-width: 700px) 700px, (min-width: 701px) 1000px"
             alt="1️⃣"
             style={{ width: '100%', height: 'auto' }}
           />
@@ -66,8 +66,8 @@ export const Background: React.FC = () => {
         <SwiperSlide>
           <img
             src={bg2_large}
-            srcSet={`${bg2_small} 700w, ${bg2_large} 1800w`}
-            sizes="(max-width: 700px) 700px, 1800px"
+            srcSet={`${bg2_small} 700w, ${bg2_large} 1000w`}
+            sizes="(max-width: 700px) 700px, (min-width: 701px) 1000px"
             alt="2️⃣"
             style={{ width: '100%', height: 'auto' }}
           />
@@ -76,8 +76,8 @@ export const Background: React.FC = () => {
         <SwiperSlide>
           <img
             src={bg4_large}
-            srcSet={`${bg4_small} 700w, ${bg4_large} 1800w`}
-            sizes="(max-width: 700px) 700px, 1800px"
+            srcSet={`${bg4_small} 700w, ${bg4_large} 1000w`}
+            sizes="(max-width: 700px) 700px, (min-width: 701px) 1000px"
             alt="4️⃣"
             style={{ width: '100%', height: 'auto' }}
           />
@@ -86,3 +86,4 @@ export const Background: React.FC = () => {
     </>
   );
 };
+
