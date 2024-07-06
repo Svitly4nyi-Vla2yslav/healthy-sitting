@@ -23,6 +23,8 @@ import bg3_large from '../../assets/image/Terminator-product-section_8-2380x850-
 import bg4_small from '../../assets/image/product-section_-2380x1200-2-small.jpg';
 import bg4_large from '../../assets/image/Terminator-product-section-7_-2380x850-3.jpg';
 
+import { TextHome, TitleHome } from './Background.styled';
+
 export const Background: React.FC = () => {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
 
@@ -88,6 +90,16 @@ export const Background: React.FC = () => {
           />
         </SwiperSlide>
       </Swiper>
+
+      {/* <Container> */}
+      {/* <Block> */}
+      <TitleHome> Title </TitleHome>
+      <TextHome>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero atque
+        beatae iste asperiores non, fuga ab dolore voluptas earum quidem.
+      </TextHome>
+      {/* </Block> */}
+      {/* </Container> */}
     </>
   );
 };
