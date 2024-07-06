@@ -24,6 +24,19 @@ import bg4_small from '../../assets/image/product-section_-2380x1200-2-small.jpg
 import bg4_large from '../../assets/image/Terminator-product-section-7_-2380x850-3.jpg';
 
 export const Background: React.FC = () => {
+  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <>
       <Swiper
@@ -47,27 +60,21 @@ export const Background: React.FC = () => {
       >
         <SwiperSlide>
           <img
-            src={bg3_large}
-            srcSet={`${bg3_small} 700w, ${bg3_large} 1000w`}
-            sizes="(max-width: 700px) 700px, (min-width: 701px) 1000px"
+            src={windowWidth > 768 ? bg1_large : bg1_small}
             alt="3️⃣"
             style={{ width: '100%', height: 'auto' }}
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src={bg1_large}
-            srcSet={`${bg1_small} 700w, ${bg1_large} 1000w`}
-            sizes="(max-width: 700px) 700px, (min-width: 701px) 1000px"
+            src={windowWidth > 768 ? bg2_large : bg2_small}
             alt="1️⃣"
             style={{ width: '100%', height: 'auto' }}
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src={bg2_large}
-            srcSet={`${bg2_small} 700w, ${bg2_large} 1000w`}
-            sizes="(max-width: 700px) 700px, (min-width: 701px) 1000px"
+            src={windowWidth > 768 ? bg3_large : bg3_small}
             alt="2️⃣"
             style={{ width: '100%', height: 'auto' }}
           />
@@ -75,9 +82,7 @@ export const Background: React.FC = () => {
 
         <SwiperSlide>
           <img
-            src={bg4_large}
-            srcSet={`${bg4_small} 700w, ${bg4_large} 1000w`}
-            sizes="(max-width: 700px) 700px, (min-width: 701px) 1000px"
+            src={windowWidth > 768 ? bg4_large : bg4_small}
             alt="4️⃣"
             style={{ width: '100%', height: 'auto' }}
           />
@@ -86,4 +91,3 @@ export const Background: React.FC = () => {
     </>
   );
 };
-
