@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -10,6 +10,9 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { EffectFade, Navigation, Autoplay, Pagination } from 'swiper/modules';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import bg1_small from '../../assets/image/Terminator-banner_bg-3-small.jpg';
 import bg1_large from '../../assets/image/product-section-2_-2380x850-2.jpg';
@@ -39,8 +42,14 @@ export const Background: React.FC = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); 
+  }, []);
   return (
-    <>
+    <div data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
       <Swiper
         style={{
           width: '100%',
@@ -100,6 +109,6 @@ export const Background: React.FC = () => {
       </TextHome>
       {/* </Block> */}
       {/* </Container> */}
-    </>
+    </div>
   );
 };
