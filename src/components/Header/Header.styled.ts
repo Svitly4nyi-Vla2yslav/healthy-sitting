@@ -17,6 +17,11 @@ export const Navigation = styled.nav`
 `;
 
 export const StyledLink = styled(Link)`
+  font-family: 'Right Grotesk';
+
+font-weight: 600;
+font-size: 16px;
+line-height: 119%;
 width: 40%;
     text-align: start;
   padding: 8px 16px;

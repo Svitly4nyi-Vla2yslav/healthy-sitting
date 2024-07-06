@@ -68,13 +68,20 @@ export const GlobalStyles = css`
     --v1: calc(max(9vw, 11vh));
   }
   body {
-    font-family: 'Roboto', sans-serif;
-    background-color: black;
-    color: #efedee;
+ font-family: 'Roboto', sans-serif;
+  background-color: #000;
+  background-size: auto 100%;
+  background-position: center center;
+  background-repeat: cover;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #111111;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
   transition-duration: 300ms;
-   background: #1d0027;
-    overflow: hidden;
-    min-height: 200vh;
+  overflow: hidden;
   }
 
   button {
@@ -125,12 +132,12 @@ export const GlobalStyles = css`
   img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   html {
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
    
     }
  
