@@ -92,6 +92,9 @@ export const MenuButton: React.FC = () => {
             style={{
               fontSize: 20,
               padding: 0,
+              // position: 'fixed',
+              // top: 20,
+              // right: "5%"
             }}
           >
             Menu

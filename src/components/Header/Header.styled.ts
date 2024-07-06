@@ -7,6 +7,8 @@ padding: 20px;
 justify-content: flex-end;  
  border-bottom: 1px solid #00baff; 
  width: 100%;
+//  position: fixed;
+
 `;
 
 export const Navigation = styled.nav`

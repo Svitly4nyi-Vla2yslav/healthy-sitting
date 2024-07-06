@@ -10,7 +10,6 @@ import Roboto from "./assets/fonts/Roboto-Regular.ttf"
 
 export const AppWrapper = styled.div`
   width: 100%;
-  height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -25,6 +24,7 @@ export const GlobalStyles = css`
   --third-family: "Biro Script Plus", sans-serif;
   --font3: "Formular", sans-serif;
   --font4: "Roboto", sans-serif;
+  --textColorWhite: #fff;
 }
 @font-face {
   font-family: 'Roboto';
@@ -78,7 +78,6 @@ export const GlobalStyles = css`
   font-style: normal;
   color: #111111;
   width: 100%;
-  height: 100vh;
   margin: 0;
   transition-duration: 300ms;
   overflow: hidden;
