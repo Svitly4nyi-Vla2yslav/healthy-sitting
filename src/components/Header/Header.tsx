@@ -18,22 +18,38 @@ import { MenuButton } from './MenuButton';
 export const Header: React.FC = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 768px' });
   useEffect(() => {
-    AOS.init({ duration: 1000 }); 
+    AOS.init({ duration: 1000 });
   }, []);
   return (
     <HeaderContainer>
       <Navigation>
-        <IconWrapper data-aos="zoom-in"> <Link to="/home">
-          <ImageLogo src={Logo} alt="Logo" /></Link>
+        <IconWrapper data-aos="zoom-in">
+          {' '}
+          <Link to="/home">
+            <ImageLogo src={Logo} alt="Logo" />
+          </Link>
         </IconWrapper>
-       {isMobile ? ( <MenuButton />) : (
-        <>
-          <StyledLink to="/home" data-aos="fade-down">HOME</StyledLink>
-          <StyledLink to="/about" data-aos="fade-up">ABOUT</StyledLink>
-          <StyledLink to="/project" data-aos="fade-down">PROJECT</StyledLink>
-          <StyledLink to="/rewards" data-aos="fade-up">REWARDS</StyledLink>
-          <StyledLink to="/contact" data-aos="fade-down">CONTACT</StyledLink>
-        </>)}
+        {isMobile ? (
+          <MenuButton />
+        ) : (
+          <>
+            <StyledLink to="/home" data-aos="fade-down" data-aos-delay="300">
+              HOME
+            </StyledLink>
+            <StyledLink to="/about" data-aos="fade-up" data-aos-delay="400">
+              ABOUT
+            </StyledLink>
+            <StyledLink to="/project" data-aos="fade-down" data-aos-delay="500">
+              PROJECT
+            </StyledLink>
+            <StyledLink to="/rewards" data-aos="fade-up" data-aos-delay="600">
+              REWARDS
+            </StyledLink>
+            <StyledLink to="/contact" data-aos="fade-down" data-aos-delay="700">
+              CONTACT
+            </StyledLink>
+          </>
+        )}
       </Navigation>
     </HeaderContainer>
   );

@@ -13,6 +13,9 @@ import ProjectIcon from '@mui/icons-material/Work';
 import RewardsIcon from '@mui/icons-material/CardGiftcard';
 import ContactIcon from '@mui/icons-material/ContactMail';
 import { StyledLink } from './Header.styled';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 type Anchor = 'top';
 
@@ -20,6 +23,10 @@ export const MenuButton: React.FC = () => {
   const [state, setState] = React.useState({
     top: false,
   });
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   const toggleDrawer =
     (anchor: Anchor, open: boolean) =>
@@ -79,7 +86,16 @@ export const MenuButton: React.FC = () => {
     <div>
       {(['top'] as const).map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>Menu</Button>
+          <Button
+            onClick={toggleDrawer(anchor, true)}
+            data-aos="zoom-in"
+            style={{
+              fontSize: 20,
+              padding: 0,
+            }}
+          >
+            Menu
+          </Button>
           <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}

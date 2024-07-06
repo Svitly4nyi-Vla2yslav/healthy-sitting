@@ -6,11 +6,16 @@ import { ContainerAbout } from './AboutUs.styled';
 
 const AboutUs: React.FC = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 }); 
+    AOS.init({ duration: 1000 });
   }, []);
 
   return (
-    <ContainerAbout>
+    <ContainerAbout
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="0"
+    >
       <Container>
         <Block>
           <Title data-aos="zoom-in">About 😀</Title>
