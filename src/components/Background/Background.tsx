@@ -47,7 +47,7 @@ export const Background: React.FC = () => {
         }}
         spaceBetween={30}
         effect={'fade'}
-        navigation={true}
+        navigation={false}
         pagination={{
           clickable: true,
         }}
