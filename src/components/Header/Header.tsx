@@ -21,7 +21,7 @@ export const Header: React.FC = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <HeaderContainer>
+    <HeaderContainer style={{position: 'fixed', top: 0}}>
       <Navigation>
         <IconWrapper data-aos="zoom-in">
           {' '}

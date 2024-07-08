@@ -8,7 +8,8 @@ justify-content: flex-end;
  border-bottom: 1px solid #00baff; 
  width: 100%;
 //  position: fixed;
-
+    z-index: 999;
+    background-color: black;
 `;
 
 export const Navigation = styled.nav`

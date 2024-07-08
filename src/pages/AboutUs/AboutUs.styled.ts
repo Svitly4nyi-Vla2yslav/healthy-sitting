@@ -1,18 +1,12 @@
 import styled from "styled-components";
-import example from "../../assets/image/Terminator-product-section_8-2380x850-3.jpg"
 import palett from "../../palette/palette"
 
 export const ContainerAbout = styled.div`
-//  background-image: url(${example});
-//    width: 100%;
-//   // height: 90vh;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
+
 `;
 
 export const ContainerPage = styled.div`
-padding: 30px 20px; 
+padding: 90px 20px 30px 20px; 
  width: 100%;
 margin: 0 auto;
 
@@ -30,7 +24,7 @@ export const ImageAngel = styled.img`
 export const AboutTitel = styled.h2`
 color: ${palett.colors.white};
 font-family: 'Roboto';
-font-size: 14px;
+font-size: 20px;
 text-align: center;
 
 `;
@@ -50,6 +44,7 @@ export const ProblemContainer = styled.div`
 padding: 30px 20px; 
  width: 100%;
 margin: 0 auto;
+
 `;
 
 export const ProblemText = styled.p`
@@ -58,6 +53,20 @@ font-family: 'Roboto';
 font-size: 12px;
 text-align: center;
 padding: 20px;
+border: 1px solid #00baff;
+margin: 20px;
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+transition: box-shadow 0.9s ease,
+  color 0.9s,
+text-shadow 0.9s;
+
+ &:hover,
+  &:focus {
+  box-shadow: 0 0 20px #00baff;
+  color: #00baff;}
 `;
 
 export const IconProblem = styled.img`

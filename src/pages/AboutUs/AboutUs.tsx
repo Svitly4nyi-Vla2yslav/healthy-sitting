@@ -33,28 +33,28 @@ const AboutUs: React.FC = () => {
         <AboutTitel data-aos="fade-left">Innovation Conveyor</AboutTitel>
       </ContainerPage>
       <ContainerPage>
-        <TitleProblem>
+        <TitleProblem data-aos="zoom-in" data-aos-delay="700">
           THE PROBLEM: Our world loses up to 70% of innovative ideas and
-          solutions that don't even survive to proof of concept
+          solutions that don't even survive to proof of concept</TitleProblem>
           <ProblemContainer>
-            <ProblemText>
+            <ProblemText data-aos="flip-left" data-aos-delay="300">
               <IconProblem src={IconFirst} alt='🤔' />
               Psychological difficulties at different levels: Internal and
               external psychological barriers and dimensions
             </ProblemText>
-            <ProblemText>
+            <ProblemText data-aos="flip-right" data-aos-delay="500">
             <IconProblem src={IconSecond} alt='⏸️' />
               Multidisciplinary challenges: Lack of expertise in key areas,
               marketing, legal, finance. Lack of competencies is a barrier for
               innovators.
             </ProblemText>
-            <ProblemText>
+            <ProblemText data-aos="flip-left" data-aos-delay="700">
             <IconProblem  src={IconThird} alt='⏲️'/>
               Conceptual jam: The long and difficult journey from idea inception
               to proof of concept, creating serious challenges.
             </ProblemText>
           </ProblemContainer>
-        </TitleProblem>
+        
       </ContainerPage>
     </ContainerAbout>
   );
