@@ -2,11 +2,11 @@ import styled from "styled-components";
 import palett from "../../palette/palette"
 
 export const ContainerAbout = styled.div`
-
+padding: 90px 20px 30px 20px; 
 `;
 
 export const ContainerPage = styled.div`
-padding: 90px 20px 30px 20px; 
+padding-bot
  width: 100%;
 margin: 0 auto;
 
@@ -38,6 +38,7 @@ color: ${palett.colors.white};
 font-family: 'Roboto';
 font-size: 18px;
 text-align: center;
+padding-top: 50px;
 `;
 
 export const ProblemContainer = styled.div`
@@ -75,21 +76,41 @@ width: 120px;
 // ! 3 page >>>>>>>>>>>>>>>>>>
 
 export const TitleSolution = styled.h3`
-
+font-family: 'Roboto';
+font-size: 28px;
+text-align: center;
+padding-bottom: 20px;
+font-weight: 900;
 `;
 
 export const TextSolution = styled.p`
-
+font-family: 'Roboto';
+font-weight: 600;
+font-size: 16px;
+text-align: center;
+line-height: 1.1875;
 `;
 
 export const TextSolutionSmall = styled.p`
+font-family: 'Roboto';
+font-size: 12px;
+text-align: start;
+padding: 5px;
+`;
 
+export const TextSolutionContainer = styled.div`
+padding-top: 10px;
+// margin-bottom: 50px;
 `;
 
 // ! 4 page >>>>>>>>>>>>>>>>>>
 
 export const TitleFeatures = styled.h3`
-
+font-family: 'Roboto';
+font-size: 28px;
+text-align: center;
+padding-bottom: 20px;
+font-weight: 900;
 `;
 
 export const ImageFeatures = styled.img`
@@ -101,11 +122,21 @@ export const ContainerFeatures = styled.div`
 `;
 
 export const TextFeatures = styled.p`
-
+font-family: 'Roboto';
+font-weight: 600;
+font-size: 16px;
+text-align: center;
+line-height: 1.1875;
+padding: 10px;
+border-
 `;
 
 export const TextFeaturesLarge = styled.p`
-
+font-family: 'Roboto';
+font-size: 19px;
+text-align: start;
+padding: 5px;
+font-weight: 900;
 `;
 
 // ! 5 page >>>>>>>>>>>>>>>>>>>>>>>

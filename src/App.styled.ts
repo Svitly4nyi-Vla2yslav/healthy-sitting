@@ -6,6 +6,7 @@ import BiroScript from "./assets/fonts/BiroScriptPlus-Bold.ttf"
 import Messina from "./assets/fonts/MessinaSansMono-Black.ttf"
 import Formular from "./assets/fonts/Formular-Medium.ttf"
 import Roboto from "./assets/fonts/Roboto-Regular.ttf"
+import palett from "./palette/palette"
 // import example from './assets/image/Terminator-product-section_8-2380x850-3.jpg';
 
 export const AppWrapper = styled.div`
@@ -119,6 +120,7 @@ export const GlobalStyles = css`
   font-family: 'Messina Sans Mono';
     margin: 0;
     padding: 0;
+    color: ${palett.colors.white};
   }
 
   ul,
