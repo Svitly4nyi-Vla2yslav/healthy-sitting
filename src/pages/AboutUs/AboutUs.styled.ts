@@ -2,14 +2,15 @@ import styled from "styled-components";
 import palett from "../../palette/palette"
 
 export const ContainerAbout = styled.div`
+text-align: center;
 padding: 90px 20px 30px 20px; 
 `;
 
 export const ContainerPage = styled.div`
-padding-bot
+text-align: center;
  width: 100%;
 margin: 0 auto;
-
+margin-bottom: 70px;
 `;
 
 // ! 1 page >>>>>>>>>>>>>>>
@@ -26,6 +27,12 @@ color: ${palett.colors.white};
 font-family: 'Roboto';
 font-size: 20px;
 text-align: center;
+font-weight: bold;
+  background: linear-gradient(-90deg, #ff7f50, #1e90ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 
 `;
 
@@ -39,6 +46,12 @@ font-family: 'Roboto';
 font-size: 18px;
 text-align: center;
 padding-top: 50px;
+font-weight: bold;
+  background: linear-gradient(-90deg, #ff7f50, #1e90ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 `;
 
 export const ProblemContainer = styled.div`
@@ -60,6 +73,12 @@ display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+     font-weight: bold;
+  background: linear-gradient(90deg, #ff7f50, #1e90ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 transition: box-shadow 0.9s ease,
   color 0.9s,
 text-shadow 0.9s;
@@ -67,7 +86,8 @@ text-shadow 0.9s;
  &:hover,
   &:focus {
   box-shadow: 0 0 20px #00baff;
-  color: #00baff;}
+  color: #00baff;
+  }
 `;
 
 export const IconProblem = styled.img`
@@ -81,6 +101,12 @@ font-size: 28px;
 text-align: center;
 padding-bottom: 20px;
 font-weight: 900;
+font-weight: bold;
+  background: linear-gradient(-90deg, #ff7f50, #1e90ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 `;
 
 export const TextSolution = styled.p`
@@ -89,6 +115,12 @@ font-weight: 600;
 font-size: 16px;
 text-align: center;
 line-height: 1.1875;
+ font-weight: bold;
+  background: linear-gradient(90deg, #ff7f50, #1e90ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 `;
 
 export const TextSolutionSmall = styled.p`
@@ -96,6 +128,12 @@ font-family: 'Roboto';
 font-size: 12px;
 text-align: start;
 padding: 5px;
+ font-weight: bold;
+  background: linear-gradient(90deg, #ff7f50, #1e90ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 `;
 
 export const TextSolutionContainer = styled.div`
@@ -111,6 +149,13 @@ font-size: 28px;
 text-align: center;
 padding-bottom: 20px;
 font-weight: 900;
+margin-top: 70px;
+font-weight: bold;
+  background: linear-gradient(-90deg, #ff7f50, #1e90ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 `;
 
 export const ImageFeatures = styled.img`
@@ -129,42 +174,90 @@ text-align: center;
 line-height: 1.1875;
 padding: 10px;
 border-bottom: 1px solid #00baff;
-
+max-width: 320px;
+    margin: 0 auto;
+     font-weight: bold;
+  background: linear-gradient(90deg, #ff7f50, #1e90ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 `;
 
 export const TextFeaturesLarge = styled.p`
 font-family: 'Roboto';
 font-size: 19px;
-text-align: start;
+text-align: center;
 padding: 5px;
 font-weight: 900;
 border-bottom: 1px solid #00baff;
-margin-bottom: 500px;
+margin-bottom: 50px;
+max-width: 320px;
+margin: 0 auto;
+ font-weight: bold;
+  background: linear-gradient(90deg, #ff7f50, #1e90ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 `;
 
 // ! 5 page >>>>>>>>>>>>>>>>>>>>>>>
 
 export const NumberTitle = styled.p`
-
+font-family: 'Roboto';
+  font-size: 58px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff7f50, #1e90ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+  padding : 15px;
 `;
 
 export const TextBenefits = styled.p`
-
+font-family: 'Roboto';
+text-align: start;
+ font-weight: bold;
+  background: linear-gradient(90deg, #ff7f50, #1e90ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 `;
 
 export const ContainerBenefits = styled.div`
-
+display: flex;
+align-items: center;
+max-width: 768px;
+border-bottom: 1px solid #00baff;
+margin: 0 auto;
+padding: 20px;
 `;
 
 export const ImageBenefits = styled.img`
-
+width: 280px;
+display: flex;
+    padding: 20px 0 20px 0;
 `;
 
-export const Border = styled.span`
+export const ImageContainer = styled.div`
+display: flex;
+margin: 0 auto;
+width: 100%;
+flex-direction: column;
+    align-items: center;
 
 `;
 
 // ! 6 page >>>>>>>>>>>>>>>>>>>>>>>
+
+export const CustomerImage = styled.img`
+width: 58px;
+margin-right: 30px;
+`;
 
 
 

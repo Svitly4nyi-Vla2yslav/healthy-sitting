@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import backgroundHeader from "../../assets/image/Terminator-product-section_8-2380x850-3.jpg"
 
 export const HeaderContainer = styled.div` 
+background-image: url(${backgroundHeader});
 padding: 20px;
  display: flex;
 justify-content: flex-end;  
@@ -9,7 +11,7 @@ justify-content: flex-end;
  width: 100%;
 //  position: fixed;
     z-index: 999;
-    background-color: black;
+    // background-color: black;
 `;
 
 export const Navigation = styled.nav`
