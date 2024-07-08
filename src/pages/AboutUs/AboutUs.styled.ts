@@ -128,7 +128,8 @@ font-size: 16px;
 text-align: center;
 line-height: 1.1875;
 padding: 10px;
-border-
+border-bottom: 1px solid #00baff;
+
 `;
 
 export const TextFeaturesLarge = styled.p`
@@ -137,6 +138,8 @@ font-size: 19px;
 text-align: start;
 padding: 5px;
 font-weight: 900;
+border-bottom: 1px solid #00baff;
+margin-bottom: 500px;
 `;
 
 // ! 5 page >>>>>>>>>>>>>>>>>>>>>>>
