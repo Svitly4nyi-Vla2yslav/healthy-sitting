@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import example from '../../assets/image/Terminator-product-section_8-2380x850-3.jpg';
 
 export const FooterContainer = styled.div`
 border-top: 1px solid #00baff;
@@ -6,6 +7,11 @@ padding: 0 ;
 margin: 0 auto;
 width: 100%;
 height: 100%;
+background-image: url(${example});
+ background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
 `;
 
 export const FooterList = styled.div`
