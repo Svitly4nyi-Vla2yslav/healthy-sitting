@@ -37,6 +37,7 @@ import CustomerThird from '../../assets/image/customer-3.png';
 import CustomerPeople from '../../assets/image/customer-people.png';
 import SearchImage from '../../assets/image/image_search.png';
 import Different from "../../assets/image/image-different.png"
+import Footer from '../../components/Footer/Footer';
 
 const AboutUs: React.FC = () => {
   useEffect(() => {
@@ -277,6 +278,7 @@ const AboutUs: React.FC = () => {
           <ImageBenefits data-aos="zoom-in-down" src={Different} alt='Different-🥸' />
         </ImageContainer>
       </ContainerPage>
+      <Footer/>
     </ContainerAbout>
   );
 };

@@ -3,7 +3,7 @@ import palett from "../../palette/palette"
 
 export const ContainerAbout = styled.div`
 text-align: center;
-padding: 90px 20px 30px 20px; 
+// padding: 90px 20px 30px 20px; 
 `;
 
 export const ContainerPage = styled.div`
@@ -12,6 +12,8 @@ text-align: center;
 margin: 0 auto;
 margin-bottom: 70px;
 max-width: 768px;
+padding: 90px 20px 30px 20px; 
+
 `;
 
 // ! 1 page >>>>>>>>>>>>>>>
