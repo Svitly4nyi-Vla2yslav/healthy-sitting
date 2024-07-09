@@ -25,31 +25,32 @@ export const StyledLink = styled(Link)`
   font-family: 'Right Grotesk';
 
 font-weight: 600;
-font-size: 16px;
+font-size: 20px;
 line-height: 119%;
 width: 40%;
     text-align: start;
   padding: 8px 16px;
   color: #ffffff; /* White text color */
-  text-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
+  background: linear-gradient(90deg, #ff7f50, #1e90ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
   transition:
-    color 0.3s,
-    text-shadow 0.3s;
+    color 0.6s,
+    text-shadow 0.6s,
+    filter 0.6s,
+ background 0.6s;
 
   &:hover,
   &:focus {
     color: #00baff; /* Blue text color on hover/focus */
-    text-shadow:
-      0 0 5px #00baff,
-      0 0 10px #00baff,
-      0 0 20px #00baff,
-      0 0 40px #00baff,
-      0 0 80px #00baff;
+     background: linear-gradient(-90deg, #ff7f50, #1e90ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+filter: drop-shadow(10px 10px 15px #ff7f50);
   }
 `;
 

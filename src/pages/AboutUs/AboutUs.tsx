@@ -35,6 +35,8 @@ import CustomerFirst from '../../assets/image/customer-1.png';
 import CustomerSecond from '../../assets/image/customer-2.png';
 import CustomerThird from '../../assets/image/customer-3.png';
 import CustomerPeople from '../../assets/image/customer-people.png';
+import SearchImage from '../../assets/image/image_search.png';
+import Different from "../../assets/image/image-different.png"
 
 const AboutUs: React.FC = () => {
   useEffect(() => {
@@ -48,7 +50,10 @@ const AboutUs: React.FC = () => {
     // data-aos-offset="0"
     >
       <ContainerPage>
-        <ImageAngel src={Angel} alt="👼" data-aos="fade-right" />
+        <ImageContainer>
+          <ImageAngel src={Angel} alt="👼" data-aos="fade-right" />
+        </ImageContainer>
+
         <AboutTitel data-aos="fade-left">Innovation Conveyor</AboutTitel>
       </ContainerPage>
       <ContainerPage>
@@ -171,31 +176,105 @@ const AboutUs: React.FC = () => {
         </ImageContainer>
       </ContainerPage>
       <ContainerPage>
-        <TitleFeatures>“AIC” CUSTOMER SEGMENTS</TitleFeatures>
-        <ContainerBenefits>
-          <CustomerImage src={CustomerFirst} alt="Icon-🪔" />{' '}
-          <TextBenefits>
+        <TitleFeatures data-aos="zoom-in">
+          “AIC” CUSTOMER SEGMENTS
+        </TitleFeatures>
+        <ContainerBenefits data-aos="zoom-out-left">
+          <CustomerImage
+            src={CustomerFirst}
+            alt="Icon-🪔"
+            data-aos="zoom-out-left"
+          />{' '}
+          <TextBenefits data-aos="zoom-out-left">
             Beginning Innovators: People who are trying their hand at creating
             startups or innovative projects for the first time.
           </TextBenefits>
         </ContainerBenefits>
-        <ContainerBenefits>
-          <CustomerImage src={CustomerSecond} alt="icon-😕" />{' '}
-          <TextBenefits>
+        <ContainerBenefits data-aos="zoom-out-left">
+          <CustomerImage
+            src={CustomerSecond}
+            alt="icon-😕"
+            data-aos="zoom-out-left"
+          />{' '}
+          <TextBenefits data-aos="zoom-out-left">
             Researchers: Science and research professionals interested in
             commercializing their research.
           </TextBenefits>
         </ContainerBenefits>
-        <ContainerBenefits>
-          <CustomerImage src={CustomerThird} alt="icon-🗣️" />{' '}
-          <TextBenefits>
+        <ContainerBenefits data-aos="zoom-out-left">
+          <CustomerImage
+            src={CustomerThird}
+            alt="icon-🗣️"
+            data-aos="zoom-out-left"
+          />{' '}
+          <TextBenefits data-aos="zoom-out-left">
             Experienced Innovators: People with experience in developing and
             implementing innovative projects, looking for support and new
             opportunities.
           </TextBenefits>
         </ContainerBenefits>
+        <ImageContainer data-aos="zoom-out-left">
+          <ImageBenefits
+            data-aos="zoom-out-left"
+            src={CustomerPeople}
+            alt="icon🫂"
+          />{' '}
+        </ImageContainer>
+      </ContainerPage>
+      <ContainerPage>
+        <TitleFeatures
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          SEARCH <br /> innovations <br />
+          in the world{' '}
+        </TitleFeatures>
+        <ImageContainer
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <ImageBenefits src={SearchImage} alt="icon-🌎" />
+        </ImageContainer>
+      </ContainerPage>
+      <ContainerPage>
+        <TitleFeatures data-aos="zoom-in">
+          {' '}
+          <strong>WHAT</strong> makes us different
+        </TitleFeatures>
+        <ContainerBenefits  data-aos="zoom-in-down">
+          <NumberTitle  data-aos="zoom-in-down">01</NumberTitle>
+          <TextBenefits data-aos="zoom-in-down">
+            Innovative concept: We work with the earliest stage of an idea. From
+            the moment it first appeared to the innovator. Our concept allows us
+            to work at the earliest stages and identify the most innovative
+            solutions.
+          </TextBenefits>
+        </ContainerBenefits>
+        <ContainerBenefits data-aos="zoom-in-down">
+          <NumberTitle data-aos="zoom-in-down">02</NumberTitle>
+          <TextBenefits data-aos="zoom-in-down">
+            Innovative concept of creating future companies: We develop and
+            complete the creation of "Reinventing Organizations" based on the
+            principle of sharing participation, responsibility and income among
+            all employees, from top management to front-line workers and this is
+            fundamentally different from the existing ones.
+          </TextBenefits>
+        </ContainerBenefits>
+        <ContainerBenefits data-aos="zoom-in-down">
+          <NumberTitle data-aos="zoom-in-down">03</NumberTitle>
+          <TextBenefits data-aos="zoom-in-down">
+            Attracting investment: Investors' attention is on the issue of not
+            losing investments, while founders' attention is on attracting vital
+            finances at any cost. And both sides are right. And the idea?
+            Innovation? It remains unattended and is transformed according to
+            circumstances. Solution: Create a concept where all parties calmly
+            receive what they need.
+          </TextBenefits>
+        </ContainerBenefits>{' '}
         <ImageContainer>
-          <ImageBenefits src={CustomerPeople} alt="icon🫂" />{' '}
+          <ImageBenefits data-aos="zoom-in-down" src={Different} alt='Different-🥸' />
         </ImageContainer>
       </ContainerPage>
     </ContainerAbout>

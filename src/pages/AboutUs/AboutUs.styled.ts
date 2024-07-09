@@ -11,6 +11,7 @@ text-align: center;
  width: 100%;
 margin: 0 auto;
 margin-bottom: 70px;
+max-width: 768px;
 `;
 
 // ! 1 page >>>>>>>>>>>>>>>
@@ -20,6 +21,7 @@ export const AboutContainerLogo = styled.div`
 
 export const ImageAngel = styled.img`
 // margin-top: 50px;
+max-width: 280px;
 `;
 
 export const AboutTitel = styled.h2`
@@ -52,11 +54,14 @@ font-weight: bold;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  max-width: 660px;
+  margin: 0 auto;
 `;
 
 export const ProblemContainer = styled.div`
 padding: 30px 20px; 
- width: 100%;
+//  width: 100%;
+max-width: 768px;
 margin: 0 auto;
 
 `;
