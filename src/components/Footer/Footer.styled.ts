@@ -12,6 +12,14 @@ background-image: url(${example});
   background-position: center;
   background-size: cover;
   width: 100%;
+  text-align: start;
+
+  @media screen and (min-width: 768px){
+    text-align: center;
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+  }
 `;
 
 export const FooterList = styled.div`
@@ -48,15 +56,17 @@ text-shadow 0.9s;
 `;
 
 export const FooterItemText = styled.p`
+text-align: center;
   font-weight: bold;
   background: linear-gradient(90deg, #ff7f50, #1e90ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  padding-bottom: 10px;
 `;
 
-export const FooterLink = styled.a`
+export const FooterLink = styled.p`
 font-family: 'Roboto';
 font-size: 12px;
 text-align: start;
@@ -90,6 +100,7 @@ justify-content: center;
 `;
 
 export const SocialLink = styled.a`
+margin: 5px;
 padding: 15px;
   transition: transform 0.3s ease, opacity 0.3s ease;
     &:focus,

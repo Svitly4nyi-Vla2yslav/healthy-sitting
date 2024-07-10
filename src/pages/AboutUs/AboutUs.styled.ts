@@ -3,17 +3,33 @@ import palett from "../../palette/palette"
 
 export const ContainerAbout = styled.div`
 text-align: center;
-// padding: 90px 20px 30px 20px; 
+
+
+padding-top: 70px;
+  @media screen and (min-width: 1440px){
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 1440px;
+    }
 `;
 
 export const ContainerPage = styled.div`
 text-align: center;
  width: 100%;
 margin: 0 auto;
-margin-bottom: 70px;
+margin-bottom: 30px;
 max-width: 768px;
-padding: 90px 20px 30px 20px; 
+padding: 10px 20px 30px 20px; 
 
+@media screen and (min-width: 1440px){
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+max-width: 1440px;
+flex-direction: column;
+ align-items: center;
+ margin-bottom: 70px;
+}
 `;
 
 // ! 1 page >>>>>>>>>>>>>>>
@@ -22,8 +38,10 @@ export const AboutContainerLogo = styled.div`
 `;
 
 export const ImageAngel = styled.img`
-// margin-top: 50px;
 max-width: 280px;
+@media screen and (min-width: 1440px){
+max-width: 500px;
+}
 `;
 
 export const AboutTitel = styled.h2`
@@ -37,7 +55,9 @@ font-weight: bold;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-
+@media screen and (min-width: 1440px){
+font-size: 30px;
+}
 `;
 
 
@@ -58,6 +78,10 @@ font-weight: bold;
   text-fill-color: transparent;
   max-width: 660px;
   margin: 0 auto;
+
+  @media screen and (min-width: 1440px){
+font-size: 30px;
+}
 `;
 
 export const ProblemContainer = styled.div`
@@ -65,6 +89,11 @@ padding: 30px 20px;
 //  width: 100%;
 max-width: 768px;
 margin: 0 auto;
+
+@media screen and (min-width: 1440px){
+display: flex;
+max-width: 1440px;
+}
 
 `;
 
@@ -95,10 +124,22 @@ text-shadow 0.9s;
   box-shadow: 0 0 20px #00baff;
   color: #00baff;
   }
+
+  @media screen and (min-width: 1440px){
+font-size: 20px;
+display: flex;
+flex-direction: row;
+text-align: start;
+}
+
 `;
 
 export const IconProblem = styled.img`
 width: 120px;
+
+  @media screen and (min-width: 1440px){
+  padding: 15px;
+  }
 `;
 // ! 3 page >>>>>>>>>>>>>>>>>>
 
@@ -114,6 +155,10 @@ font-weight: bold;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+    @media screen and (min-width: 1440px){
+font-size: 35px;
+}
 `;
 
 export const TextSolution = styled.p`
@@ -128,6 +173,15 @@ line-height: 1.1875;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+    @media screen and (min-width: 1440px){
+font-size: 25px;
+max-width: 1240px;
+text-align: start;
+display: flex;
+flex-direction: column;
+        align-items: stretch;
+}
 `;
 
 export const TextSolutionSmall = styled.p`
@@ -141,11 +195,25 @@ padding: 5px;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+@media screen and (min-width: 1440px){
+font-size: 18px;
+padding: 10px;
+}
 `;
 
 export const TextSolutionContainer = styled.div`
 padding-top: 10px;
-// margin-bottom: 50px;
+@media screen and (min-width: 1440px){
+display: flex;
+width: 90%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: baseline;
+
+
+}
 `;
 
 // ! 4 page >>>>>>>>>>>>>>>>>>
@@ -163,14 +231,38 @@ font-weight: bold;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+    @media screen and (min-width: 1440px){
+font-size: 35px;
+// margin-left: 30px;
+}
 `;
 
 export const ImageFeatures = styled.img`
-
+display: none;
+@media screen and (min-width: 1280px){
+display: block;
+width: 400px;
+}
 `;
 
 export const ContainerFeatures = styled.div`
+text-align: center;
+ width: 100%;
+margin: 0 auto;
+margin-bottom: 70px;
+max-width: 768px;
+padding: 10px 20px 30px 20px; 
 
+@media screen and (min-width: 1280px){
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 1300px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 102px;
+}
 `;
 
 export const TextFeatures = styled.p`
@@ -189,6 +281,11 @@ max-width: 320px;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+  @media screen and (min-width: 1440px){
+font-weight: 800;
+font-size: 19px;
+}
 `;
 
 export const TextFeaturesLarge = styled.p`
@@ -207,6 +304,10 @@ margin: 0 auto;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+  @media screen and (min-width: 1440px){
+
+}
 `;
 
 // ! 5 page >>>>>>>>>>>>>>>>>>>>>>>
@@ -222,6 +323,11 @@ font-family: 'Roboto';
   text-fill-color: transparent;
   text-align: center;
   padding : 15px;
+
+    @media screen and (min-width: 1440px){
+ font-size: 78px;
+  font-weight: bold;
+}
 `;
 
 export const TextBenefits = styled.p`
@@ -233,6 +339,10 @@ text-align: start;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+    @media screen and (min-width: 1440px){
+font-size: 24px;
+}
 `;
 
 export const ContainerBenefits = styled.div`
@@ -242,12 +352,26 @@ max-width: 768px;
 border-bottom: 1px solid #00baff;
 margin: 0 auto;
 padding: 20px;
+
+ @media screen and (min-width: 1440px){
+display: flex;
+padding-bottom: 40px;
+
+}
 `;
 
 export const ImageBenefits = styled.img`
 width: 280px;
 display: flex;
     padding: 20px 0 20px 0;
+
+ @media screen and (min-width: 1440px){
+width: 500px;
+
+
+}
+
+
 `;
 
 export const ImageContainer = styled.div`
@@ -256,14 +380,29 @@ margin: 0 auto;
 width: 100%;
 flex-direction: column;
     align-items: center;
-
+ @media screen and (min-width: 1440px){
+display: flex;
+}
 `;
+
+export const FlexContainer = styled.div`
+
+ @media screen and (min-width: 1440px){
+display: flex;
+
+}
+`;
+
 
 // ! 6 page >>>>>>>>>>>>>>>>>>>>>>>
 
 export const CustomerImage = styled.img`
 width: 58px;
 margin-right: 30px;
+ @media screen and (min-width: 1440px){
+width: 88px;
+
+}
 `;
 
 

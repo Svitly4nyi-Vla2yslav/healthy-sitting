@@ -36,36 +36,45 @@ const Footer: React.FC = () => {
       </FooterList>
       <FooterList>
         <FooterItemTitel>Useful Links</FooterItemTitel>
-        <FooterLink>Blog</FooterLink>
-        <FooterLink>Projects</FooterLink>
-        <FooterLink>Contact Us</FooterLink>
+        <Link to={'/*'}>
+          <FooterLink>Blog</FooterLink>
+        </Link>
+        <Link to="/project">
+          <FooterLink>Projects</FooterLink>
+        </Link>
+        <Link to="/contact">
+          <FooterLink>Contact Us</FooterLink>
+        </Link>
       </FooterList>
-      <WrapperSocialLink>
-        <SocialLink style={{ color: '#1e90ff' }}>
-          <LinkedIn />
-        </SocialLink>
-        <SocialLink
-          style={{
-            backdropFilter: 'linear-gradient(-90deg, #ff7f50, #1e90ff)',
-          }}
+      <FooterList>
+        <FooterItemText
+          style={{ borderBottom: ' 1px solid #00baff', width: 140 }}
         >
-          <Instagram
-            style={{
-              background: 'linear-gradient(50deg, #ff7f50, #1e90ff)',
-              borderRadius: 8,
-            }}
-          />
-        </SocialLink>
-        <SocialLink style={{ color: '#1e90ff' }}>
-          <Facebook />
-        </SocialLink>
-        <SocialLink style={{ color: 'red' }}>
-          <YouTube />
-        </SocialLink>
-        <SocialLink style={{ color: '#1e90ff' }}>
-          <Twitter />
-        </SocialLink>
-      </WrapperSocialLink>
+          SOCIAL MEDIA
+        </FooterItemText>
+        <WrapperSocialLink>
+          <SocialLink style={{ color: '#1e90ff' }}>
+            <LinkedIn />
+          </SocialLink>
+          <SocialLink>
+            <Instagram
+              style={{
+                background: 'linear-gradient(50deg, #ff7f50, #1e90ff)',
+                borderRadius: 8,
+              }}
+            />
+          </SocialLink>
+          <SocialLink style={{ color: '#1e90ff' }}>
+            <Facebook />
+          </SocialLink>
+          <SocialLink style={{ color: 'red' }}>
+            <YouTube />
+          </SocialLink>
+          <SocialLink style={{ color: '#1e90ff' }}>
+            <Twitter />
+          </SocialLink>
+        </WrapperSocialLink>
+      </FooterList>
     </FooterContainer>
   );
 };

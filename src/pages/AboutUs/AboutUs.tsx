@@ -5,8 +5,10 @@ import {
   AboutTitel,
   ContainerAbout,
   ContainerBenefits,
+  ContainerFeatures,
   ContainerPage,
   CustomerImage,
+  FlexContainer,
   IconProblem,
   ImageAngel,
   ImageBenefits,
@@ -36,7 +38,9 @@ import CustomerSecond from '../../assets/image/customer-2.png';
 import CustomerThird from '../../assets/image/customer-3.png';
 import CustomerPeople from '../../assets/image/customer-people.png';
 import SearchImage from '../../assets/image/image_search.png';
-import Different from "../../assets/image/image-different.png"
+import Different from '../../assets/image/image-different.png';
+import Features from '../../assets/image/features.png';
+
 import Footer from '../../components/Footer/Footer';
 
 const AboutUs: React.FC = () => {
@@ -44,12 +48,8 @@ const AboutUs: React.FC = () => {
     AOS.init({ duration: 3000 });
   }, []);
 
-  return (
-    <ContainerAbout
-    // data-aos="fade-zoom-in"
-    // data-aos-easing="ease-in-back"
-    // data-aos-offset="0"
-    >
+  return (<>
+    <ContainerAbout>
       <ContainerPage>
         <ImageContainer>
           <ImageAngel src={Angel} alt="👼" data-aos="fade-right" />
@@ -84,7 +84,7 @@ const AboutUs: React.FC = () => {
       <ContainerPage>
         <TitleSolution data-aos="zoom-in">Solution </TitleSolution>
         <TextSolution data-aos="fade-up">
-          <strong style={{ fontSize: 20 }}>
+          <strong style={{ fontSize: 26 }}>
             Angelic Innovation Conveyor "AIC":
           </strong>{' '}
           A platform designed to accumulate and test innovations at the Pre-seed
@@ -116,70 +116,76 @@ const AboutUs: React.FC = () => {
           </TextSolutionSmall>
         </TextSolutionContainer>
       </ContainerPage>
-      <ContainerPage>
+      <ContainerFeatures>
         <TitleFeatures data-aos="fade-up" data-aos-delay="100">
           PRODUCT AND FEATURES{' '}
         </TitleFeatures>
-        <TextFeatures data-aos="fade-up" data-aos-delay="200">
-          Idea pitch: The innovator delivers the idea on the platform using
-          customized templates in a psychologically safe environment.
-        </TextFeatures>
-        <ImageFeatures />
-        <TextFeatures data-aos="fade-up" data-aos-delay="200">
-          Lightning-fast innovation validation: After signing the NDA and
-          adaptive presentation, the innovation is subjected to rapid pipeline
-          validation and filtering.
-        </TextFeatures>
-        <TextFeatures data-aos="fade-up" data-aos-delay="200">
-          Full and in-depth validation: Once the concept has been validated, a
-          comprehensive analysis of the innovation is carried out and a final
-          report is prepared.
-        </TextFeatures>
-        <TextFeatures data-aos="fade-up" data-aos-delay="200">
-          Multi-level assessment: Information is sent to specialized departments
-          for a comprehensive assessment
-        </TextFeatures>
-        <TextFeaturesLarge data-aos="fade-up" data-aos-delay="200">
-          Psychological safety + Conveyr approach = “AIC”
-        </TextFeaturesLarge>
-      </ContainerPage>
+        <ContainerFeatures>
+          <TextFeatures data-aos="fade-up" data-aos-delay="100">
+            Idea pitch: The innovator delivers the idea on the platform using
+            customized templates in a psychologically safe environment.
+          </TextFeatures>
+          <ImageFeatures data-aos="zoom-in" src={Features} alt="icon-🕵️‍♀️" />
+          <TextFeatures data-aos="fade-up" data-aos-delay="100">
+            Lightning-fast innovation validation: After signing the NDA and
+            adaptive presentation, the innovation is subjected to rapid pipeline
+            validation and filtering.
+          </TextFeatures>
+          <TextFeatures data-aos="fade-up" data-aos-delay="100">
+            Full and in-depth validation: Once the concept has been validated, a
+            comprehensive analysis of the innovation is carried out and a final
+            report is prepared.
+          </TextFeatures>
+          <TextFeatures data-aos="fade-up" data-aos-delay="100">
+            Multi-level assessment: Information is sent to specialized
+            departments for a comprehensive assessment
+          </TextFeatures>
+          <TextFeaturesLarge data-aos="fade-up" data-aos-delay="100">
+            Psychological safety + Conveyr approach = “AIC”
+          </TextFeaturesLarge>
+        </ContainerFeatures>
+      </ContainerFeatures>
       <ContainerPage>
         <TitleFeatures data-aos="zoom-in">BENEFITS innovators</TitleFeatures>
-        <ContainerBenefits data-aos="zoom-out-right">
-          <NumberTitle data-aos="zoom-out-right">01</NumberTitle>{' '}
-          <TextBenefits data-aos="zoom-out-right">
-            Psychological comfort: Innovators will have access to a
-            psychologically safe environment where their emotional needs are
-            taken into account and stress levels are reduced when presenting
-            their ideas and allowing them to focus on innovation
-          </TextBenefits>
-        </ContainerBenefits>
-        <ContainerBenefits data-aos="zoom-out-right">
-          <NumberTitle data-aos="zoom-out-right">02</NumberTitle>{' '}
-          <TextBenefits data-aos="zoom-out-right">
-            Accelerated optimization of processes and resources: With
-            lightning-fast innovation validation and built-in templates for
-            presentations and videos, innovators save time and resources by
-            gaining quick access to evaluate their ideas and potential
-            investors.
-          </TextBenefits>
-        </ContainerBenefits>
-        <ContainerBenefits data-aos="zoom-out-right">
-          <NumberTitle data-aos="zoom-out-right">03</NumberTitle>{' '}
-          <TextBenefits data-aos="zoom-out-right">
-            Effective Support and Development: Innovators can concentrate as
-            much as possible on their innovative solutions. The parent company
-            will take care of procedural issues.
-          </TextBenefits>
-        </ContainerBenefits>
-        <ImageContainer>
-          <ImageBenefits src={Benefits} alt="💸" data-aos="zoom-out-right" />
-        </ImageContainer>
+        <FlexContainer> <ContainerPage>
+          <ContainerBenefits data-aos="zoom-out-right">
+            <NumberTitle data-aos="zoom-out-right">01</NumberTitle>{' '}
+            <TextBenefits data-aos="zoom-out-right">
+              Psychological comfort: Innovators will have access to a
+              psychologically safe environment where their emotional needs are
+              taken into account and stress levels are reduced when presenting
+              their ideas and allowing them to focus on innovation
+            </TextBenefits>
+          </ContainerBenefits>
+          <ContainerBenefits data-aos="zoom-out-right">
+            <NumberTitle data-aos="zoom-out-right">02</NumberTitle>{' '}
+            <TextBenefits data-aos="zoom-out-right">
+              Accelerated optimization of processes and resources: With
+              lightning-fast innovation validation and built-in templates for
+              presentations and videos, innovators save time and resources by
+              gaining quick access to evaluate their ideas and potential
+              investors.
+            </TextBenefits>
+          </ContainerBenefits>
+          <ContainerBenefits data-aos="zoom-out-right">
+            <NumberTitle data-aos="zoom-out-right">03</NumberTitle>{' '}
+            <TextBenefits data-aos="zoom-out-right">
+              Effective Support and Development: Innovators can concentrate as
+              much as possible on their innovative solutions. The parent company
+              will take care of procedural issues.
+            </TextBenefits>
+          </ContainerBenefits></ContainerPage>
+
+          <ImageContainer>
+            <ImageBenefits src={Benefits} alt="💸" data-aos="zoom-out-right" />
+          </ImageContainer>
+        </FlexContainer>
       </ContainerPage>
       <ContainerPage>
         <TitleFeatures data-aos="zoom-in">
           “AIC” CUSTOMER SEGMENTS
-        </TitleFeatures>
+        </TitleFeatures><FlexContainer>
+        <ContainerPage>
         <ContainerBenefits data-aos="zoom-out-left">
           <CustomerImage
             src={CustomerFirst}
@@ -213,17 +219,18 @@ const AboutUs: React.FC = () => {
             implementing innovative projects, looking for support and new
             opportunities.
           </TextBenefits>
-        </ContainerBenefits>
+        </ContainerBenefits></ContainerPage>
+
         <ImageContainer data-aos="zoom-out-left">
           <ImageBenefits
             data-aos="zoom-out-left"
             src={CustomerPeople}
             alt="icon🫂"
           />{' '}
-        </ImageContainer>
+        </ImageContainer></FlexContainer>
       </ContainerPage>
-      <ContainerPage>
-        <TitleFeatures
+      <ContainerPage><FlexContainer>
+        <TitleFeatures style={{paddingRight: 130}}
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
@@ -237,15 +244,16 @@ const AboutUs: React.FC = () => {
           data-aos-duration="1500"
         >
           <ImageBenefits src={SearchImage} alt="icon-🌎" />
-        </ImageContainer>
+        </ImageContainer></FlexContainer>
       </ContainerPage>
       <ContainerPage>
         <TitleFeatures data-aos="zoom-in">
           {' '}
           <strong>WHAT</strong> makes us different
         </TitleFeatures>
-        <ContainerBenefits  data-aos="zoom-in-down">
-          <NumberTitle  data-aos="zoom-in-down">01</NumberTitle>
+        <FlexContainer> <ContainerPage>
+        <ContainerBenefits data-aos="zoom-in-down">
+          <NumberTitle data-aos="zoom-in-down">01</NumberTitle>
           <TextBenefits data-aos="zoom-in-down">
             Innovative concept: We work with the earliest stage of an idea. From
             the moment it first appeared to the innovator. Our concept allows us
@@ -273,13 +281,18 @@ const AboutUs: React.FC = () => {
             circumstances. Solution: Create a concept where all parties calmly
             receive what they need.
           </TextBenefits>
-        </ContainerBenefits>{' '}
+        </ContainerBenefits>{' '}</ContainerPage>
         <ImageContainer>
-          <ImageBenefits data-aos="zoom-in-down" src={Different} alt='Different-🥸' />
-        </ImageContainer>
+          <ImageBenefits
+            data-aos="zoom-in-down"
+            src={Different}
+            alt="Different-🥸"
+          />
+        </ImageContainer></FlexContainer>
       </ContainerPage>
-      <Footer/>
-    </ContainerAbout>
+     
+    </ContainerAbout> <Footer />
+    </>
   );
 };
 
