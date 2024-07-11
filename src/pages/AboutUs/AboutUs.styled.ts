@@ -341,7 +341,7 @@ text-align: start;
   text-fill-color: transparent;
 
     @media screen and (min-width: 1440px){
-font-size: 24px;
+font-size: 20px;
 }
 `;
 
@@ -355,7 +355,7 @@ padding: 20px;
 
  @media screen and (min-width: 1440px){
 display: flex;
-padding-bottom: 40px;
+// padding-bottom: 40px;
 
 }
 `;
@@ -366,9 +366,9 @@ display: flex;
     padding: 20px 0 20px 0;
 
  @media screen and (min-width: 1440px){
-width: 500px;
-
-
+max-width: 500px;
+// height:500px;
+ background-size: cover;
 }
 
 

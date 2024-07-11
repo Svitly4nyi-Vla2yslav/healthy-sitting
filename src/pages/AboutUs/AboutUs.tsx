@@ -42,8 +42,12 @@ import Different from '../../assets/image/image-different.png';
 import Features from '../../assets/image/features.png';
 
 import Footer from '../../components/Footer/Footer';
+import { useMediaQuery } from 'react-responsive';
 
 const AboutUs: React.FC = () => {
+
+  const isMobile = useMediaQuery({ query: '(max-width: 768px' });
+
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
@@ -283,11 +287,11 @@ const AboutUs: React.FC = () => {
           </TextBenefits>
         </ContainerBenefits>{' '}</ContainerPage>
         <ImageContainer>
-          <ImageBenefits
+         {isMobile ? ("display: none") : (<ImageBenefits
             data-aos="zoom-in-down"
             src={Different}
             alt="Different-🥸"
-          />
+          />)}
         </ImageContainer></FlexContainer>
       </ContainerPage>
      
