@@ -357,7 +357,12 @@ padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 500px;
+     padding-top: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 330px;
+    margin : 0 auto;
+    pading: 5px;
 `,NC=Kn.div`
   text-align: center;
 `,BC=Kn.h1`
