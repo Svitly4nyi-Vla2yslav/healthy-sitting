@@ -25,7 +25,7 @@
     "react-dom": "^18.2.0",
     "react-particles": "^2.12.2",
     "react-responsive": "^10.0.0",
-    "react-router-dom": "^6.15.0",
+    "react-router-dom": "^6.24.1",
     "styled-components": "^6.0.7",
     "swiper": "^11.1.4",
     "vite-plugin-svgr": "^3.2.0"

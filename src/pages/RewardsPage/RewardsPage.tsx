@@ -6,7 +6,7 @@ const RewardsPage: React.FC = () => {
     <RewardsContainer>
       <Container>
         <Block>
-          <Title>Rewards 😀</Title>
+          <Title>Rewards </Title>
         </Block>
       </Container>
     </RewardsContainer>

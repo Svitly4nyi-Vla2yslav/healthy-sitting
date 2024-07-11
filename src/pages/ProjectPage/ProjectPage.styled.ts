@@ -6,7 +6,7 @@ import example from "../../assets/image/Terminator-product-section_8-2380x850-3.
 export const ContainerProject = styled.div`
  background-image: url(${example});
    width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -101,15 +101,13 @@ export const Background: React.FC = () => {
         </SwiperSlide>
       </Swiper>
 
-      {/* <Container> */}
-      {/* <Block> */}
+     
       <TitleHome> Title </TitleHome>
       <TextHome>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero atque
         beatae iste asperiores non, fuga ab dolore voluptas earum quidem.
       </TextHome>
-      {/* </Block> */}
-      {/* </Container> */}
+    
     </div>
   );
 };

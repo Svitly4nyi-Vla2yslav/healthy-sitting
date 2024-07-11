@@ -6,7 +6,7 @@ const ProjectPage: React.FC = () => {
     <ContainerProject>
        <Container>
         <Block>
-          <Title>Projects 😀</Title>
+          <Title>Projects </Title>
         </Block>
       </Container>
     </ContainerProject>

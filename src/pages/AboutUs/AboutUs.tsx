@@ -41,7 +41,7 @@ import SearchImage from '../../assets/image/image_search.png';
 import Different from '../../assets/image/image-different.png';
 import Features from '../../assets/image/features.png';
 
-import Footer from '../../components/Footer/Footer';
+
 import { useMediaQuery } from 'react-responsive';
 
 const AboutUs: React.FC = () => {
@@ -295,7 +295,7 @@ const AboutUs: React.FC = () => {
         </ImageContainer></FlexContainer>
       </ContainerPage>
      
-    </ContainerAbout> <Footer />
+    </ContainerAbout> 
     </>
   );
 };

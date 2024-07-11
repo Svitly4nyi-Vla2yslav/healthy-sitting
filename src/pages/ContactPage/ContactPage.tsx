@@ -1,16 +1,19 @@
 import React from 'react';
-import { Container, Block, Title } from '../ProjectPage/ProjectPage.styled';
 import { ContactContainer } from './ContactPage.styled';
+import EmailTicket from '../../components/EmailTicket/EmailTicket';
+import Subscribe from '../../components/EmailTicket/Subscribe';
+import { Container } from '../ProjectPage/ProjectPage.styled';
 
 const ContactPage: React.FC = () => {
   return (
-    <ContactContainer>
-      <Container>
-        <Block>
-          <Title> Contact 📱</Title>
-        </Block>
-      </Container>
-    </ContactContainer>
+    <>
+      <ContactContainer>
+        <Container>
+          <EmailTicket />
+          <Subscribe />
+        </Container>
+      </ContactContainer>
+    </>
   );
 };
 
