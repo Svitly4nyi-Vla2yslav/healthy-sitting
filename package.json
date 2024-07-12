@@ -13,6 +13,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@formspree/react": "^2.5.1",
     "@mui/icons-material": "^5.15.21",
     "@mui/material": "^5.15.21",
     "@sendgrid/mail": "^8.1.3",
@@ -28,6 +29,7 @@
     "react-responsive": "^10.0.0",
     "react-router-dom": "^6.24.1",
     "styled-components": "^6.0.7",
+    "sweetalert2": "^11.12.2",
     "swiper": "^11.1.4",
     "vite-plugin-svgr": "^3.2.0"
   },
