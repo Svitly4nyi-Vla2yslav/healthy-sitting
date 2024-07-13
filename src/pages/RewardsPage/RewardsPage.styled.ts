@@ -10,5 +10,5 @@ export const RewardsContainer = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
+background-attachment: fixed;
 `

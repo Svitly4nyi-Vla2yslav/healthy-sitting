@@ -2,8 +2,9 @@ import styled from 'styled-components';
 import { Button as AntButton } from 'antd';
 
 export const FormContainer = styled.div`
-  padding: 20px;
-  background-color: #f9f9f9;
+padding: 20px;
+  background-color: rgba(249, 249, 249, 0.28); /* півпрозорий фон */
+  backdrop-filter: blur(10px); /* ефект blur */
   border-radius: 10px;
   max-width: 500px;
   margin: 0 auto;
@@ -47,7 +48,8 @@ export const StatusMessage = styled.p`
 // !>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 export const TicketFormContainer = styled.div`
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: rgba(249, 249, 249, 0.28); /* півпрозорий фон */
+  backdrop-filter: blur(10px); /* ефект blur */
   border-radius: 10px;
   max-width: 500px;
   margin: 0 auto;
@@ -83,14 +85,31 @@ export const TicketButton = styled(AntButton)`
   color: white;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
+  // cursor: pointer;
+  transition: background 0.5s ease-in-out;
 
-  &:hover {
-    background-color: #0056b3;
+  &:hover,
+  &:focus {
+    background: linear-gradient(80deg, #ff7f50, #1e90ff, #ff096c, #d50082);
+    background-size: 400% 400%;
+    animation: gradientAnimation 3s ease infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 `;
 
 export const TicketStatusMessage = styled.p`
   margin-top: 20px;
   font-weight: bold;
+
 `;

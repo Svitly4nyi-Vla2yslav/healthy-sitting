@@ -10,6 +10,7 @@ export const ContainerProject = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 `
 
 export const Container = styled.div`

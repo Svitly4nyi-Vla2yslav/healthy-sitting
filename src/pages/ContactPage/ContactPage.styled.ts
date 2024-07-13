@@ -8,5 +8,17 @@ export const ContactContainer = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+   background-attachment: fixed; 
 `;
 
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+     padding-top: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 330px;
+    margin : 0 auto;
+    pading: 5px;
+`;
