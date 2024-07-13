@@ -1,5 +1,3 @@
-import { Input } from 'antd';
-import TextArea from 'antd/es/input/TextArea';
 import React, { useState } from 'react';
 
 import { useForm, ValidationError } from '@formspree/react';
@@ -7,12 +5,15 @@ import {
   TicketFormContainer,
   TicketForm,
   TicketLabel,
-  TicketButton,
   TicketStatusMessage,
+  Button,
+  Input,
+  TicketTextArea,
+  FormTitel,
+  FormText,
 } from './Email.styled';
 import { Message } from './Message';
 import { MessageErrors } from './MessageErrors';
-
 
 const EmailTicket: React.FC = () => {
   const [state, handleSubmit] = useForm('xgvwvayg');
@@ -81,6 +82,8 @@ const EmailTicket: React.FC = () => {
 
   return (
     <TicketFormContainer>
+      <FormTitel>Need Help? Open a Ticket</FormTitel>
+      <FormText>Our support team will get back to you ASAP via email.</FormText>
       <TicketForm
         name="email-ticket"
         method="POST"
@@ -89,24 +92,24 @@ const EmailTicket: React.FC = () => {
       >
         <input type="hidden" name="form-name" value="email-ticket" />
         <TicketLabel>
-          Your Name:{' '}
           <Input
             type="text"
             name="name"
             value={formData.name}
             onChange={handleInputChange}
+            placeholder="Your Name"
           />
           {formErrors.name && (
             <TicketStatusMessage>{formErrors.name}</TicketStatusMessage>
           )}
         </TicketLabel>
         <TicketLabel>
-          Your Email:{' '}
           <Input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleInputChange}
+            placeholder="Your Email"
           />
           {formErrors.email && (
             <TicketStatusMessage>{formErrors.email}</TicketStatusMessage>
@@ -114,12 +117,12 @@ const EmailTicket: React.FC = () => {
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </TicketLabel>
         <TicketLabel>
-          Message:{' '}
-          <TextArea
+          <TicketTextArea
             id="message"
             name="message"
             value={formData.message}
             onChange={handleInputChange}
+            placeholder="Enter Your Message"
           />
           {formErrors.message && (
             <TicketStatusMessage>{formErrors.message}</TicketStatusMessage>
@@ -130,25 +133,22 @@ const EmailTicket: React.FC = () => {
             errors={state.errors}
           />
         </TicketLabel>
-        <TicketButton
-          type="primary"
-          htmlType="submit"
-          disabled={state.submitting}
-        >
-          {state.submitting ? 'Sending...' : 'Send'}
-        </TicketButton>
+        <Button type="submit" disabled={state.submitting}>
+          {state.submitting ? 'Sending...' : 'Submit Ticket'}
+        </Button>
         {state.submitting && (
           <TicketStatusMessage>Sending...</TicketStatusMessage>
         )}
-        {state.errors && (
-  Array.isArray(state.errors) ? (
-    state.errors.length > 0 ? (
-      <TicketStatusMessage>Error occurred while submitting the form.</TicketStatusMessage>
-    ) : null
-  ) : (
-    <MessageErrors/>
-  )
-)}
+        {state.errors &&
+          (Array.isArray(state.errors) ? (
+            state.errors.length > 0 ? (
+              <TicketStatusMessage>
+                Error occurred while submitting the form.
+              </TicketStatusMessage>
+            ) : null
+          ) : (
+            <MessageErrors />
+          ))}
       </TicketForm>
     </TicketFormContainer>
   );

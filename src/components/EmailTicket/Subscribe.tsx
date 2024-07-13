@@ -1,26 +1,97 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { Message } from './Message';
-import { Button, Form, FormContainer, Input, Label } from './Email.styled';
-
+import {
+  Button,
+  Form,
+  FormContainer,
+  FormText,
+  FormTitel,
+  Input,
+  Label,
+  TicketStatusMessage,
+} from './Email.styled';
+import { MessageErrors } from './MessageErrors';
 
 const Subscribe: React.FC = () => {
   const [state, handleSubmit] = useForm('xkgwgjzn');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+  });
+  const [formErrors, setFormErrors] = useState({
+    name: '',
+    email: '',
+  });
+
+  const handleInputChange = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const validateForm = () => {
+    let errors = {
+      name: '',
+      email: '',
+    };
+    let isValid = true;
+
+    if (!formData.name.trim()) {
+      errors.name = 'Name is required';
+      isValid = false;
+    }
+
+    if (!formData.email.trim()) {
+      errors.email = 'Email is required';
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      errors.email = 'Email address is invalid';
+      isValid = false;
+    }
+
+    setFormErrors(errors);
+    return isValid;
+  };
+
+  const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    if (validateForm()) {
+      await handleSubmit(event);
+    }
+  };
+
   if (state.succeeded) {
-    return <Message/>;
+    return <Message />;
   }
 
   return (
     <FormContainer>
+      <FormTitel> Subscribe to receive future updates</FormTitel>
       <Form
         name="subscribe"
         method="POST"
         data-netlify="true"
-        onSubmit={handleSubmit}
+        onSubmit={handleFormSubmit}
       >
         <input type="hidden" name="form-name" value="subscribe" />
         <Label>
-          Your Name: <Input type="text" name="name" />{' '}
+          {/* Your Name:{' '} */}
+          <Input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleInputChange}
+            placeholder=" Your Name"
+          />{' '}
+          {formErrors.name && (
+            <TicketStatusMessage>{formErrors.name}</TicketStatusMessage>
+          )}
           <ValidationError
             prefix="Message"
             field="message"
@@ -28,13 +99,39 @@ const Subscribe: React.FC = () => {
           />
         </Label>
         <Label>
-          Your Email: <Input type="email" name="email" />
+          {/* Your Email:{' '} */}
+          <Input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleInputChange}
+            placeholder="Your Email"
+          />{' '}
+          {formErrors.email && (
+            <TicketStatusMessage>{formErrors.email}</TicketStatusMessage>
+          )}
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </Label>
         <Button type="submit" disabled={state.submitting}>
-          Send
+          {state.submitting ? 'Sending...' : 'Subscribe'}
         </Button>
+        {state.submitting && (
+          <TicketStatusMessage>Sending...</TicketStatusMessage>
+        )}
+        {state.errors &&
+          (Array.isArray(state.errors) ? (
+            state.errors.length > 0 ? (
+              <TicketStatusMessage>
+                Error occurred while submitting the form.
+              </TicketStatusMessage>
+            ) : null
+          ) : (
+            <MessageErrors />
+          ))}
       </Form>
+      <FormText>
+        No spam guaranteed, So please don’t send any spam mail.
+      </FormText>
     </FormContainer>
   );
 };
