@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { useForm, ValidationError } from '@formspree/react';
 import {
@@ -14,6 +14,9 @@ import {
 } from './Email.styled';
 import { Message } from './Message';
 import { MessageErrors } from './MessageErrors';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const EmailTicket: React.FC = () => {
   const [state, handleSubmit] = useForm('xgvwvayg');
@@ -80,8 +83,13 @@ const EmailTicket: React.FC = () => {
     return <Message />;
   }
 
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
+
+
   return (
-    <TicketFormContainer>
+    <TicketFormContainer  data-aos="zoom-in" data-aos-delay="100">
       <FormTitel>Need Help? Open a Ticket</FormTitel>
       <FormText>Our support team will get back to you ASAP via email.</FormText>
       <TicketForm

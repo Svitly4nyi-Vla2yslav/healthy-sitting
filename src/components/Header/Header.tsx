@@ -9,7 +9,7 @@ import {
   Navigation,
   StyledLink,
 } from './Header.styled';
-import Logo from '../../assets/image/logo-transparent-png.png';
+import Logo from '../../assets/image/logo_Systems.png';
 import { ImageLogo } from './Header.styled';
 import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-router-dom';

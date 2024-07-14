@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { Message } from './Message';
 import {
@@ -12,6 +12,9 @@ import {
   TicketStatusMessage,
 } from './Email.styled';
 import { MessageErrors } from './MessageErrors';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Subscribe: React.FC = () => {
   const [state, handleSubmit] = useForm('xkgwgjzn');
@@ -70,8 +73,12 @@ const Subscribe: React.FC = () => {
     return <Message />;
   }
 
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
+
   return (
-    <FormContainer>
+    <FormContainer  data-aos="zoom-in" data-aos-delay="700">
       <FormTitel> Subscribe to receive future updates</FormTitel>
       <Form
         name="subscribe"

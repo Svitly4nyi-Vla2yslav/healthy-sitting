@@ -9,7 +9,7 @@ export const ContactContainer = styled.div`
   background-size: cover;
    background-attachment: fixed; 
   @media screen and (min-width: 768px){
-  height: 100vh;
+  // height: 100vh;
   }
 `;
 

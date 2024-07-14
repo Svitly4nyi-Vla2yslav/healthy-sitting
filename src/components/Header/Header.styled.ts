@@ -57,7 +57,7 @@ filter: drop-shadow(10px 10px 15px #ff7f50);
 export const IconWrapper = styled.div`
  position: fixed;
     left: 10px;
-    top: 10px;
+    top: px;
       &:hover,
   &:focus {
     color: #00baff; /* Blue text color on hover/focus */
