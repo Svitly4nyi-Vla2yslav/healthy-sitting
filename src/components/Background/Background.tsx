@@ -8,6 +8,8 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+import { Link } from 'react-scroll';
+
 // import required modules
 import { EffectFade, Navigation, Autoplay, Pagination } from 'swiper/modules';
 
@@ -26,7 +28,16 @@ import bg3_large from '../../assets/image/Terminator-product-section_8-2380x850-
 import bg4_small from '../../assets/image/product-section_-2380x1200-2-small.jpg';
 import bg4_large from '../../assets/image/Terminator-product-section-7_-2380x850-3.jpg';
 
-import { TextHome, TitleHome } from './Background.styled';
+import {
+  ArrowWrapper,
+  ButtonDown,
+  TextHomeContainer,
+  SlideContent,
+  SlideText,
+  SlideImage,
+  SlideTitel,
+} from './Background.styled';
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
 export const Background: React.FC = () => {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
@@ -44,13 +55,16 @@ export const Background: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    AOS.init({ duration: 1000 }); 
+    AOS.init({ duration: 1000 });
   }, []);
+
   return (
-    <div data-aos="fade-right"
-    data-aos-offset="300"
-    data-aos-easing="ease-in-sine"
-    style={{marginTop: 76}}>
+    <div
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      style={{ marginTop: 76 }}
+    >
       <Swiper
         style={{
           width: '100%',
@@ -71,43 +85,65 @@ export const Background: React.FC = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img
-            src={windowWidth > 768 ? bg1_large : bg1_small}
-            alt="3️⃣"
-            style={{ width: '100%', height: 'auto' }}
-          />
+          <SlideContent>
+            <SlideImage
+              src={windowWidth > 768 ? bg1_large : bg1_small}
+              alt="Slide 1"
+            />
+            <SlideTitel>Text for Slide 1</SlideTitel>
+            <SlideText>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Delectus, accusamus.
+            </SlideText>
+          </SlideContent>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src={windowWidth > 768 ? bg2_large : bg2_small}
-            alt="1️⃣"
-            style={{ width: '100%', height: 'auto' }}
-          />
+          <SlideContent>
+            <SlideImage
+              src={windowWidth > 768 ? bg2_large : bg2_small}
+              alt="Slide 2"
+            />
+            <SlideTitel>Text for Slide 2</SlideTitel>
+            <SlideText>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Delectus, accusamus. 2</SlideText>
+          </SlideContent>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src={windowWidth > 768 ? bg3_large : bg3_small}
-            alt="2️⃣"
-            style={{ width: '100%', height: 'auto' }}
-          />
+          <SlideContent>
+            <SlideImage
+              src={windowWidth > 768 ? bg3_large : bg3_small}
+              alt="Slide 3"
+            />
+            <SlideTitel>Text for Slide 3</SlideTitel>
+            <SlideText>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Delectus, accusamus. 3</SlideText>
+          </SlideContent>
         </SwiperSlide>
-
         <SwiperSlide>
-          <img
-            src={windowWidth > 768 ? bg4_large : bg4_small}
-            alt="4️⃣"
-            style={{ width: '100%', height: 'auto' }}
-          />
+          <SlideContent>
+            <SlideImage
+              src={windowWidth > 768 ? bg4_large : bg4_small}
+              alt="Slide 4"
+            />
+            <SlideTitel>Text for Slide 4</SlideTitel>
+            <SlideText>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Delectus, accusamus. 4</SlideText>
+          </SlideContent>
         </SwiperSlide>
       </Swiper>
 
-     
-      <TitleHome> Title </TitleHome>
-      <TextHome>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero atque
-        beatae iste asperiores non, fuga ab dolore voluptas earum quidem.
-      </TextHome>
-    
+      <TextHomeContainer>
+        <Link to="video" smooth={true} duration={1000}>
+          <ButtonDown>
+            SCROLL DOWN
+            <ArrowWrapper>
+              <KeyboardDoubleArrowDownIcon style={{ fontSize: 50 }} />{' '}
+            </ArrowWrapper>
+          </ButtonDown>
+        </Link>
+      </TextHomeContainer>
     </div>
   );
 };
+
+export default Background;
