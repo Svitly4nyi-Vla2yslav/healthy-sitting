@@ -847,7 +847,7 @@ text-align: center;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  padding-bottom: 10px;
+  padding: 10px;
 `,mj=K.div`
 margin-bottom: 30px;
 display: flex;
@@ -861,7 +861,7 @@ padding: 15px;
     transform: scale(2.1); /* Scale up on hover */
     opacity: 1.8; /* Reduce opacity on hover */
   }
-`,hj="/assets/Maksim-af9db85a.png",gj=()=>(k.useEffect(()=>{qr.init({duration:3e3})},[]),C.jsx(aj,{children:C.jsxs(sj,{children:[" ",C.jsx(uj,{"data-aos":"zoom-in",src:B1,alt:"logo"}),C.jsx(lj,{"data-aos":"fade-up",src:hj,alt:"foto-schef"}),C.jsxs(fj,{"data-aos":"flip-left","data-aos-delay":"300",children:[C.jsx(cj,{children:"Maksym Morenets"}),C.jsx(dj,{children:"Founder of Angel Systems"})]}),C.jsx(pj,{"data-aos":"zoom-in","data-aos-delay":"700",children:"SOCIAL MEDIA"}),C.jsxs(mj,{children:[C.jsx(oa,{"data-aos":"fade-left","data-aos-delay":"500",href:"https://www.linkedin.com/in/maksym-morenets-aab4b1250/",style:{color:"#1e90ff"},children:C.jsx(Bx,{})}),C.jsx(oa,{"data-aos":"fade-left","data-aos-delay":"300",children:C.jsx(Nx,{style:{background:"linear-gradient(50deg, #ff7f50, #1e90ff)",borderRadius:8}})}),C.jsx(oa,{"data-aos":"zoom-in",style:{color:"#1e90ff"},children:C.jsx(zx,{})}),C.jsx(oa,{"data-aos":"fade-right","data-aos-delay":"300",style:{color:"#1e90ff"},children:C.jsx(Dx,{})}),C.jsx(oa,{"data-aos":"fade-right","data-aos-delay":"500",href:"mailto:maksym.morenets.ch@gmail.com",style:{color:"#1e90ff"},children:C.jsx(KR,{})})]})]})})),vj=()=>C.jsx(C.Fragment,{children:C.jsx(XA,{children:C.jsxs(QA,{children:[C.jsx(gj,{}),C.jsx(ij,{}),C.jsx(oj,{})]})})}),yj=K.div`
+`,hj="/assets/Maksim-af9db85a.png",gj=()=>(k.useEffect(()=>{qr.init({duration:3e3})},[]),C.jsx(aj,{children:C.jsxs(sj,{children:[" ",C.jsx(uj,{"data-aos":"zoom-in",src:B1,alt:"logo"}),C.jsx(lj,{"data-aos":"fade-up",src:hj,alt:"foto-schef"}),C.jsxs(fj,{"data-aos":"flip-left","data-aos-delay":"300",children:[C.jsx(cj,{children:"Maksym Morenets"}),C.jsx(dj,{children:"Founder of Angel Systems"})]}),C.jsx(pj,{"data-aos":"zoom-in","data-aos-delay":"700",children:"SOCIAL MEDIA"}),C.jsxs(mj,{"data-aos":"fade-left","data-aos-delay":"300",children:[C.jsx(oa,{href:"https://www.linkedin.com/in/maksym-morenets-aab4b1250/",style:{color:"#1e90ff"},children:C.jsx(Bx,{})}),C.jsx(oa,{children:C.jsx(Nx,{style:{background:"linear-gradient(50deg, #ff7f50, #1e90ff)",borderRadius:8}})}),C.jsx(oa,{style:{color:"#1e90ff"},children:C.jsx(zx,{})}),C.jsx(oa,{style:{color:"#1e90ff"},children:C.jsx(Dx,{})}),C.jsx(oa,{href:"mailto:maksym.morenets.ch@gmail.com",style:{color:"#1e90ff"},children:C.jsx(KR,{})})]})]})})),vj=()=>C.jsx(C.Fragment,{children:C.jsx(XA,{children:C.jsxs(QA,{children:[C.jsx(gj,{}),C.jsx(ij,{}),C.jsx(oj,{})]})})}),yj=K.div`
 text-align: center;
 
 
