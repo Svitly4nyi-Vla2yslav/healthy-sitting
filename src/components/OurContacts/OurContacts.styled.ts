@@ -58,7 +58,7 @@ text-align: center;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  padding-bottom: 10px;
+  padding: 10px;
 `;
 
 export const WrapperSocial = styled.div`

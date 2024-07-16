@@ -33,8 +33,8 @@ const OurContacts: React.FC = () => {
     <OurContactsContainer>
       <ImageContainer>
         {' '}
-          <ContactImageLogo data-aos="zoom-in" src={Logo} alt="logo" />
-          <ContactImage data-aos="fade-up" src={Maks} alt="foto-schef" />
+        <ContactImageLogo data-aos="zoom-in" src={Logo} alt="logo" />
+        <ContactImage data-aos="fade-up" src={Maks} alt="foto-schef" />
         <WrapperEmail data-aos="flip-left" data-aos-delay="300">
           <NameTitel>Maksym Morenets</NameTitel>
           <InfoText>Founder of Angel Systems</InfoText>
@@ -42,16 +42,14 @@ const OurContacts: React.FC = () => {
         <TextLinks data-aos="zoom-in" data-aos-delay="700">
           SOCIAL MEDIA
         </TextLinks>
-        <WrapperSocial>
+        <WrapperSocial data-aos="fade-left" data-aos-delay="300">
           <SocialLink
-            data-aos="fade-left"
-            data-aos-delay="500"
             href="https://www.linkedin.com/in/maksym-morenets-aab4b1250/"
             style={{ color: '#1e90ff' }}
           >
             <LinkedIn />
           </SocialLink>
-          <SocialLink data-aos="fade-left" data-aos-delay="300">
+          <SocialLink>
             <Instagram
               style={{
                 background: 'linear-gradient(50deg, #ff7f50, #1e90ff)',
@@ -59,20 +57,14 @@ const OurContacts: React.FC = () => {
               }}
             />
           </SocialLink>
-          <SocialLink data-aos="zoom-in" style={{ color: '#1e90ff' }}>
+          <SocialLink style={{ color: '#1e90ff' }}>
             <Facebook />
           </SocialLink>
 
-          <SocialLink
-            data-aos="fade-right"
-            data-aos-delay="300"
-            style={{ color: '#1e90ff' }}
-          >
+          <SocialLink style={{ color: '#1e90ff' }}>
             <Twitter />
           </SocialLink>
           <SocialLink
-            data-aos="fade-right"
-            data-aos-delay="500"
             href="mailto:maksym.morenets.ch@gmail.com"
             style={{ color: '#1e90ff' }}
           >
