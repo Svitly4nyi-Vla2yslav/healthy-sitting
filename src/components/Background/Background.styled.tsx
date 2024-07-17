@@ -1,5 +1,5 @@
-import styled, { keyframes } from "styled-components";
-import bg from "../../assets/image/product-section-4_-2380x850-2.jpg"
+import styled, { keyframes } from 'styled-components';
+import bg from '../../assets/image/product-section-4_-2380x850-2.jpg';
 // Define the keyframes for the pulse animation
 const pulse = keyframes`
   0% {
@@ -101,17 +101,16 @@ export const SlideText = styled.div`
   border-radius: 5px;
   width: 300px;
 
-@media screen and (min-width: 769px){
-bottom: 32px;
-left: 400px;
-font-size: 24px;
-
+  @media screen and (min-width: 769px) {
+    bottom: 32px;
+    left: 400px;
+    font-size: 24px;
   }
 
-  @media screen and (min-width: 1240px){
-  bottom: 132px;
-left: 400px;
-font-size: 24px;
+  @media screen and (min-width: 1240px) {
+    bottom: 132px;
+    left: 400px;
+    font-size: 24px;
   }
 `;
 
@@ -126,24 +125,21 @@ export const SlideTitel = styled.div`
   padding: 10px;
   border-radius: 5px;
 
-@media screen and (min-width: 769px){
- bottom: 70px;
-  left: 40px;  
- font-size: 30px;
+  @media screen and (min-width: 769px) {
+    bottom: 70px;
+    left: 40px;
+    font-size: 30px;
+  }
 
-}
+  @media screen and (min-width: 1024px) {
+    bottom: 170px;
+    left: 400px;
+    font-size: 34px;
+  }
 
-@media screen and (min-width: 1024px){
- bottom: 170px;
-  left: 400px;  
- font-size: 34px;
-
-}
-
- @media screen and (min-width: 1240px){
-   bottom: 270px;
-  left: 400px;  
- font-size: 34px;
-
+  @media screen and (min-width: 1240px) {
+    bottom: 270px;
+    left: 400px;
+    font-size: 34px;
   }
 `;

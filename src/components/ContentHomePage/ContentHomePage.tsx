@@ -1,4 +1,4 @@
-import React, { useEffect} from 'react';
+import React, { useEffect } from 'react';
 import {
   Card,
   CardText,
@@ -24,7 +24,7 @@ const ContentHomePage: React.FC = () => {
 
   return (
     <MainSection
-       id="video"
+      id="video"
       data-aos="fade-up"
       data-aos-easing="ease"
       data-aos-delay="800"
@@ -62,7 +62,6 @@ const ContentHomePage: React.FC = () => {
                 Dolorum, odio.
               </CardText>
             </Card>
-        
           </ListCard>
         </ContentOverlay>
       </VideoContainer>
