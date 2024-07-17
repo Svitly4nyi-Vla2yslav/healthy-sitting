@@ -675,7 +675,7 @@ font-size: 470px;
     transform: translateY(0%);
   }
   100% {
-    transform: translateY(-150%);
+    transform: translateY(-250%);
   }
 `,VN=G.section`
   width: 100%;
@@ -833,7 +833,7 @@ margin-bottom: 50px;
 max-width: 320px;
 margin: 0 auto;
  font-weight: bold;
-`,qN="/assets/airbender-d26d6a33.mp4",YN="/assets/card-1-2404c845.jpg",KN="/assets/card-2-4969718b.jpg",XN="/assets/card-3-10a0870f.jpg",QN=()=>(k.useEffect(()=>{br.init({duration:3e3})},[]),E.jsx(VN,{id:"video","data-aos":"fade-up","data-aos-easing":"ease","data-aos-delay":"800",children:E.jsxs(WN,{children:[E.jsxs("video",{autoPlay:!0,loop:!0,muted:!0,children:[E.jsx("source",{src:qN,type:"video/mp4"}),"Your browser does not support the video tag."]}),E.jsxs(UN,{children:[E.jsx("h1",{"data-aos":"zoom-in",children:"Your Content Here"}),E.jsx("p",{"data-aos":"zoom-in-down",children:"Your description or other content here."}),E.jsxs(GN,{children:[E.jsxs(Ef,{"data-aos":"zoom-in-right",children:[E.jsx(Cf,{src:YN,alt:"card-1"}),E.jsx(kf,{children:" Titel-1"}),E.jsx(Tf,{children:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo."})]}),E.jsxs(Ef,{"data-aos":"zoom-out",children:[E.jsx(Cf,{src:KN,alt:"Card-2"}),E.jsx(kf,{children:" Titel-2"}),E.jsx(Tf,{children:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, velit?"})]}),E.jsxs(Ef,{"data-aos":"zoom-in-left",children:[E.jsx(Cf,{src:XN,alt:"Card-3"}),E.jsx(kf,{children:" Titel-3"}),E.jsx(Tf,{children:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, odio."})]})]})]})]})})),ZN=()=>E.jsxs(E.Fragment,{children:[E.jsx(FN,{}),E.jsx(QN,{})]}),JN=G.div`
+`,qN="/assets/airbender-d26d6a33.mp4",YN="/assets/card-1-2404c845.jpg",KN="/assets/card-2-4969718b.jpg",XN="/assets/card-3-10a0870f.jpg",QN=()=>(k.useEffect(()=>{br.init({duration:3e3})},[]),E.jsx(VN,{id:"video","data-aos":"fade-up","data-aos-easing":"ease","data-aos-delay":"800",children:E.jsxs(WN,{children:[E.jsxs("video",{autoPlay:!0,loop:!0,muted:!0,children:[E.jsx("source",{src:qN,type:"video/mp4"}),"Your browser does not support the video tag."]}),E.jsxs(UN,{children:[E.jsx("h1",{"data-aos":"zoom-in",children:"Your Content Here"}),E.jsx("p",{"data-aos":"zoom-in-down",children:"Your description or other content here."}),E.jsxs(GN,{"data-aos":"zoom-in","data-aos-delay":"300",children:[E.jsxs(Ef,{children:[E.jsx(Cf,{src:YN,alt:"card-1"}),E.jsx(kf,{children:" Titel-1"}),E.jsx(Tf,{children:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo."})]}),E.jsxs(Ef,{children:[E.jsx(Cf,{src:KN,alt:"Card-2"}),E.jsx(kf,{children:" Titel-2"}),E.jsx(Tf,{children:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, velit?"})]}),E.jsxs(Ef,{children:[E.jsx(Cf,{src:XN,alt:"Card-3"}),E.jsx(kf,{children:" Titel-3"}),E.jsx(Tf,{children:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, odio."})]})]})]})]})})),ZN=()=>E.jsxs(E.Fragment,{children:[E.jsx(FN,{}),E.jsx(QN,{})]}),JN=G.div`
  background-image: url(${Gh});
    width: 100%;
   height: 100vh;
