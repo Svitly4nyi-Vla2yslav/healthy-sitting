@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-
+import bg from "../../assets/image/product-section-4_-2380x850-2.jpg"
 // Define the keyframes for the pulse animation
 const pulse = keyframes`
   0% {
@@ -69,8 +69,13 @@ export const TextHomeContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 40px;
-  padding-top: 30px;
+  // margin-bottom: 40px;
+  // padding-top: 30px;
+  background-image: url(${bg});
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 20vh;
 `;
 
 export const SlideContent = styled.div`

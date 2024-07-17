@@ -125,6 +125,27 @@ export const Card = styled.div`
   }
 
    @media (min-width: 769px) {
+
+     transition: background 1.9s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(90deg, #ff7f50, #1e90ff, #ff7f50, #1e90ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
    
    
    }

@@ -24,7 +24,7 @@ const ContentHomePage: React.FC = () => {
 
   return (
     <MainSection
-      id="video"
+       id="video"
       data-aos="fade-up"
       data-aos-easing="ease"
       data-aos-delay="800"
