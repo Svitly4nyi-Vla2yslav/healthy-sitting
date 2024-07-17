@@ -5,7 +5,7 @@ const move = keyframes`
     transform: translateY(0%);
   }
   100% {
-    transform: translateY(-150%);
+    transform: translateY(-250%);
   }
 `;
 

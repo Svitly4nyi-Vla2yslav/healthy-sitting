@@ -37,8 +37,8 @@ const ContentHomePage: React.FC = () => {
         <ContentOverlay>
           <h1 data-aos="zoom-in">Your Content Here</h1>
           <p data-aos="zoom-in-down">Your description or other content here.</p>
-          <ListCard>
-            <Card data-aos="zoom-in-right">
+          <ListCard  data-aos="zoom-in"  data-aos-delay="300">
+            <Card>
               <Image src={CardFirst} alt="card-1" />
               <CardTitel> Titel-1</CardTitel>
               <CardText>
@@ -46,7 +46,7 @@ const ContentHomePage: React.FC = () => {
                 nemo.
               </CardText>
             </Card>
-            <Card data-aos="zoom-out">
+            <Card>
               <Image src={CardSecond} alt="Card-2" />
               <CardTitel> Titel-2</CardTitel>
               <CardText>
@@ -54,7 +54,7 @@ const ContentHomePage: React.FC = () => {
                 velit?
               </CardText>
             </Card>
-            <Card data-aos="zoom-in-left">
+            <Card>
               <Image src={CardThird} alt="Card-3" />
               <CardTitel> Titel-3</CardTitel>
               <CardText>
