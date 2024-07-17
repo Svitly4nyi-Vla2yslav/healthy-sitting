@@ -138,8 +138,18 @@ export const GlobalStyles = css`
 
   html {
     overflow-x: hidden;
-    // scroll-behavior: smooth;
+    scroll-behavior: smooth;
    
     }
+
+    @keyframes move {
+  from {
+    tranform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}
  
 `;

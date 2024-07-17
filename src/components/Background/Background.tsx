@@ -16,6 +16,12 @@ import { EffectFade, Navigation, Autoplay, Pagination } from 'swiper/modules';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import bg1_1_large from "../../assets/image/Terminator_productlist_banner-3.jpg"
+import bg1_1_small from '../../assets/image/hero-image.jpg';
+
+import bg1_2_large from "../../assets/image/index-banner2-armorevo-2.jpg"
+import bg1_2_small from '../../assets/image/07-1.png';
+
 import bg1_small from '../../assets/image/Terminator-banner_bg-3-small.jpg';
 import bg1_large from '../../assets/image/product-section-2_-2380x850-2.jpg';
 
@@ -83,10 +89,35 @@ export const Background: React.FC = () => {
         }}
         modules={[Autoplay, EffectFade, Navigation, Pagination]}
         className="mySwiper"
-      >
+      ><SwiperSlide>
+      <SlideContent>
+        <SlideImage style={{ height: windowWidth < 769 ? 297 : 'auto', objectFit: 'cover' }}
+          src={windowWidth > 768 ? bg1_1_large : bg1_1_small}
+          alt="Slide 1 - 1"
+        />
+        <SlideTitel>Text for Slide 🤖</SlideTitel>
+        <SlideText>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Delectus, accusamus.
+        </SlideText>
+      </SlideContent>
+    </SwiperSlide>
+        <SwiperSlide>
+      <SlideContent>
+        <SlideImage  style={{ height: windowWidth < 769 ? 297 : 'auto', backgroundColor: "black" , objectFit: 'cover' }}
+          src={windowWidth > 768 ? bg1_2_large : bg1_2_small}
+          alt="Slide 1 - 2"
+        />
+        <SlideTitel>Text for Slide 😈</SlideTitel>
+        <SlideText>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Delectus, accusamus.
+        </SlideText>
+      </SlideContent>
+    </SwiperSlide>
         <SwiperSlide>
           <SlideContent>
-            <SlideImage
+            <SlideImage  style={{ height: windowWidth < 769 ? 297 : 'auto', objectFit: 'cover' }}
               src={windowWidth > 768 ? bg1_large : bg1_small}
               alt="Slide 1"
             />
@@ -97,9 +128,9 @@ export const Background: React.FC = () => {
             </SlideText>
           </SlideContent>
         </SwiperSlide>
-        <SwiperSlide>
-          <SlideContent>
-            <SlideImage
+        <SwiperSlide >
+          <SlideContent> 
+            <SlideImage   style={{ height: windowWidth < 769 ? 297 : 'auto', objectFit: 'cover' }}
               src={windowWidth > 768 ? bg2_large : bg2_small}
               alt="Slide 2"
             />
@@ -110,7 +141,7 @@ export const Background: React.FC = () => {
         </SwiperSlide>
         <SwiperSlide>
           <SlideContent>
-            <SlideImage
+            <SlideImage style={{ height: windowWidth < 769 ? 297 : 'auto', objectFit: 'cover' }}
               src={windowWidth > 768 ? bg3_large : bg3_small}
               alt="Slide 3"
             />
@@ -121,7 +152,7 @@ export const Background: React.FC = () => {
         </SwiperSlide>
         <SwiperSlide>
           <SlideContent>
-            <SlideImage
+            <SlideImage  style={{ height: windowWidth < 769 ? 297 : 'auto', objectFit: 'cover' }}
               src={windowWidth > 768 ? bg4_large : bg4_small}
               alt="Slide 4"
             />
