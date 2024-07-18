@@ -16,6 +16,7 @@ import 'aos/dist/aos.css';
 import CardFirst from '../../assets/image/card-1.jpg';
 import CardSecond from '../../assets/image/card-2.jpg';
 import CardThird from '../../assets/image/card-3.jpg';
+import HomeComponent from './HomeComponent';
 
 const ContentHomePage: React.FC = () => {
   useEffect(() => {
@@ -23,49 +24,54 @@ const ContentHomePage: React.FC = () => {
   }, []);
 
   return (
-    <MainSection
-      id="video"
-      data-aos="fade-up"
-      data-aos-easing="ease"
-      data-aos-delay="800"
-    >
-      <VideoContainer>
-        <video autoPlay loop muted>
-          <source src={Video} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <ContentOverlay>
-          <h1 data-aos="zoom-in">Your Content Here</h1>
-          <p data-aos="zoom-in-down">Your description or other content here.</p>
-          <ListCard  data-aos="zoom-in"  data-aos-delay="300">
-            <Card>
-              <Image src={CardFirst} alt="card-1" />
-              <CardTitel> Titel-1</CardTitel>
-              <CardText>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-                nemo.
-              </CardText>
-            </Card>
-            <Card>
-              <Image src={CardSecond} alt="Card-2" />
-              <CardTitel> Titel-2</CardTitel>
-              <CardText>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
-                velit?
-              </CardText>
-            </Card>
-            <Card>
-              <Image src={CardThird} alt="Card-3" />
-              <CardTitel> Titel-3</CardTitel>
-              <CardText>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolorum, odio.
-              </CardText>
-            </Card>
-          </ListCard>
-        </ContentOverlay>
-      </VideoContainer>
-    </MainSection>
+    <>
+      <MainSection
+        id="video"
+        data-aos="fade-up"
+        data-aos-easing="ease"
+        data-aos-delay="800"
+      >
+        <VideoContainer>
+          <video autoPlay loop muted>
+            <source src={Video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <ContentOverlay>
+            <h1 data-aos="zoom-in">Your Content Here</h1>
+            <p data-aos="zoom-in-down">
+              Your description or other content here.
+            </p>
+            <ListCard data-aos="zoom-in" data-aos-delay="300">
+              <Card>
+                <Image src={CardFirst} alt="card-1" />
+                <CardTitel> Titel-1</CardTitel>
+                <CardText>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam, nemo.
+                </CardText>
+              </Card>
+              <Card>
+                <Image src={CardSecond} alt="Card-2" />
+                <CardTitel> Titel-2</CardTitel>
+                <CardText>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Omnis, velit?
+                </CardText>
+              </Card>
+              <Card>
+                <Image src={CardThird} alt="Card-3" />
+                <CardTitel> Titel-3</CardTitel>
+                <CardText>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, odio.
+                </CardText>
+              </Card>
+            </ListCard>
+          </ContentOverlay>
+        </VideoContainer>
+      </MainSection>
+      <HomeComponent/>
+    </>
   );
 };
 

@@ -63,12 +63,12 @@ export const ContentOverlay = styled.div`
   text-align: center;
   
   h1 {
-    font-size: 3em;
+    // font-size: 3em;
     margin-bottom: 20px;
   }
 
   p {
-    font-size: 1.5em;
+    // font-size: 1.5em;
   }
 
   @media (max-width: 768px) {
