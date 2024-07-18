@@ -56,8 +56,8 @@ filter: drop-shadow(10px 10px 15px #ff7f50);
 
 export const IconWrapper = styled.div`
  position: fixed;
-    left: 10px;
-    top: px;
+    left: 1px;
+    top: 1px;
       &:hover,
   &:focus {
     color: #00baff; /* Blue text color on hover/focus */
@@ -79,7 +79,7 @@ export const ButtonMenuContainer = styled.div`
 `;
 
 export const ImageLogo = styled.img`
-width: 200px;
+width: 170px;
 transition:
     color 0.3s,
     filter 0.3s;

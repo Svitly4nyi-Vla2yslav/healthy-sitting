@@ -1,11 +1,26 @@
 import styled, { css, keyframes } from "styled-components";
 
-const move = keyframes`
+const gradientAnimation = keyframes`
   0% {
-    transform: translateX(0%);
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
   }
   100% {
-    transform: translateX(-250%);
+    background-position: 0% 50%;
+  }
+`;
+
+const pulse = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 `;
 
@@ -13,8 +28,8 @@ export const Wrapper = styled.section<{ background?: string }>`
 width: 100%;
 height: 100vh;
 ${(props) =>
-  props.background &&
-  css`
+    props.background &&
+    css`
     background-image: url(${props.background});
     background-position: center center;
     background-repeat: no-repeat;
@@ -24,8 +39,39 @@ ${(props) =>
   `}
 `;
 
-export const DonatButton = styled.a`
+export const DonatButton = styled.button`
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg, #ff7f50, #1e90ff, #ff7f50, #1e90ff);
+  background-size: 400% 400%;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+ margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  animation: ${gradientAnimation} 10s ease infinite;
 
+  &:hover {
+    animation: ${pulse} 0.6s infinite;
+    background-position: 100% 0;
+    box-shadow: 0 0 20px rgba(0, 186, 255, 0.7);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (min-width: 1024px) {
+  display: flex;
+  margin-top: 50px;
+   padding: 15px 30px;
+  }
 `;
 
 export const TitelH3 = styled.h3`
@@ -37,16 +83,34 @@ padding: 5px;
 font-weight: 900;
 border-bottom: 1px solid #00baff;
 margin-bottom: 50px;
-width: 100%;
+width: 80%;
 margin: 0 auto;
  font-weight: bold;
+
+ @media (min-width: 1024px) {
+ font-size: 48px;
+ width: 100%;
+ margin-bottom: 40px;
+ padding-bottom: 40px;
+ }
 `;
 
 export const ContainerStatistic = styled.div`
+ margin: 0 auto;
+ @media (min-width: 768px) {
+display: flex;
+width: 760px;
+height: 200px;
+}   
+ @media (min-width: 1240px) {   
+ padding: 10px;
+ width: 1200px;
+ height: 50vh;
 
 `;
 
 export const CardStatistic = styled.div`
+ margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -70,41 +134,26 @@ text-shadow 0.9s;
 
  &:hover,
   &:focus {
-//   box-shadow: 0 0 20px #00baff;
+  box-shadow: 0 0 20px #00baff;
   color: #00baff;
   border-bottom:  4px solid #00baff;
    border-top:  4px solid #00baff;
   }
 
   @media (max-width: 768px) {
-    // animation: ${move} 15s linear infinite; 
+
   }
 
    @media (min-width: 768px) {
 
-     transition: background 1.9s ease-in-out;
+    //  transition: background 1.9s ease-in-out;
 
   &:hover,
   &:focus {
-    background: linear-gradient(90deg, #ff7f50, #1e90ff, #ff7f50, #1e90ff);
+    // background: linear-gradient(90deg, #ff7f50, #1e90ff, #ff7f50, #1e90ff);
     background-size: 400% 400%;
     animation: gradientAnimation 5s ease infinite;
   }
-
-  @keyframes gradientAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-   
-   
-   }
 `;
 
 export const NumberLarge = styled.p`
@@ -133,4 +182,11 @@ font-weight: 400;
 max-width: 320px;
 margin: 0 auto;
  font-weight: bold;
+
+  @media (min-width: 1240px) { 
+  font-size: 20px;
+  display: flex;
+  padding-top: 10%;
+padding: 10px;
+  }
 `;

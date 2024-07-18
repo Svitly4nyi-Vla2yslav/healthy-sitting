@@ -89,7 +89,7 @@ const EmailTicket: React.FC = () => {
 
 
   return (
-    <TicketFormContainer  data-aos="zoom-in" data-aos-delay="100">
+    <TicketFormContainer  id="contact"  data-aos="zoom-in" data-aos-delay="100">
       <FormTitel>Need Help? Open a Ticket</FormTitel>
       <FormText>Our support team will get back to you ASAP via email.</FormText>
       <TicketForm

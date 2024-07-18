@@ -14,6 +14,7 @@ import { ImageLogo } from './Header.styled';
 import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-router-dom';
 import { MenuButton } from './MenuButton';
+import { DonatButton } from '../ContentHomePage/HomeComponent.styled';
 
 export const Header: React.FC = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 768px' });
@@ -21,7 +22,7 @@ export const Header: React.FC = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <HeaderContainer style={{position: 'fixed', top: 0}}>
+    <HeaderContainer style={{ position: 'fixed', top: 0 }}>
       <Navigation>
         <IconWrapper data-aos="zoom-in">
           {' '}
@@ -29,6 +30,11 @@ export const Header: React.FC = () => {
             <ImageLogo src={Logo} alt="Logo" />
           </Link>
         </IconWrapper>
+        <Link to="/contact">
+          <DonatButton style={{ margin: 0, marginRight: 10 }}>
+            Order
+          </DonatButton>
+        </Link>
         {isMobile ? (
           <MenuButton />
         ) : (
