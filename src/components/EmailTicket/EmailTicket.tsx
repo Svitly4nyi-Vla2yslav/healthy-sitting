@@ -90,8 +90,8 @@ const EmailTicket: React.FC = () => {
 
   return (
     <TicketFormContainer  id="contact"  data-aos="zoom-in" data-aos-delay="100">
-      <FormTitel>Need Help? Open a Ticket</FormTitel>
-      <FormText>Our support team will get back to you ASAP via email.</FormText>
+      <FormTitel data-translate>Need Help? Open a Ticket</FormTitel>
+      <FormText data-translate>Our support team will get back to you ASAP via email.</FormText>
       <TicketForm
         name="email-ticket"
         method="POST"
@@ -101,6 +101,7 @@ const EmailTicket: React.FC = () => {
         <input type="hidden" name="form-name" value="email-ticket" />
         <TicketLabel>
           <Input
+          data-translate
             type="text"
             name="name"
             value={formData.name}
@@ -126,6 +127,7 @@ const EmailTicket: React.FC = () => {
         </TicketLabel>
         <TicketLabel>
           <TicketTextArea
+          data-translate
             id="message"
             name="message"
             value={formData.message}
@@ -141,16 +143,16 @@ const EmailTicket: React.FC = () => {
             errors={state.errors}
           />
         </TicketLabel>
-        <Button type="submit" disabled={state.submitting}>
+        <Button  data-translate type="submit" disabled={state.submitting}>
           {state.submitting ? 'Sending...' : 'Submit Ticket'}
         </Button>
         {state.submitting && (
-          <TicketStatusMessage>Sending...</TicketStatusMessage>
+          <TicketStatusMessage data-translate>Sending...</TicketStatusMessage>
         )}
         {state.errors &&
           (Array.isArray(state.errors) ? (
             state.errors.length > 0 ? (
-              <TicketStatusMessage>
+              <TicketStatusMessage data-translate>
                 Error occurred while submitting the form.
               </TicketStatusMessage>
             ) : null

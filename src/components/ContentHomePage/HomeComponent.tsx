@@ -29,31 +29,43 @@ const HomeComponent: React.FC = () => {
           Your browser does not support the video tag.
         </video>
         <ContentOverlay>
-          <TitelH3 data-aos="zoom-in">
+          <TitelH3 data-aos="zoom-in" data-translate="Creative Project">
             Bring a creative project to life.
           </TitelH3>
           <ContainerStatistic data-aos="zoom-in" data-aos-delay="300">
             <CardStatistic>
-              <NumberLarge>€ 2 000 000 </NumberLarge>
-              <TextSmoll>OUR GOAL</TextSmoll>
+              <NumberLarge data-translate="Goal Amount">
+                € 2 000 000
+              </NumberLarge>
+              <TextSmoll data-translate="Our Goal">OUR GOAL</TextSmoll>
             </CardStatistic>
             <CardStatistic>
-              <NumberLarge>€ 16 547</NumberLarge>
-              <TextSmoll>CURRENTLY WE HAVE</TextSmoll>
+              <NumberLarge data-translate="Current Amount">
+                € 16 547
+              </NumberLarge>
+              <TextSmoll data-translate="Currently We Have">
+                CURRENTLY WE HAVE
+              </TextSmoll>
             </CardStatistic>
             <CardStatistic>
-              <NumberLarge>
+              <NumberLarge data-translate="Number of Investors">
                 15 + <br />
               </NumberLarge>
-              <TextSmoll>OUR INVESTORS</TextSmoll>
+              <TextSmoll data-translate="Our Investors">
+                OUR INVESTORS
+              </TextSmoll>
             </CardStatistic>
             <CardStatistic>
-              <NumberLarge>€ 1 983 453</NumberLarge>
-              <TextSmoll>WE HAVE TO COLLECT</TextSmoll>
+              <NumberLarge data-translate="Amount to Collect">
+                € 1 983 453
+              </NumberLarge>
+              <TextSmoll data-translate="We Have to Collect">
+                WE HAVE TO COLLECT
+              </TextSmoll>
             </CardStatistic>
           </ContainerStatistic>
           <Link to={'/contact'}>
-            <DonatButton>Order</DonatButton>
+            <DonatButton data-translate="Order Button">Order</DonatButton>
           </Link>
         </ContentOverlay>
       </VideoContainer>

@@ -79,7 +79,7 @@ const Subscribe: React.FC = () => {
 
   return (
     <FormContainer  data-aos="zoom-in" data-aos-delay="700">
-      <FormTitel> Subscribe to receive future updates</FormTitel>
+      <FormTitel data-translate> Subscribe to receive future updates</FormTitel>
       <Form
         name="subscribe"
         method="POST"
@@ -119,16 +119,16 @@ const Subscribe: React.FC = () => {
           )}
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </Label>
-        <Button type="submit" disabled={state.submitting}>
+        <Button  data-translate type="submit" disabled={state.submitting}>
           {state.submitting ? 'Sending...' : 'Subscribe'}
         </Button>
         {state.submitting && (
-          <TicketStatusMessage>Sending...</TicketStatusMessage>
+          <TicketStatusMessage  data-translate>Sending...</TicketStatusMessage>
         )}
         {state.errors &&
           (Array.isArray(state.errors) ? (
             state.errors.length > 0 ? (
-              <TicketStatusMessage>
+              <TicketStatusMessage  data-translate>
                 Error occurred while submitting the form.
               </TicketStatusMessage>
             ) : null
@@ -136,7 +136,7 @@ const Subscribe: React.FC = () => {
             <MessageErrors />
           ))}
       </Form>
-      <FormText>
+      <FormText data-translate>
         No spam guaranteed, So please don’t send any spam mail.
       </FormText>
     </FormContainer>

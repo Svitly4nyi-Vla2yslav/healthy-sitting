@@ -37,40 +37,48 @@ const ContentHomePage: React.FC = () => {
             Your browser does not support the video tag.
           </video>
           <ContentOverlay>
-            <h1 data-aos="zoom-in">Your Content Here</h1>
-            <p data-aos="zoom-in-down">
+            <h1 data-aos="zoom-in" data-translate="Your Content Here">
+              Your Content Here
+            </h1>
+            <p
+              data-aos="zoom-in-down"
+              data-translate="Your description or other content here."
+            >
               Your description or other content here.
             </p>
-            <ListCard data-aos="zoom-in" data-aos-delay="300">
+            <ListCard data-aos="zoom-in" data-aos-delay="500">
               <Card>
-                <Image src={CardFirst} alt="card-1" />
-                <CardTitel> Titel-1</CardTitel>
-                <CardText>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ullam, nemo.
+                <Image src={CardFirst} alt="Card 1" />
+                <CardTitel data-translate="Card Title 1">
+                  Card Title 1
+                </CardTitel>
+                <CardText data-translate="Card description 1">
+                  Card description 1
                 </CardText>
               </Card>
               <Card>
-                <Image src={CardSecond} alt="Card-2" />
-                <CardTitel> Titel-2</CardTitel>
-                <CardText>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Omnis, velit?
+                <Image src={CardSecond} alt="Card 2" />
+                <CardTitel data-translate="Card Title 2">
+                  Card Title 2
+                </CardTitel>
+                <CardText data-translate="Card description 2">
+                  Card description 2
                 </CardText>
               </Card>
               <Card>
-                <Image src={CardThird} alt="Card-3" />
-                <CardTitel> Titel-3</CardTitel>
-                <CardText>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum, odio.
+                <Image src={CardThird} alt="Card 3" />
+                <CardTitel data-translate="Card Title 3">
+                  Card Title 3
+                </CardTitel>
+                <CardText data-translate="Card description 3">
+                  Card description 3
                 </CardText>
               </Card>
             </ListCard>
           </ContentOverlay>
         </VideoContainer>
       </MainSection>
-      <HomeComponent/>
+      <HomeComponent />
     </>
   );
 };

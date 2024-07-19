@@ -100,8 +100,10 @@ export const Background: React.FC = () => {
               src={windowWidth > 768 ? bg1_1_large : bg1_1_small}
               alt="Slide 1 - 1"
             />
-            <SlideTitel>Text for Slide 🤖</SlideTitel>
-            <SlideText>
+            <SlideTitel data-translate="Text for Slide 🤖">
+              Text for Slide 🤖
+            </SlideTitel>
+            <SlideText data-translate="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Delectus, accusamus.
             </SlideText>
@@ -118,8 +120,10 @@ export const Background: React.FC = () => {
               src={windowWidth > 768 ? bg1_2_large : bg1_2_small}
               alt="Slide 1 - 2"
             />
-            <SlideTitel>Text for Slide 😈</SlideTitel>
-            <SlideText>
+            <SlideTitel data-translate="Text for Slide 😈">
+              Text for Slide 😈
+            </SlideTitel>
+            <SlideText data-translate="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Delectus, accusamus.
             </SlideText>
@@ -135,8 +139,10 @@ export const Background: React.FC = () => {
               src={windowWidth > 768 ? bg1_large : bg1_small}
               alt="Slide 1"
             />
-            <SlideTitel>Text for Slide 1</SlideTitel>
-            <SlideText>
+            <SlideTitel data-translate="Text for Slide 1">
+              Text for Slide 1
+            </SlideTitel>
+            <SlideText data-translate="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Delectus, accusamus.
             </SlideText>
@@ -152,8 +158,10 @@ export const Background: React.FC = () => {
               src={windowWidth > 768 ? bg2_large : bg2_small}
               alt="Slide 2"
             />
-            <SlideTitel>Text for Slide 2</SlideTitel>
-            <SlideText>
+            <SlideTitel data-translate="Text for Slide 2">
+              Text for Slide 2
+            </SlideTitel>
+            <SlideText data-translate="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 2">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Delectus, accusamus. 2
             </SlideText>
@@ -169,8 +177,10 @@ export const Background: React.FC = () => {
               src={windowWidth > 768 ? bg3_large : bg3_small}
               alt="Slide 3"
             />
-            <SlideTitel>Text for Slide 3</SlideTitel>
-            <SlideText>
+            <SlideTitel data-translate="Text for Slide 3">
+              Text for Slide 3
+            </SlideTitel>
+            <SlideText data-translate="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 3">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Delectus, accusamus. 3
             </SlideText>
@@ -186,8 +196,10 @@ export const Background: React.FC = () => {
               src={windowWidth > 768 ? bg4_large : bg4_small}
               alt="Slide 4"
             />
-            <SlideTitel>Text for Slide 4</SlideTitel>
-            <SlideText>
+            <SlideTitel data-translate="Text for Slide 4">
+              Text for Slide 4
+            </SlideTitel>
+            <SlideText data-translate="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 4">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Delectus, accusamus. 4
             </SlideText>
@@ -197,10 +209,10 @@ export const Background: React.FC = () => {
 
       <TextHomeContainer>
         <Link to="video" smooth={true} duration={1000}>
-          <ButtonDown>
+          <ButtonDown data-translate="SCROLL DOWN">
             SCROLL DOWN
             <ArrowWrapper>
-              <KeyboardDoubleArrowDownIcon style={{ fontSize: 50 }} />{' '}
+              <KeyboardDoubleArrowDownIcon style={{ fontSize: 50 }} />
             </ArrowWrapper>
           </ButtonDown>
         </Link>

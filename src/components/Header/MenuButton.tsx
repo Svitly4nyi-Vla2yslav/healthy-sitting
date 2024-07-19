@@ -54,7 +54,6 @@ export const MenuButton: React.FC = () => {
   const list = (anchor: Anchor) => (
     <Box
       sx={{ bgcolor: '#000' }}
-      // role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
@@ -73,7 +72,9 @@ export const MenuButton: React.FC = () => {
               <ListItemIcon style={{ color: '#00baff' }}>
                 {link.icon}
               </ListItemIcon>
-              <StyledLink to={link.to}>{link.text}</StyledLink>
+              <StyledLink to={link.to} data-translate={link.text}>
+                {link.text}
+              </StyledLink>
             </ListItemButton>
           </ListItem>
         ))}
@@ -92,9 +93,6 @@ export const MenuButton: React.FC = () => {
             style={{
               fontSize: 20,
               padding: 0,
-              // position: 'fixed',
-              // top: 20,
-              // right: "5%"
             }}
           >
             Menu

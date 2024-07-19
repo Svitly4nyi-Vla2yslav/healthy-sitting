@@ -32,20 +32,26 @@ const OurContacts: React.FC = () => {
   return (
     <OurContactsContainer>
       <ImageContainer>
-        {' '}
         <ContactImageLogo data-aos="zoom-in" src={Logo} alt="logo" />
         <ContactImage data-aos="fade-up" src={Maks} alt="foto-schef" />
         <WrapperEmail data-aos="flip-left" data-aos-delay="300">
-          <NameTitel>Maksym Morenets</NameTitel>
-          <InfoText>Founder of Angel Systems</InfoText>
+          <NameTitel data-translate="Founder Name">Maksym Morenets</NameTitel>
+          <InfoText data-translate="Founder Position">
+            Founder of Angel Systems
+          </InfoText>
         </WrapperEmail>
-        <TextLinks data-aos="zoom-in" data-aos-delay="700">
+        <TextLinks
+          data-aos="zoom-in"
+          data-aos-delay="700"
+          data-translate="Social Media"
+        >
           SOCIAL MEDIA
         </TextLinks>
         <WrapperSocial data-aos="fade-left" data-aos-delay="300">
           <SocialLink
             href="https://www.linkedin.com/in/maksym-morenets-aab4b1250/"
             style={{ color: '#1e90ff' }}
+           
           >
             <LinkedIn />
           </SocialLink>
@@ -60,13 +66,13 @@ const OurContacts: React.FC = () => {
           <SocialLink style={{ color: '#1e90ff' }}>
             <Facebook />
           </SocialLink>
-
           <SocialLink style={{ color: '#1e90ff' }}>
             <Twitter />
           </SocialLink>
           <SocialLink
             href="mailto:maksym.morenets.ch@gmail.com"
             style={{ color: '#1e90ff' }}
+            
           >
             <Email />
           </SocialLink>

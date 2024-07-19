@@ -20,6 +20,7 @@ import {
   Twitter,
   YouTube,
 } from '@mui/icons-material';
+// import Translator from '../LanguageSelector/Translater';
 
 const Footer: React.FC = () => {
   useEffect(() => {
@@ -32,23 +33,27 @@ const Footer: React.FC = () => {
         <Link to="/home">
           <ImageLogo src={Logo} alt="Logo" />
         </Link>
-        <FooterItemText></FooterItemText>
+        <FooterItemText data-translate="Footer additional text"></FooterItemText>
       </FooterList>
       <FooterList>
-        <FooterItemTitel>Useful Links</FooterItemTitel>
+        <FooterItemTitel data-translate="Useful Links">
+          Useful Links
+        </FooterItemTitel>
         <Link to={'/*'}>
-          <FooterLink>Blog</FooterLink>
+          <FooterLink data-translate="Blog">Blog</FooterLink>
         </Link>
         <Link to="/project">
-          <FooterLink>Projects</FooterLink>
+          <FooterLink data-translate="Projects">Projects</FooterLink>
         </Link>
         <Link to="/contact">
-          <FooterLink>Contact Us</FooterLink>
+          <FooterLink data-translate="Contact Us">Contact Us</FooterLink>
         </Link>
       </FooterList>
+      {/* <Translator/> */}
       <FooterList>
         <FooterItemText
-          style={{ borderBottom: ' 1px solid #00baff', width: 140 }}
+          style={{ borderBottom: '1px solid #00baff', width: 140 }}
+          data-translate="Social Media"
         >
           SOCIAL MEDIA
         </FooterItemText>

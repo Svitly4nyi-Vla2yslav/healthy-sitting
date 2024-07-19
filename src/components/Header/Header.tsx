@@ -30,8 +30,9 @@ export const Header: React.FC = () => {
             <ImageLogo src={Logo} alt="Logo" />
           </Link>
         </IconWrapper>
+        
         <Link to="/contact">
-          <DonatButton style={{ margin: 0, marginRight: 10 }}>
+          <DonatButton  data-aos="fade-right" style={{ margin: 0, marginRight: 10 }}>
             Order
           </DonatButton>
         </Link>
