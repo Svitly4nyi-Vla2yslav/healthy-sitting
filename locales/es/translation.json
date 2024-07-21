@@ -1,0 +1,118 @@
+{
+    "AboutUs": {
+      "title": "Conveyor de Innovación",
+      "problemTitle": "EL PROBLEMA: Nuestro mundo pierde hasta el 70% de ideas y soluciones innovadoras que ni siquiera sobreviven hasta la prueba de concepto",
+      "problemText1": "Dificultades psicológicas en diferentes niveles: Barreras y dimensiones psicológicas internas y externas",
+      "problemText2": "Desafíos multidisciplinarios: Falta de experiencia en áreas clave, marketing, legal, finanzas. La falta de competencias es una barrera para los innovadores.",
+      "problemText3": "Bloqueo conceptual: El largo y difícil camino desde la concepción de la idea hasta la prueba de concepto crea desafíos serios.",
+      "solutionTitle": "Solución",
+      "solutionStrong": "Conveyor de Innovación Angelical \"AIC\":",
+      "solutionText": "Una plataforma diseñada para acumular y probar innovaciones en la etapa Pre-seed lo más rápido posible. Por un lado, la solución es individualizada y, al mismo tiempo, se aplica el principio de la cinta transportadora.",
+      "solutionPoint1": "Creación de un entorno psicológicamente seguro",
+      "solutionPoint2": "Plantillas adaptadas",
+      "solutionPoint3": "Apoyo completo",
+      "solutionPoint4": "Prueba de concepto rápida",
+      "solutionPoint5": "Filtrado innovador",
+      "solutionPoint6": "Análisis rápido y profundo",
+      "solutionPoint7": "Integración en el ADN de una startup",
+      "featuresTitle": "PRODUCTO Y CARACTERÍSTICAS",
+      "featuresText1": "Presentación de la idea: El innovador presenta la idea en la plataforma usando plantillas personalizadas en un entorno psicológicamente seguro.",
+      "featuresText2": "Validación de innovación ultrarrápida: Después de firmar el NDA y la presentación adaptativa, la innovación se somete a una rápida validación y filtrado.",
+      "featuresText3": "Validación completa y profunda: Una vez validado el concepto, se realiza un análisis exhaustivo de la innovación y se prepara un informe final.",
+      "featuresText4": "Evaluación multinivel: La información se envía a departamentos especializados para una evaluación integral",
+      "featuresText5": "Seguridad psicológica + Enfoque de cinta transportadora = “AIC”",
+      "benefitsTitle": "VENTAJAS PARA INNOVADORES",
+      "benefitsText1": "Confort psicológico: Los innovadores tendrán acceso a un entorno psicológicamente seguro donde se tienen en cuenta sus necesidades emocionales y se reducen los niveles de estrés al presentar sus ideas, permitiéndoles concentrarse en la innovación.",
+      "benefitsText2": "Optimización acelerada de procesos y recursos: Con la validación de innovación ultrarrápida y plantillas integradas para presentaciones y videos, los innovadores ahorran tiempo y recursos al obtener acceso rápido para evaluar sus ideas y posibles inversores.",
+      "benefitsText3": "Apoyo y desarrollo efectivos: Los innovadores pueden concentrarse tanto como sea posible en sus soluciones innovadoras. La empresa matriz se encargará de los asuntos procedimentales.",
+      "customerSegmentsTitle": "SEGMENTOS DE CLIENTES \"AIC\"",
+      "customerText1": "Innovadores principiantes: Personas que están intentando crear startups o proyectos innovadores por primera vez.",
+      "customerText2": "Investigadores: Profesionales de la ciencia y la investigación interesados en comercializar su investigación.",
+      "customerText3": "Innovadores experimentados: Personas con experiencia en el desarrollo e implementación de proyectos innovadores, que buscan apoyo y nuevas oportunidades.",
+      "searchTitle": "BUSCAR INNOVACIONES EN EL MUNDO",
+      "differenceTitle": "QUÉ NOS HACE DIFERENTES",
+      "differenceText1": "Concepto innovador: Trabajamos con la etapa más temprana de una idea. Desde el momento en que apareció por primera vez al innovador. Nuestro concepto nos permite trabajar en las etapas más tempranas e identificar las soluciones más innovadoras.",
+      "differenceText2": "Concepto innovador para crear futuras empresas: Desarrollamos y completamos la creación de \"Reinventing Organizations\" basado en el principio de participación compartida, responsabilidad e ingresos entre todos los empleados, desde la alta dirección hasta los trabajadores de primera línea, y esto es fundamentalmente diferente de los existentes.",
+      "differenceText3": "Atraer inversiones: La atención de los inversores se centra en el problema de no perder inversiones, mientras que la atención de los fundadores se centra en atraer finanzas vitales a cualquier costo. Y ambas partes tienen razón. ¿Y la idea? ¿Innovación? Permanece sin atención y se transforma según las circunstancias. Solución: Crear un concepto donde todas las partes reciban tranquilamente lo que necesitan."
+    },
+    "Header": {
+        "order": "Ordenar",
+        "home": "INICIO",
+        "about": "ACERCA DE",
+        "project": "PROYECTOS",
+        "rewards": "RECOMPENSAS",
+        "contact": "CONTACTO"
+      },
+      "MenuButton": {
+        "menu": "Menú"
+      },
+      "Footer": {
+        "footerAdditionalText": "Texto adicional del pie de página",
+        "usefulLinks": "Enlaces útiles",
+        "blog": "Blog",
+        "projects": "Proyectos",
+        "contactUs": "Contáctanos",
+        "socialMedia": "REDES SOCIALES"
+      },
+      "LanguageSelector": {
+        "language": "Idioma"
+      },
+      "Background": {
+    "slide1Text": "Texto para la diapositiva 🤖",
+    "slide1Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.",
+    "slide2Text": "Texto para la diapositiva 😈",
+    "slide2Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.",
+    "slide3Text": "Texto para la diapositiva 1",
+    "slide3Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.",
+    "slide4Text": "Texto para la diapositiva 2",
+    "slide4Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 2",
+    "slide5Text": "Texto para la diapositiva 3",
+    "slide5Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 3",
+    "slide6Text": "Texto para la diapositiva 4",
+    "slide6Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 4",
+    "scrollDown": "DESPLAZAR HACIA ABAJO"
+  },
+  "ContentHomePage": {
+    "mainSectionTitle": "Tu contenido aquí",
+    "mainSectionDescription": "Tu descripción u otro contenido aquí.",
+    "card1Title": "Título de la tarjeta 1",
+    "card1Description": "Descripción de la tarjeta 1",
+    "card2Title": "Título de la tarjeta 2",
+    "card2Description": "Descripción de la tarjeta 2",
+    "card3Title": "Título de la tarjeta 3",
+    "card3Description": "Descripción de la tarjeta 3"
+  },
+  "HomeComponent": {
+    "projectTitle": "Lleva un proyecto creativo a la vida.",
+    "goalAmount": "NUESTRO OBJETIVO",
+    "currentAmount": "ACTUALMENTE TENEMOS",
+    "numberOfInvestors": "NUESTROS INVERSIONISTAS",
+    "amountToCollect": "TENEMOS QUE RECOGER",
+    "orderButton": "Ordenar"
+  },
+  "EmailTicket": {
+    "formTitle": "¿Necesitas ayuda? Abre un ticket",
+    "formDescription": "Nuestro equipo de soporte se pondrá en contacto contigo lo antes posible por correo electrónico.",
+    "namePlaceholder": "Tu Nombre",
+    "emailPlaceholder": "Tu Correo Electrónico",
+    "messagePlaceholder": "Introduce tu Mensaje",
+    "submitButton": "Enviar Ticket",
+    "sending": "Enviando...",
+    "error": "Se produjo un error al enviar el formulario."
+  },
+  "Subscribe": {
+    "subscribeTitle": "Suscríbete para recibir actualizaciones futuras",
+    "namePlaceholder": "Tu Nombre",
+    "emailPlaceholder": "Tu Correo Electrónico",
+    "subscribeButton": "Suscribirse",
+    "sending": "Enviando...",
+    "error": "Se produjo un error al enviar el formulario.",
+    "noSpam": "No garantizamos spam, así que por favor no envíes correo basura."
+  },
+  "OurContacts": {
+    "founderName": "Maksym Morenets",
+    "founderPosition": "Fundador de Angel Systems",
+    "socialMedia": "REDES SOCIALES"
+  }
+  }
+  

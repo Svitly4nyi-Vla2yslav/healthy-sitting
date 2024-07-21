@@ -1,0 +1,119 @@
+{
+    "AboutUs": {
+      "title": "Innovationsförderer",
+      "problemTitle": "DAS PROBLEM: Unsere Welt verliert bis zu 70 % der innovativen Ideen und Lösungen, die nicht einmal bis zum Nachweis des Konzepts überleben",
+      "problemText1": "Psychologische Schwierigkeiten auf verschiedenen Ebenen: Interne und externe psychologische Barrieren und Dimensionen",
+      "problemText2": "Multidisziplinäre Herausforderungen: Mangel an Expertise in Schlüsselbereichen, Marketing, Recht, Finanzen. Fehlen von Kompetenzen ist eine Barriere für Innovatoren.",
+      "problemText3": "Konzeptionelle Blockade: Der lange und schwierige Weg von der Idee bis zum Nachweis des Konzepts schafft ernsthafte Herausforderungen.",
+      "solutionTitle": "Lösung",
+      "solutionStrong": "Engelischer Innovationsförderer \"AIC\":",
+      "solutionText": "Eine Plattform, die darauf ausgelegt ist, Innovationen in der Pre-Seed-Phase so schnell wie möglich zu akkumulieren und zu testen. Einerseits ist die Lösung individualisiert und gleichzeitig wird das Prinzip des Förderbands angewendet.",
+      "solutionPoint1": "Schaffung einer psychologisch sicheren Umgebung",
+      "solutionPoint2": "Angepasste Vorlagen",
+      "solutionPoint3": "Vollständige Unterstützung",
+      "solutionPoint4": "Schneller Nachweis des Konzepts",
+      "solutionPoint5": "Innovative Filterung",
+      "solutionPoint6": "Schnelle und umfassende Analyse",
+      "solutionPoint7": "Integration in die DNA eines Startups",
+      "featuresTitle": "PRODUKT UND MERKMALE",
+      "featuresText1": "Ideenpräsentation: Der Innovator stellt die Idee auf der Plattform mithilfe maßgeschneiderter Vorlagen in einer psychologisch sicheren Umgebung vor.",
+      "featuresText2": "Blitzschnelle Innovationsvalidierung: Nach Unterzeichnung der NDA und der adaptiven Präsentation wird die Innovation einer schnellen Pipeline-Validierung und -Filterung unterzogen.",
+      "featuresText3": "Vollständige und umfassende Validierung: Nach der Validierung des Konzepts wird eine umfassende Analyse der Innovation durchgeführt und ein Abschlussbericht erstellt.",
+      "featuresText4": "Mehrstufige Bewertung: Informationen werden an spezialisierte Abteilungen zur umfassenden Bewertung weitergeleitet",
+      "featuresText5": "Psychologische Sicherheit + Förderbandansatz = „AIC“",
+      "benefitsTitle": "VORTEILE FÜR INNOVATOREN",
+      "benefitsText1": "Psychologischer Komfort: Innovatoren haben Zugang zu einer psychologisch sicheren Umgebung, in der ihre emotionalen Bedürfnisse berücksichtigt werden und die Stresslevel bei der Präsentation ihrer Ideen reduziert werden, sodass sie sich auf Innovation konzentrieren können.",
+      "benefitsText2": "Beschleunigte Optimierung von Prozessen und Ressourcen: Mit blitzschneller Innovationsvalidierung und integrierten Vorlagen für Präsentationen und Videos sparen Innovatoren Zeit und Ressourcen, indem sie schnellen Zugang zur Bewertung ihrer Ideen und potenziellen Investoren erhalten.",
+      "benefitsText3": "Effektive Unterstützung und Entwicklung: Innovatoren können sich so weit wie möglich auf ihre innovativen Lösungen konzentrieren. Das Mutterunternehmen kümmert sich um die Verfahrensfragen.",
+      "customerSegmentsTitle": "„AIC“ KUNDENSEGMENTE",
+      "customerText1": "Anfänger-Innovatoren: Menschen, die zum ersten Mal versuchen, Startups oder innovative Projekte zu gründen.",
+      "customerText2": "Forscher: Wissenschafts- und Forschungsexperten, die an der Kommerzialisierung ihrer Forschung interessiert sind.",
+      "customerText3": "Erfahrene Innovatoren: Menschen mit Erfahrung in der Entwicklung und Umsetzung innovativer Projekte, die nach Unterstützung und neuen Möglichkeiten suchen.",
+      "searchTitle": "SUCHEN NACH INNOVATIONEN WELTWEIT",
+      "differenceTitle": "WAS UNS UNTERScheidet",
+      "differenceText1": "Innovatives Konzept: Wir arbeiten mit der frühesten Phase einer Idee. Ab dem Moment, in dem sie dem Innovator erstmals begegnet ist. Unser Konzept ermöglicht es uns, in den frühesten Phasen zu arbeiten und die innovativsten Lösungen zu identifizieren.",
+      "differenceText2": "Innovatives Konzept zur Schaffung zukünftiger Unternehmen: Wir entwickeln und vollenden die Schaffung von \"Reinventing Organizations\" basierend auf dem Prinzip der gemeinsamen Teilnahme, Verantwortung und Einnahmen unter allen Mitarbeitern, vom Top-Management bis zu den Frontarbeitern, was sich grundlegend von den bestehenden unterscheidet.",
+      "differenceText3": "Investitionen anziehen: Das Augenmerk der Investoren liegt auf dem Thema, keine Investitionen zu verlieren, während das Augenmerk der Gründer darauf liegt, lebenswichtige Finanzen um jeden Preis zu gewinnen. Und beide Seiten haben recht. Und die Idee? Innovation? Sie bleibt unbeachtet und wird je nach Umständen transformiert. Lösung: Schaffung eines Konzepts, bei dem alle Parteien ruhig das erhalten, was sie brauchen."
+    },
+    "Header": {
+        "order": "Bestellen",
+        "home": "STARTSEITE",
+        "about": "ÜBER",
+        "project": "PROJEKT",
+        "rewards": "BELONUNGEN",
+        "contact": "KONTAKT"
+      },
+      "MenuButton": {
+        "menu": "Menü"
+      },
+      "Footer": {
+        "footerAdditionalText": "Zusätzlicher Fußtext",
+        "usefulLinks": "Nützliche Links",
+        "blog": "Blog",
+        "projects": "Projekte",
+        "contactUs": "Kontaktiere uns",
+        "socialMedia": "SOZIALE MEDIEN"
+      },
+      "LanguageSelector": {
+        "language": "Sprache"
+      },
+      "Background": {
+        "slide1Text": "Text für Slide 🤖",
+        "slide1Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.",
+        "slide2Text": "Text für Slide 😈",
+        "slide2Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.",
+        "slide3Text": "Text für Slide 1",
+        "slide3Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.",
+        "slide4Text": "Text für Slide 2",
+        "slide4Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 2",
+        "slide5Text": "Text für Slide 3",
+        "slide5Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 3",
+        "slide6Text": "Text für Slide 4",
+        "slide6Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 4",
+        "scrollDown": "NACH UNTEN SCROLLEN"
+      },
+      "ContentHomePage": {
+        "mainSectionTitle": "Ihr Inhalt hier",
+        "mainSectionDescription": "Ihre Beschreibung oder andere Inhalte hier.",
+        "card1Title": "Kartentitel 1",
+        "card1Description": "Kartentext 1",
+        "card2Title": "Kartentitel 2",
+        "card2Description": "Kartentext 2",
+        "card3Title": "Kartentitel 3",
+        "card3Description": "Kartentext 3"
+      },
+      "HomeComponent": {
+        "projectTitle": "Bringen Sie ein kreatives Projekt zum Leben.",
+        "goalAmount": "UNSER ZIEL",
+        "currentAmount": "DERZEIT HABEN WIR",
+        "numberOfInvestors": "UNSERE INVESTOREN",
+        "amountToCollect": "WIR MÜSSEN NOCH SAMMELN",
+        "orderButton": "Bestellen"
+    
+      },
+      "EmailTicket": {
+        "formTitle": "Brauchen Sie Hilfe? Öffnen Sie ein Ticket",
+        "formDescription": "Unser Support-Team wird sich so schnell wie möglich per E-Mail bei Ihnen melden.",
+        "namePlaceholder": "Ihr Name",
+        "emailPlaceholder": "Ihre E-Mail",
+        "messagePlaceholder": "Geben Sie Ihre Nachricht ein",
+        "submitButton": "Ticket absenden",
+        "sending": "Sending...",
+        "error": "Beim Absenden des Formulars ist ein Fehler aufgetreten."
+      },
+      "Subscribe": {
+        "subscribeTitle": "Abonnieren Sie, um zukünftige Updates zu erhalten",
+        "namePlaceholder": "Ihr Name",
+        "emailPlaceholder": "Ihre E-Mail",
+        "subscribeButton": "Abonnieren",
+        "sending": "Sending...",
+        "error": "Beim Absenden des Formulars ist ein Fehler aufgetreten.",
+        "noSpam": "Kein Spam garantiert, also bitte keinen Spam senden."
+      },
+      "OurContacts": {
+        "founderName": "Maksym Morenets",
+        "founderPosition": "Gründer von Angel Systems",
+        "socialMedia": "SOZIALE MEDIEN"
+      } 
+  }
+  
