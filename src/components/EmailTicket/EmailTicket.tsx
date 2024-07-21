@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-
 import { useForm, ValidationError } from '@formspree/react';
 import {
   TicketFormContainer,
@@ -17,8 +16,10 @@ import { MessageErrors } from './MessageErrors';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 const EmailTicket: React.FC = () => {
+  const { t } = useTranslation(); // Initialize translation hook
   const [state, handleSubmit] = useForm('xgvwvayg');
   const [formData, setFormData] = useState({
     name: '',
@@ -50,20 +51,20 @@ const EmailTicket: React.FC = () => {
     let isValid = true;
 
     if (!formData.name.trim()) {
-      errors.name = 'Name is required';
+      errors.name = t('EmailTicket.nameError');
       isValid = false;
     }
 
     if (!formData.email.trim()) {
-      errors.email = 'Email is required';
+      errors.email = t('EmailTicket.emailError');
       isValid = false;
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      errors.email = 'Email address is invalid';
+      errors.email = t('EmailTicket.emailInvalid');
       isValid = false;
     }
 
     if (!formData.message.trim()) {
-      errors.message = 'Message is required';
+      errors.message = t('EmailTicket.messageError');
       isValid = false;
     }
 
@@ -79,19 +80,18 @@ const EmailTicket: React.FC = () => {
     }
   };
 
-  if (state.succeeded) {
-    return <Message />;
-  }
-
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
 
+  if (state.succeeded) {
+    return <Message />;
+  }
 
   return (
-    <TicketFormContainer  id="contact"  data-aos="zoom-in" data-aos-delay="100">
-      <FormTitel data-translate>Need Help? Open a Ticket</FormTitel>
-      <FormText data-translate>Our support team will get back to you ASAP via email.</FormText>
+    <TicketFormContainer id="contact" data-aos="zoom-in" data-aos-delay="100">
+      <FormTitel data-translate>{t('EmailTicket.formTitle')}</FormTitel>
+      <FormText data-translate>{t('EmailTicket.formDescription')}</FormText>
       <TicketForm
         name="email-ticket"
         method="POST"
@@ -101,12 +101,12 @@ const EmailTicket: React.FC = () => {
         <input type="hidden" name="form-name" value="email-ticket" />
         <TicketLabel>
           <Input
-          data-translate
+            data-translate
             type="text"
             name="name"
             value={formData.name}
             onChange={handleInputChange}
-            placeholder="Your Name"
+            placeholder={t('EmailTicket.namePlaceholder')}
           />
           {formErrors.name && (
             <TicketStatusMessage>{formErrors.name}</TicketStatusMessage>
@@ -118,7 +118,7 @@ const EmailTicket: React.FC = () => {
             name="email"
             value={formData.email}
             onChange={handleInputChange}
-            placeholder="Your Email"
+            placeholder={t('EmailTicket.emailPlaceholder')}
           />
           {formErrors.email && (
             <TicketStatusMessage>{formErrors.email}</TicketStatusMessage>
@@ -127,12 +127,12 @@ const EmailTicket: React.FC = () => {
         </TicketLabel>
         <TicketLabel>
           <TicketTextArea
-          data-translate
+            data-translate
             id="message"
             name="message"
             value={formData.message}
             onChange={handleInputChange}
-            placeholder="Enter Your Message"
+            placeholder={t('EmailTicket.messagePlaceholder')}
           />
           {formErrors.message && (
             <TicketStatusMessage>{formErrors.message}</TicketStatusMessage>
@@ -143,17 +143,17 @@ const EmailTicket: React.FC = () => {
             errors={state.errors}
           />
         </TicketLabel>
-        <Button  data-translate type="submit" disabled={state.submitting}>
-          {state.submitting ? 'Sending...' : 'Submit Ticket'}
+        <Button data-translate type="submit" disabled={state.submitting}>
+          {state.submitting ? t('EmailTicket.sending') : t('EmailTicket.submitButton')}
         </Button>
         {state.submitting && (
-          <TicketStatusMessage data-translate>Sending...</TicketStatusMessage>
+          <TicketStatusMessage data-translate>{t('EmailTicket.sending')}</TicketStatusMessage>
         )}
         {state.errors &&
           (Array.isArray(state.errors) ? (
             state.errors.length > 0 ? (
               <TicketStatusMessage data-translate>
-                Error occurred while submitting the form.
+                {t('EmailTicket.error')}
               </TicketStatusMessage>
             ) : null
           ) : (

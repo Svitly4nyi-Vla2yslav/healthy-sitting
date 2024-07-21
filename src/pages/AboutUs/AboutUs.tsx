@@ -42,8 +42,10 @@ import Different from '../../assets/image/image-different.png';
 import Features from '../../assets/image/features.png';
 
 import { useMediaQuery } from 'react-responsive';
+import { useTranslation } from 'react-i18next';
 
 const AboutUs: React.FC = () => {
+  const { t } = useTranslation();
   const isMobile = useMediaQuery({ query: '(max-width: 768px' });
 
   useEffect(() => {
@@ -58,143 +60,111 @@ const AboutUs: React.FC = () => {
             <ImageAngel src={Angel} alt="👼" data-aos="fade-right" />
           </ImageContainer>
 
-          <AboutTitel data-aos="fade-left">Innovation Conveyor</AboutTitel>
+          <AboutTitel data-aos="fade-left">{t('AboutUs.title')}</AboutTitel>
         </ContainerPage>
         <ContainerPage>
           <TitleProblem data-aos="zoom-in" data-aos-delay="700">
-            THE PROBLEM: Our world loses up to 70% of innovative ideas and
-            solutions that don't even survive to proof of concept
+            {t('AboutUs.problemTitle')}
           </TitleProblem>
           <ProblemContainer>
             <ProblemText data-aos="flip-left" data-aos-delay="300">
               <IconProblem src={IconFirst} alt="🤔" />
-              Psychological difficulties at different levels: Internal and
-              external psychological barriers and dimensions
+              {t('AboutUs.problemText1')}
             </ProblemText>
             <ProblemText data-aos="flip-right" data-aos-delay="500">
               <IconProblem src={IconSecond} alt="⏸️" />
-              Multidisciplinary challenges: Lack of expertise in key areas,
-              marketing, legal, finance. Lack of competencies is a barrier for
-              innovators.
+              {t('AboutUs.problemText2')}
             </ProblemText>
             <ProblemText data-aos="flip-left" data-aos-delay="700">
               <IconProblem src={IconThird} alt="⏲️" />
-              Conceptual jam: The long and difficult journey from idea inception
-              to proof of concept, creating serious challenges.
+              {t('AboutUs.problemText3')}
             </ProblemText>
           </ProblemContainer>
         </ContainerPage>
         <ContainerPage>
-          <TitleSolution data-aos="zoom-in">Solution </TitleSolution>
+          <TitleSolution data-aos="zoom-in">{t('AboutUs.solutionTitle')}</TitleSolution>
           <TextSolution data-aos="fade-up">
-            <strong style={{ fontSize: 26 }}>
-              Angelic Innovation Conveyor "AIC":
-            </strong>{' '}
-            A platform designed to accumulate and test innovations at the
-            Pre-seed stage as quickly as possible. On the one hand, the solution
-            is individualized and at the same time the principle of the conveyor
-            belt is applied.
+            <strong style={{ fontSize: 26 }}>{t('AboutUs.solutionStrong')}</strong>{' '}
+            {t('AboutUs.solutionText')}
           </TextSolution>
           <TextSolutionContainer style={{ marginBottom: 50 }}>
             <TextSolutionSmall data-aos="fade-up" data-aos-delay="100">
-              ✔ Creating a psychologically safe environment
+              ✔ {t('AboutUs.solutionPoint1')}
             </TextSolutionSmall>
             <TextSolutionSmall data-aos="fade-up" data-aos-delay="200">
-              ✔ Adapted templates
+              ✔ {t('AboutUs.solutionPoint2')}
             </TextSolutionSmall>
             <TextSolutionSmall data-aos="fade-up" data-aos-delay="300">
-              ✔ Full support
+              ✔ {t('AboutUs.solutionPoint3')}
             </TextSolutionSmall>
             <TextSolutionSmall data-aos="fade-up" data-aos-delay="300">
-              ✔ Speedy proof of concept
+              ✔ {t('AboutUs.solutionPoint4')}
             </TextSolutionSmall>
             <TextSolutionSmall data-aos="fade-up" data-aos-delay="300">
-              ✔ Innovative filtering
+              ✔ {t('AboutUs.solutionPoint5')}
             </TextSolutionSmall>
             <TextSolutionSmall data-aos="fade-up" data-aos-delay="300">
-              ✔ Fast and in-depth analysis{' '}
+              ✔ {t('AboutUs.solutionPoint6')}
             </TextSolutionSmall>
             <TextSolutionSmall data-aos="fade-up" data-aos-delay="300">
-              ✔ Building into the DNA of a startup
+              ✔ {t('AboutUs.solutionPoint7')}
             </TextSolutionSmall>
           </TextSolutionContainer>
         </ContainerPage>
         <ContainerFeatures>
           <TitleFeatures data-aos="fade-up" data-aos-delay="100">
-            PRODUCT AND FEATURES{' '}
+            {t('AboutUs.featuresTitle')}
           </TitleFeatures>
           <ContainerFeatures>
             <TextFeatures data-aos="fade-up" data-aos-delay="100">
-              Idea pitch: The innovator delivers the idea on the platform using
-              customized templates in a psychologically safe environment.
+              {t('AboutUs.featuresText1')}
             </TextFeatures>
             <ImageFeatures data-aos="zoom-in" src={Features} alt="icon-🕵️‍♀️" />
             <TextFeatures data-aos="fade-up" data-aos-delay="100">
-              Lightning-fast innovation validation: After signing the NDA and
-              adaptive presentation, the innovation is subjected to rapid
-              pipeline validation and filtering.
+              {t('AboutUs.featuresText2')}
             </TextFeatures>
             <TextFeatures data-aos="fade-up" data-aos-delay="100">
-              Full and in-depth validation: Once the concept has been validated,
-              a comprehensive analysis of the innovation is carried out and a
-              final report is prepared.
+              {t('AboutUs.featuresText3')}
             </TextFeatures>
             <TextFeatures data-aos="fade-up" data-aos-delay="100">
-              Multi-level assessment: Information is sent to specialized
-              departments for a comprehensive assessment
+              {t('AboutUs.featuresText4')}
             </TextFeatures>
             <TextFeaturesLarge data-aos="fade-up" data-aos-delay="100">
-              Psychological safety + Conveyr approach = “AIC”
+              {t('AboutUs.featuresText5')}
             </TextFeaturesLarge>
           </ContainerFeatures>
         </ContainerFeatures>
         <ContainerPage>
-          <TitleFeatures data-aos="zoom-in">BENEFITS innovators</TitleFeatures>
+          <TitleFeatures data-aos="zoom-in">{t('AboutUs.benefitsTitle')}</TitleFeatures>
           <FlexContainer>
             {' '}
             <ContainerPage>
               <ContainerBenefits data-aos="zoom-out-right">
                 <NumberTitle data-aos="zoom-out-right">01</NumberTitle>{' '}
                 <TextBenefits data-aos="zoom-out-right">
-                  Psychological comfort: Innovators will have access to a
-                  psychologically safe environment where their emotional needs
-                  are taken into account and stress levels are reduced when
-                  presenting their ideas and allowing them to focus on
-                  innovation
+                  {t('AboutUs.benefitsText1')}
                 </TextBenefits>
               </ContainerBenefits>
               <ContainerBenefits data-aos="zoom-out-right">
                 <NumberTitle data-aos="zoom-out-right">02</NumberTitle>{' '}
                 <TextBenefits data-aos="zoom-out-right">
-                  Accelerated optimization of processes and resources: With
-                  lightning-fast innovation validation and built-in templates
-                  for presentations and videos, innovators save time and
-                  resources by gaining quick access to evaluate their ideas and
-                  potential investors.
+                  {t('AboutUs.benefitsText2')}
                 </TextBenefits>
               </ContainerBenefits>
               <ContainerBenefits data-aos="zoom-out-right">
                 <NumberTitle data-aos="zoom-out-right">03</NumberTitle>{' '}
                 <TextBenefits data-aos="zoom-out-right">
-                  Effective Support and Development: Innovators can concentrate
-                  as much as possible on their innovative solutions. The parent
-                  company will take care of procedural issues.
+                  {t('AboutUs.benefitsText3')}
                 </TextBenefits>
               </ContainerBenefits>
             </ContainerPage>
             <ImageContainer>
-              <ImageBenefits
-                src={Benefits}
-                alt="💸"
-                data-aos="zoom-out-right"
-              />
+              <ImageBenefits src={Benefits} alt="💸" data-aos="zoom-out-right" />
             </ImageContainer>
           </FlexContainer>
         </ContainerPage>
         <ContainerPage>
-          <TitleFeatures data-aos="zoom-in">
-            “AIC” CUSTOMER SEGMENTS
-          </TitleFeatures>
+          <TitleFeatures data-aos="zoom-in">{t('AboutUs.customerSegmentsTitle')}</TitleFeatures>
           <FlexContainer>
             <ContainerPage>
               <ContainerBenefits data-aos="zoom-out-left">
@@ -204,8 +174,7 @@ const AboutUs: React.FC = () => {
                   data-aos="zoom-out-left"
                 />{' '}
                 <TextBenefits data-aos="zoom-out-left">
-                  Beginning Innovators: People who are trying their hand at
-                  creating startups or innovative projects for the first time.
+                  {t('AboutUs.customerText1')}
                 </TextBenefits>
               </ContainerBenefits>
               <ContainerBenefits data-aos="zoom-out-left">
@@ -215,8 +184,7 @@ const AboutUs: React.FC = () => {
                   data-aos="zoom-out-left"
                 />{' '}
                 <TextBenefits data-aos="zoom-out-left">
-                  Researchers: Science and research professionals interested in
-                  commercializing their research.
+                  {t('AboutUs.customerText2')}
                 </TextBenefits>
               </ContainerBenefits>
               <ContainerBenefits data-aos="zoom-out-left">
@@ -226,9 +194,7 @@ const AboutUs: React.FC = () => {
                   data-aos="zoom-out-left"
                 />{' '}
                 <TextBenefits data-aos="zoom-out-left">
-                  Experienced Innovators: People with experience in developing
-                  and implementing innovative projects, looking for support and
-                  new opportunities.
+                  {t('AboutUs.customerText3')}
                 </TextBenefits>
               </ContainerBenefits>
             </ContainerPage>
@@ -250,8 +216,7 @@ const AboutUs: React.FC = () => {
               data-aos-easing="linear"
               data-aos-duration="1500"
             >
-              SEARCH <br /> innovations <br />
-              in the world{' '}
+              {t('AboutUs.searchTitle')}
             </TitleFeatures>
             <ImageContainer
               data-aos="fade-down"
@@ -264,8 +229,7 @@ const AboutUs: React.FC = () => {
         </ContainerPage>
         <ContainerPage>
           <TitleFeatures data-aos="zoom-in">
-            {' '}
-            <strong>WHAT</strong> makes us different
+            {t('AboutUs.differenceTitle')}
           </TitleFeatures>
           <FlexContainer>
             {' '}
@@ -273,32 +237,19 @@ const AboutUs: React.FC = () => {
               <ContainerBenefits data-aos="zoom-in-down">
                 <NumberTitle data-aos="zoom-in-down">01</NumberTitle>
                 <TextBenefits data-aos="zoom-in-down">
-                  Innovative concept: We work with the earliest stage of an
-                  idea. From the moment it first appeared to the innovator. Our
-                  concept allows us to work at the earliest stages and identify
-                  the most innovative solutions.
+                  {t('AboutUs.differenceText1')}
                 </TextBenefits>
               </ContainerBenefits>
               <ContainerBenefits data-aos="zoom-in-down">
                 <NumberTitle data-aos="zoom-in-down">02</NumberTitle>
                 <TextBenefits data-aos="zoom-in-down">
-                  Innovative concept of creating future companies: We develop
-                  and complete the creation of "Reinventing Organizations" based
-                  on the principle of sharing participation, responsibility and
-                  income among all employees, from top management to front-line
-                  workers and this is fundamentally different from the existing
-                  ones.
+                  {t('AboutUs.differenceText2')}
                 </TextBenefits>
               </ContainerBenefits>
               <ContainerBenefits data-aos="zoom-in-down">
                 <NumberTitle data-aos="zoom-in-down">03</NumberTitle>
                 <TextBenefits data-aos="zoom-in-down">
-                  Attracting investment: Investors' attention is on the issue of
-                  not losing investments, while founders' attention is on
-                  attracting vital finances at any cost. And both sides are
-                  right. And the idea? Innovation? It remains unattended and is
-                  transformed according to circumstances. Solution: Create a
-                  concept where all parties calmly receive what they need.
+                  {t('AboutUs.differenceText3')}
                 </TextBenefits>
               </ContainerBenefits>{' '}
             </ContainerPage>

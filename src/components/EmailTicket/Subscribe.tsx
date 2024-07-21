@@ -15,8 +15,10 @@ import { MessageErrors } from './MessageErrors';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 const Subscribe: React.FC = () => {
+  const { t } = useTranslation(); // Initialize translation hook
   const [state, handleSubmit] = useForm('xkgwgjzn');
   const [formData, setFormData] = useState({
     name: '',
@@ -45,15 +47,15 @@ const Subscribe: React.FC = () => {
     let isValid = true;
 
     if (!formData.name.trim()) {
-      errors.name = 'Name is required';
+      errors.name = t('Subscribe.nameError');
       isValid = false;
     }
 
     if (!formData.email.trim()) {
-      errors.email = 'Email is required';
+      errors.email = t('Subscribe.emailError');
       isValid = false;
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      errors.email = 'Email address is invalid';
+      errors.email = t('Subscribe.emailInvalid');
       isValid = false;
     }
 
@@ -69,17 +71,17 @@ const Subscribe: React.FC = () => {
     }
   };
 
-  if (state.succeeded) {
-    return <Message />;
-  }
-
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
 
+  if (state.succeeded) {
+    return <Message />;
+  }
+
   return (
-    <FormContainer  data-aos="zoom-in" data-aos-delay="700">
-      <FormTitel data-translate> Subscribe to receive future updates</FormTitel>
+    <FormContainer data-aos="zoom-in" data-aos-delay="700">
+      <FormTitel data-translate>{t('Subscribe.subscribeTitle')}</FormTitel>
       <Form
         name="subscribe"
         method="POST"
@@ -88,48 +90,50 @@ const Subscribe: React.FC = () => {
       >
         <input type="hidden" name="form-name" value="subscribe" />
         <Label>
-          {/* Your Name:{' '} */}
           <Input
             type="text"
             name="name"
             value={formData.name}
             onChange={handleInputChange}
-            placeholder=" Your Name"
-          />{' '}
+            placeholder={t('Subscribe.namePlaceholder')}
+          />
           {formErrors.name && (
             <TicketStatusMessage>{formErrors.name}</TicketStatusMessage>
           )}
           <ValidationError
-            prefix="Message"
-            field="message"
+            prefix="Name"
+            field="name"
             errors={state.errors}
           />
         </Label>
         <Label>
-          {/* Your Email:{' '} */}
           <Input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleInputChange}
-            placeholder="Your Email"
-          />{' '}
+            placeholder={t('Subscribe.emailPlaceholder')}
+          />
           {formErrors.email && (
             <TicketStatusMessage>{formErrors.email}</TicketStatusMessage>
           )}
-          <ValidationError prefix="Email" field="email" errors={state.errors} />
+          <ValidationError
+            prefix="Email"
+            field="email"
+            errors={state.errors}
+          />
         </Label>
-        <Button  data-translate type="submit" disabled={state.submitting}>
-          {state.submitting ? 'Sending...' : 'Subscribe'}
+        <Button data-translate type="submit" disabled={state.submitting}>
+          {state.submitting ? t('Subscribe.sending') : t('Subscribe.subscribeButton')}
         </Button>
         {state.submitting && (
-          <TicketStatusMessage  data-translate>Sending...</TicketStatusMessage>
+          <TicketStatusMessage data-translate>{t('Subscribe.sending')}</TicketStatusMessage>
         )}
         {state.errors &&
           (Array.isArray(state.errors) ? (
             state.errors.length > 0 ? (
-              <TicketStatusMessage  data-translate>
-                Error occurred while submitting the form.
+              <TicketStatusMessage data-translate>
+                {t('Subscribe.error')}
               </TicketStatusMessage>
             ) : null
           ) : (
@@ -137,7 +141,7 @@ const Subscribe: React.FC = () => {
           ))}
       </Form>
       <FormText data-translate>
-        No spam guaranteed, So please don’t send any spam mail.
+        {t('Subscribe.noSpam')}
       </FormText>
     </FormContainer>
   );

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 import {
   FooterContainer,
   FooterItemText,
@@ -20,9 +21,10 @@ import {
   Twitter,
   YouTube,
 } from '@mui/icons-material';
-// import Translator from '../LanguageSelector/Translater';
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
@@ -33,29 +35,36 @@ const Footer: React.FC = () => {
         <Link to="/home">
           <ImageLogo src={Logo} alt="Logo" />
         </Link>
-        <FooterItemText data-translate="Footer additional text"></FooterItemText>
+        <FooterItemText data-translate="footerAdditionalText">
+          {t('Footer.footerAdditionalText')}
+        </FooterItemText>
       </FooterList>
       <FooterList>
-        <FooterItemTitel data-translate="Useful Links">
-          Useful Links
+        <FooterItemTitel data-translate="usefulLinks">
+          {t('Footer.usefulLinks')}
         </FooterItemTitel>
         <Link to={'/*'}>
-          <FooterLink data-translate="Blog">Blog</FooterLink>
+          <FooterLink data-translate="blog">
+            {t('Footer.blog')}
+          </FooterLink>
         </Link>
         <Link to="/project">
-          <FooterLink data-translate="Projects">Projects</FooterLink>
+          <FooterLink data-translate="projects">
+            {t('Footer.projects')}
+          </FooterLink>
         </Link>
         <Link to="/contact">
-          <FooterLink data-translate="Contact Us">Contact Us</FooterLink>
+          <FooterLink data-translate="contactUs">
+            {t('Footer.contactUs')}
+          </FooterLink>
         </Link>
       </FooterList>
-      {/* <Translator/> */}
       <FooterList>
         <FooterItemText
           style={{ borderBottom: '1px solid #00baff', width: 140 }}
-          data-translate="Social Media"
+          data-translate="socialMedia"
         >
-          SOCIAL MEDIA
+          {t('Footer.socialMedia')}
         </FooterItemText>
         <WrapperSocialLink>
           <SocialLink style={{ color: '#1e90ff' }}>

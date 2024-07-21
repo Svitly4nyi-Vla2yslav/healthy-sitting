@@ -13,20 +13,15 @@ import ProjectIcon from '@mui/icons-material/Work';
 import RewardsIcon from '@mui/icons-material/CardGiftcard';
 import ContactIcon from '@mui/icons-material/ContactMail';
 import { StyledLink } from './Header.styled';
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 type Anchor = 'top';
 
 export const MenuButton: React.FC = () => {
+  const { t } = useTranslation();
   const [state, setState] = React.useState({
     top: false,
   });
-
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
 
   const toggleDrawer =
     (anchor: Anchor, open: boolean) =>
@@ -44,11 +39,11 @@ export const MenuButton: React.FC = () => {
     };
 
   const links = [
-    { to: '/home', text: 'HOME', icon: <HomeIcon /> },
-    { to: '/about', text: 'ABOUT', icon: <InfoIcon /> },
-    { to: '/project', text: 'PROJECTS', icon: <ProjectIcon /> },
-    { to: '/rewards', text: 'REWARDS', icon: <RewardsIcon /> },
-    { to: '/contact', text: 'CONTACT', icon: <ContactIcon /> },
+    { to: '/home', text: t('Header.home'), icon: <HomeIcon /> },
+    { to: '/about', text: t('Header.about'), icon: <InfoIcon /> },
+    { to: '/project', text: t('Header.project'), icon: <ProjectIcon /> },
+    { to: '/rewards', text: t('Header.rewards'), icon: <RewardsIcon /> },
+    { to: '/contact', text: t('Header.contact'), icon: <ContactIcon /> },
   ];
 
   const list = (anchor: Anchor) => (
@@ -95,7 +90,7 @@ export const MenuButton: React.FC = () => {
               padding: 0,
             }}
           >
-            Menu
+            {t('MenuButton.menu')}
           </Button>
           <SwipeableDrawer
             anchor={anchor}

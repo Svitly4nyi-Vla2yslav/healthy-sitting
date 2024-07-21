@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 
 import { Link } from 'react-scroll';
 
-// import required modules
+// Import required modules
 import { EffectFade, Navigation, Autoplay, Pagination } from 'swiper/modules';
 
 import AOS from 'aos';
@@ -18,21 +18,18 @@ import 'aos/dist/aos.css';
 
 import bg1_1_large from '../../assets/image/Terminator_productlist_banner-3.jpg';
 import bg1_1_small from '../../assets/image/hero-image.jpg';
-
 import bg1_2_large from '../../assets/image/index-banner2-armorevo-2.jpg';
 import bg1_2_small from '../../assets/image/07-1.png';
-
 import bg1_small from '../../assets/image/Terminator-banner_bg-3-small.jpg';
 import bg1_large from '../../assets/image/product-section-2_-2380x850-2.jpg';
-
 import bg2_small from '../../assets/image/Terminator-product-section-1_-2380x850-3-small.jpg';
 import bg2_large from '../../assets/image/product-section-4_-2380x850-2.jpg';
-
 import bg3_small from '../../assets/image/product-section-4_-2380x850-2-small.jpg';
 import bg3_large from '../../assets/image/Terminator-product-section_8-2380x850-3.jpg';
-
 import bg4_small from '../../assets/image/product-section_-2380x1200-2-small.jpg';
 import bg4_large from '../../assets/image/Terminator-product-section-7_-2380x850-3.jpg';
+
+import { useTranslation } from 'react-i18next';
 
 import {
   ArrowWrapper,
@@ -45,10 +42,11 @@ import {
 } from './Background.styled';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
-export const Background: React.FC = () => {
-  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+const Background: React.FC = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const { t } = useTranslation();  // Use useTranslation to get the translation function
 
-  React.useEffect(() => {
+  useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
@@ -80,13 +78,8 @@ export const Background: React.FC = () => {
         spaceBetween={30}
         effect={'fade'}
         navigation={false}
-        pagination={{
-          clickable: true,
-        }}
-        autoplay={{
-          delay: 7500,
-          disableOnInteraction: false,
-        }}
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 7500, disableOnInteraction: false }}
         modules={[Autoplay, EffectFade, Navigation, Pagination]}
         className="mySwiper"
       >
@@ -100,13 +93,8 @@ export const Background: React.FC = () => {
               src={windowWidth > 768 ? bg1_1_large : bg1_1_small}
               alt="Slide 1 - 1"
             />
-            <SlideTitel data-translate="Text for Slide 🤖">
-              Text for Slide 🤖
-            </SlideTitel>
-            <SlideText data-translate="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Delectus, accusamus.
-            </SlideText>
+            <SlideTitel>{t('Background.slide1Text')}</SlideTitel>
+            <SlideText>{t('Background.slide1Description')}</SlideText>
           </SlideContent>
         </SwiperSlide>
         <SwiperSlide>
@@ -120,13 +108,8 @@ export const Background: React.FC = () => {
               src={windowWidth > 768 ? bg1_2_large : bg1_2_small}
               alt="Slide 1 - 2"
             />
-            <SlideTitel data-translate="Text for Slide 😈">
-              Text for Slide 😈
-            </SlideTitel>
-            <SlideText data-translate="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Delectus, accusamus.
-            </SlideText>
+            <SlideTitel>{t('Background.slide2Text')}</SlideTitel>
+            <SlideText>{t('Background.slide2Description')}</SlideText>
           </SlideContent>
         </SwiperSlide>
         <SwiperSlide>
@@ -139,13 +122,8 @@ export const Background: React.FC = () => {
               src={windowWidth > 768 ? bg1_large : bg1_small}
               alt="Slide 1"
             />
-            <SlideTitel data-translate="Text for Slide 1">
-              Text for Slide 1
-            </SlideTitel>
-            <SlideText data-translate="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Delectus, accusamus.
-            </SlideText>
+            <SlideTitel>{t('Background.slide3Text')}</SlideTitel>
+            <SlideText>{t('Background.slide3Description')}</SlideText>
           </SlideContent>
         </SwiperSlide>
         <SwiperSlide>
@@ -158,13 +136,8 @@ export const Background: React.FC = () => {
               src={windowWidth > 768 ? bg2_large : bg2_small}
               alt="Slide 2"
             />
-            <SlideTitel data-translate="Text for Slide 2">
-              Text for Slide 2
-            </SlideTitel>
-            <SlideText data-translate="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 2">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Delectus, accusamus. 2
-            </SlideText>
+            <SlideTitel>{t('Background.slide4Text')}</SlideTitel>
+            <SlideText>{t('Background.slide4Description')}</SlideText>
           </SlideContent>
         </SwiperSlide>
         <SwiperSlide>
@@ -177,13 +150,8 @@ export const Background: React.FC = () => {
               src={windowWidth > 768 ? bg3_large : bg3_small}
               alt="Slide 3"
             />
-            <SlideTitel data-translate="Text for Slide 3">
-              Text for Slide 3
-            </SlideTitel>
-            <SlideText data-translate="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 3">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Delectus, accusamus. 3
-            </SlideText>
+            <SlideTitel>{t('Background.slide5Text')}</SlideTitel>
+            <SlideText>{t('Background.slide5Description')}</SlideText>
           </SlideContent>
         </SwiperSlide>
         <SwiperSlide>
@@ -196,21 +164,16 @@ export const Background: React.FC = () => {
               src={windowWidth > 768 ? bg4_large : bg4_small}
               alt="Slide 4"
             />
-            <SlideTitel data-translate="Text for Slide 4">
-              Text for Slide 4
-            </SlideTitel>
-            <SlideText data-translate="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 4">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Delectus, accusamus. 4
-            </SlideText>
+            <SlideTitel>{t('Background.slide6Text')}</SlideTitel>
+            <SlideText>{t('Background.slide6Description')}</SlideText>
           </SlideContent>
         </SwiperSlide>
       </Swiper>
 
       <TextHomeContainer>
         <Link to="video" smooth={true} duration={1000}>
-          <ButtonDown data-translate="SCROLL DOWN">
-            SCROLL DOWN
+          <ButtonDown>
+            {t('Background.scrollDown')}
             <ArrowWrapper>
               <KeyboardDoubleArrowDownIcon style={{ fontSize: 50 }} />
             </ArrowWrapper>

@@ -1,0 +1,118 @@
+{
+    "AboutUs": {
+      "title": "Conveyor d'Innovation",
+      "problemTitle": "LE PROBLÈME : Notre monde perd jusqu'à 70 % des idées et solutions innovantes qui ne survivent même pas jusqu'à la preuve de concept",
+      "problemText1": "Difficultés psychologiques à différents niveaux : Barrières et dimensions psychologiques internes et externes",
+      "problemText2": "Défis multidisciplinaires : Manque d'expertise dans des domaines clés, marketing, juridique, finance. Le manque de compétences est un obstacle pour les innovateurs.",
+      "problemText3": "Blocage conceptuel : Le long et difficile chemin de la conception de l'idée à la preuve de concept crée des défis sérieux.",
+      "solutionTitle": "Solution",
+      "solutionStrong": "Conveyor d'Innovation Angélique \"AIC\":",
+      "solutionText": "Une plateforme conçue pour accumuler et tester les innovations au stade Pre-seed le plus rapidement possible. D'une part, la solution est individualisée et d'autre part, le principe du tapis roulant est appliqué.",
+      "solutionPoint1": "Création d'un environnement psychologiquement sûr",
+      "solutionPoint2": "Modèles adaptés",
+      "solutionPoint3": "Soutien complet",
+      "solutionPoint4": "Preuve de concept rapide",
+      "solutionPoint5": "Filtrage innovant",
+      "solutionPoint6": "Analyse rapide et approfondie",
+      "solutionPoint7": "Intégration dans l'ADN d'une startup",
+      "featuresTitle": "PRODUIT ET CARACTÉRISTIQUES",
+      "featuresText1": "Présentation de l'idée : L'innovateur présente l'idée sur la plateforme en utilisant des modèles personnalisés dans un environnement psychologiquement sûr.",
+      "featuresText2": "Validation de l'innovation ultra-rapide : Après la signature de la NDA et la présentation adaptative, l'innovation est soumise à une validation rapide et un filtrage.",
+      "featuresText3": "Validation complète et approfondie : Une fois le concept validé, une analyse complète de l'innovation est réalisée et un rapport final est préparé.",
+      "featuresText4": "Évaluation multi-niveaux : Les informations sont envoyées aux départements spécialisés pour une évaluation complète",
+      "featuresText5": "Sécurité psychologique + Approche du tapis roulant = “AIC”",
+      "benefitsTitle": "AVANTAGES POUR LES INNOVATEURS",
+      "benefitsText1": "Confort psychologique : Les innovateurs auront accès à un environnement psychologiquement sûr où leurs besoins émotionnels sont pris en compte et les niveaux de stress réduits lors de la présentation de leurs idées, leur permettant de se concentrer sur l'innovation.",
+      "benefitsText2": "Optimisation accélérée des processus et des ressources : Grâce à la validation ultra-rapide des innovations et aux modèles intégrés pour les présentations et les vidéos, les innovateurs économisent du temps et des ressources en obtenant rapidement l'évaluation de leurs idées et des investisseurs potentiels.",
+      "benefitsText3": "Soutien et développement efficaces : Les innovateurs peuvent se concentrer autant que possible sur leurs solutions innovantes. La société mère s'occupera des questions procédurales.",
+      "customerSegmentsTitle": "SEGMENTS DE CLIENTS \"AIC\"",
+      "customerText1": "Innovateurs débutants : Personnes qui tentent de créer des startups ou des projets innovants pour la première fois.",
+      "customerText2": "Chercheurs : Professionnels de la science et de la recherche intéressés par la commercialisation de leurs recherches.",
+      "customerText3": "Innovateurs expérimentés : Personnes ayant de l'expérience dans le développement et la mise en œuvre de projets innovants, recherchant du soutien et de nouvelles opportunités.",
+      "searchTitle": "RECHERCHER DES INNOVATIONS DANS LE MONDE",
+      "differenceTitle": "CE QUI NOUS DIFFÉRENCIE",
+      "differenceText1": "Concept innovant : Nous travaillons avec la phase la plus précoce d'une idée. Dès le moment où elle est apparue pour la première fois à l'innovateur. Notre concept nous permet de travailler aux stades les plus précoces et d'identifier les solutions les plus innovantes.",
+      "differenceText2": "Concept innovant pour créer des entreprises futures : Nous développons et complétons la création de \"Reinventing Organizations\" sur la base du principe de participation partagée, de responsabilité et de revenus parmi tous les employés, de la haute direction aux travailleurs de première ligne, ce qui est fondamentalement différent des concepts existants.",
+      "differenceText3": "Attirer des investissements : L'attention des investisseurs est centrée sur la question de ne pas perdre des investissements, tandis que l'attention des fondateurs est sur l'attraction de finances vitales à tout prix. Et les deux parties ont raison. Et l'idée ? Innovation ? Elle reste sans attention et se transforme selon les circonstances. Solution : Créer un concept où toutes les parties reçoivent calmement ce dont elles ont besoin."
+    },
+    "Header": {
+        "order": "Commander",
+        "home": "ACCUEIL",
+        "about": "À PROPOS",
+        "project": "PROJETS",
+        "rewards": "RÉCOMPENSES",
+        "contact": "CONTACT"
+      },
+      "MenuButton": {
+        "menu": "Menu"
+      },
+      "Footer": {
+        "footerAdditionalText": "Texte supplémentaire en bas",
+        "usefulLinks": "Liens utiles",
+        "blog": "Blog",
+        "projects": "Projets",
+        "contactUs": "Contactez-nous",
+        "socialMedia": "RÉSEAUX SOCIAUX"
+      },
+      "LanguageSelector": {
+        "language": "Langue"
+      },
+      "Background": {
+    "slide1Text": "Texte pour le diaporama 🤖",
+    "slide1Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.",
+    "slide2Text": "Texte pour le diaporama 😈",
+    "slide2Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.",
+    "slide3Text": "Texte pour le diaporama 1",
+    "slide3Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.",
+    "slide4Text": "Texte pour le diaporama 2",
+    "slide4Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 2",
+    "slide5Text": "Texte pour le diaporama 3",
+    "slide5Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 3",
+    "slide6Text": "Texte pour le diaporama 4",
+    "slide6Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 4",
+    "scrollDown": "DÉFILEZ VERS LE BAS"
+  },
+  "ContentHomePage": {
+    "mainSectionTitle": "Votre contenu ici",
+    "mainSectionDescription": "Votre description ou autre contenu ici.",
+    "card1Title": "Titre de la carte 1",
+    "card1Description": "Description de la carte 1",
+    "card2Title": "Titre de la carte 2",
+    "card2Description": "Description de la carte 2",
+    "card3Title": "Titre de la carte 3",
+    "card3Description": "Description de la carte 3"
+  },
+  "HomeComponent": {
+    "projectTitle": "Donnez vie à un projet créatif.",
+    "goalAmount": "NOTRE OBJECTIF",
+    "currentAmount": "NOUS AVONS ACTUELLEMENT",
+    "numberOfInvestors": "NOS INVESTISSEURS",
+    "amountToCollect": "NOUS DEVRIONS COLLECTER",
+    "orderButton": "Commander"
+  },
+  "EmailTicket": {
+    "formTitle": "Besoin d'aide ? Ouvrir un ticket",
+    "formDescription": "Notre équipe de support vous contactera dès que possible par e-mail.",
+    "namePlaceholder": "Votre Nom",
+    "emailPlaceholder": "Votre E-mail",
+    "messagePlaceholder": "Entrez votre message",
+    "submitButton": "Envoyer le ticket",
+    "sending": "Envoi en cours...",
+    "error": "Une erreur est survenue lors de l'envoi du formulaire."
+  },
+  "Subscribe": {
+    "subscribeTitle": "Abonnez-vous pour recevoir des mises à jour futures",
+    "namePlaceholder": "Votre Nom",
+    "emailPlaceholder": "Votre E-mail",
+    "subscribeButton": "S'abonner",
+    "sending": "Envoi en cours...",
+    "error": "Une erreur est survenue lors de l'envoi du formulaire.",
+    "noSpam": "Spam non garanti, donc veuillez ne pas envoyer de spam."
+  },
+  "OurContacts": {
+    "founderName": "Maksym Morenets",
+    "founderPosition": "Fondateur d'Angel Systems",
+    "socialMedia": "RÉSEAUX SOCIAUX"
+  }
+  }
+  
