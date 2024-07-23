@@ -1,11 +1,41 @@
 import React from 'react';
-import { Container, Title } from './ErrorPage.styled';
+import { Wrapper } from '../../components/ContentHomePage/HomeComponent.styled';
+import {
+  ContentOverlay,
+  VideoContainer,
+} from '../../components/ContentHomePage/ContentHomePage.styled';
+import Video from '../../assets/image/3249672-uhd_3840_2160_25fps.mp4';
+import { useTranslation } from 'react-i18next';
+import CountdownTimer from '../../components/Timer/CountdownTimer';
+import Subscribe from '../../components/EmailTicket/Subscribe';
+import LanguageMenu from '../../components/LanguageSelector/LanguageSelector';
 
 const ErrorPage: React.FC = () => {
+  const { t } = useTranslation();
+  const targetDate = new Date('2024-08-08T23:59:59');
   return (
-    <Container>
-      <Title>404</Title>
-    </Container>
+    <Wrapper
+      style={{
+        height: "100%"
+      }}
+    >
+      <VideoContainer  style={{
+       width: '100%',
+      position: "fixed"
+      }}>
+        <video autoPlay loop muted style={{objectFit: 'cover', position: "fixed"}}>
+          <source src={Video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </VideoContainer>
+      <ContentOverlay style={{marginTop:100 }}>
+        <LanguageMenu />
+        <h1 style={{ fontSize: '3.5em' }}>{t('ErrorPage.CommingSoon')}</h1>
+        <p style={{ fontSize: '1.5em' }}>{t('ErrorPage.ThankYou')}</p>
+        <CountdownTimer targetDate={targetDate} />
+        <Subscribe />
+      </ContentOverlay>
+    </Wrapper>
   );
 };
 

@@ -113,6 +113,10 @@
     "founderName": "Maksym Morenets",
     "founderPosition": "Fundador de Angel Systems",
     "socialMedia": "REDES SOCIALES"
+  },
+  "ErrorPage": {
+    "CommingSoon": "Próximamente",
+    "ThankYou": "Nuestro sitio web está actualmente en desarrollo. Deberíamos estar terminados pronto. Gracias por su paciencia."
   }
   }
   

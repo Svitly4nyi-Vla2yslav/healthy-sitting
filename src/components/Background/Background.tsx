@@ -44,8 +44,8 @@ import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrow
 
 const Background: React.FC = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const { t } = useTranslation();  // Use useTranslation to get the translation function
-
+  const { t } = useTranslation();
+  
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);

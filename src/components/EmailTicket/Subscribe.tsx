@@ -80,7 +80,7 @@ const Subscribe: React.FC = () => {
   }
 
   return (
-    <FormContainer data-aos="zoom-in" data-aos-delay="700">
+    <FormContainer>
       <FormTitel data-translate>{t('Subscribe.subscribeTitle')}</FormTitel>
       <Form
         name="subscribe"

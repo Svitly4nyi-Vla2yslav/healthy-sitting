@@ -27,6 +27,7 @@ const pulse = keyframes`
 export const Wrapper = styled.section<{ background?: string }>`
 width: 100%;
 height: 100vh;
+margin: 0 auto; 
 ${(props) =>
     props.background &&
     css`
