@@ -52,7 +52,7 @@ export const VideoContainer = styled.div`
 
 export const ContentOverlay = styled.div`
   position: absolute;
-  bottom: 1%;
+  bottom: 7%;
   left: 4%;
   transform: translate(-50%, -50%);
   color: white;
@@ -88,7 +88,7 @@ text-align: start;
     line-height: 1;
 
     @media (min-width: 768px) {
-    font-size: 6.5rem;
+    font-size: 4.5rem;
     max-width: 80%;
     }
 `;

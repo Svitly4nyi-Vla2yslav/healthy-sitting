@@ -6,6 +6,7 @@ import BiroScript from "./assets/fonts/BiroScriptPlus-Bold.ttf"
 import Messina from "./assets/fonts/MessinaSansMono-Black.ttf"
 import Formular from "./assets/fonts/Formular-Medium.ttf"
 import Roboto from "./assets/fonts/Roboto-Regular.ttf"
+import Proxima from "./assets/fonts/d9fe41ee-4904-4a11-ba11-b61cd3be767f.woff2"
 import palett from "./palette/palette"
 // import example from './assets/image/Terminator-product-section_8-2380x850-3.jpg';
 
@@ -30,6 +31,10 @@ export const GlobalStyles = css`
 @font-face {
   font-family: 'Roboto';
   // src: url(${Roboto}) format('truetype');
+}
+  @font-face {
+  font-family: 'Proxima';
+  // src: url(${Proxima}) format('truetype');
 }
 
 @font-face {
