@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { CardTitel, Image } from './ContentHomePage.styled';
+import { CardTitel, Image, ListCard } from './ContentHomePage.styled';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -19,11 +19,12 @@ const ContentHomePage: React.FC = () => {
 
   return (
     <>
-      <Container>
-        <Wrapper>
+      <Container id='video'>
+        <Wrapper data-aos="fade-up"
+        >
           <Titel>{t('ContentHomePage.mainSectionTitle')}</Titel>
         </Wrapper>
-        <Wrapper>
+        <ListCard  data-aos="flip-left">
           <Card>
             <Image src={CardFirst} alt="1" />
             <CardTitel>{t('ContentHomePage.card1Title')}</CardTitel>
@@ -36,7 +37,7 @@ const ContentHomePage: React.FC = () => {
             <Image src={CardThird} alt="3" />
             <CardTitel>{t('ContentHomePage.card3Title')}</CardTitel>
           </Card>
-        </Wrapper>
+        </ListCard>
       </Container>
 
       <HomeComponent />

@@ -4,17 +4,25 @@ export const Container = styled.div`
 display: flex;
 margin: 0 auto;
 padding: 10px;
-
+height: 100%;
+ justify-content: center;
 
 @media (min-width: 1240px) {
-padding: 30px;
+padding: 100px;
 gap: 19.5rem;
+padding-top: 200px;
+padding-bottom: 300px;
+flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 `;
 
 export const Wrapper = styled.div`
-display: grid;
+    position: absolute;
+    top: 128%;
+    left: 10%;
 `;
 
 export const Titel = styled.h2`
@@ -26,8 +34,11 @@ font-family: "Proxima Nova", sans-serif;
     font-size: 2.8rem;
     line-height: 1.1;
         color: #01cbe1;
+        border-top: 1px solid #01cbe1;
+        padding-top: 50px;
 @media (min-width: 1240px) {
 width: 510px;
+z-index: -15;
 }
 
 `;
@@ -48,8 +59,8 @@ text-align: center;
 padding: 5px;
 font-weight: 900;
 border-bottom: 1px solid #00baff;
-margin-bottom: 50px;
-width: 50%;
+// margin-bottom: 50px;
+width: 90%;
 margin: 0 auto;
  font-weight: bold;
 `;
@@ -152,28 +163,33 @@ export const ListCard = styled.div`
   display: flex;
   flex-direction: column;
   max-height: 20%;
-  overflow-y: hidden;
-
+  // overflow-y: hidden;
+ scrollbar-width: none;
+  padding-top: 220%;
+     
   
   
   @media (min-width: 769px) {
  width: 760px;
-        overflow-y: visible;
+    padding-top: 0;     
         display: flex;
-        overflow-y: visible;
-        flex-direction: row;
+        overflow: overlay;
         flex-wrap: nowrap;
         gap: 1%;
+        height: 50vh;
+        margin: 0 auto;
+         padding-top: 0%;
   }
 @media (min-width: 1240px) {
 display: flex;
         width: 1240px;
         margin: 0 auto;
         gap: 2%;
-        justify-content: center;
-
-
+height: 90vh;
+flex-direction: column;
+        align-items: flex-end;
 }
+
 
 `;
 
@@ -184,39 +200,38 @@ export const Card = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 40px;
-  padding-botton: 20px;
   max-width: 310px;
   padding: 5px;
-   background-color: rgba(249, 249, 249, 0.28);
-  backdrop-filter: blur(10px);
+  //  background-color: rgba(249, 249, 249, 0.28);
+  // backdrop-filter: blur(10px);
   border-radius: 20px;
 
   @media (max-width: 768px) {
-    animation: ${move} 15s linear infinite; 
+    // animation: ${move} 15s linear infinite; 
   }
 
    @media (min-width: 769px) {
-
+height: 100vh;
      transition: background 1.9s ease-in-out;
 
-  &:hover,
-  &:focus {
-    background: linear-gradient(90deg, #ff7f50, #1e90ff, #ff7f50, #1e90ff);
-    background-size: 400% 400%;
-    animation: gradientAnimation 5s ease infinite;
-  }
+  // &:hover,
+  // &:focus {
+  //   background: linear-gradient(90deg, #ff7f50, #1e90ff, #ff7f50, #1e90ff);
+  //   background-size: 400% 400%;
+  //   animation: gradientAnimation 5s ease infinite;
+  // }
 
-  @keyframes gradientAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+  // @keyframes gradientAnimation {
+  //   0% {
+  //     background-position: 0% 50%;
+  //   }
+  //   50% {
+  //     background-position: 100% 50%;
+  //   }
+  //   100% {
+  //     background-position: 0% 50%;
+  //   }
+  // }
    
    
    }

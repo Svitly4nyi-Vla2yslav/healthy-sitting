@@ -72,6 +72,7 @@ export const GlobalStyles = css`
     padding: 0;
     box-sizing: border-box;
     --v1: calc(max(9vw, 11vh));
+    scrollbar-width: none;
   }
   body {
  font-family: 'Roboto', sans-serif;
