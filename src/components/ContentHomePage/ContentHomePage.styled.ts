@@ -1,5 +1,76 @@
 import styled, { css, keyframes } from 'styled-components';
 
+export const Container = styled.div`
+display: flex;
+margin: 0 auto;
+padding: 10px;
+
+
+@media (min-width: 1240px) {
+padding: 30px;
+gap: 19.5rem;
+}
+
+`;
+
+export const Wrapper = styled.div`
+display: grid;
+`;
+
+export const Titel = styled.h2`
+font-family: "Proxima Nova", sans-serif;
+    font-weight: 300;
+    letter-spacing: -.035em;
+    margin: 0 0 .5em;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    line-height: 1.1;
+        color: #01cbe1;
+@media (min-width: 1240px) {
+width: 510px;
+}
+
+`;
+
+
+
+export const Image = styled.img`
+  max-width: 300px;
+  height: auto;
+  border-radius: 20px;
+`;
+
+export const CardTitel = styled.h3`
+  margin: 10px 0;
+  font-family: 'Roboto';
+font-size: 24px;
+text-align: center;
+padding: 5px;
+font-weight: 900;
+border-bottom: 1px solid #00baff;
+margin-bottom: 50px;
+width: 50%;
+margin: 0 auto;
+ font-weight: bold;
+`;
+
+export const CardText = styled.p`
+ font-family: 'Roboto';
+font-size: 14px;
+text-align: center;
+padding: 15px;
+font-weight: 600;
+margin-bottom: 50px;
+max-width: 320px;
+margin: 0 auto;
+ font-weight: bold;
+`;
+
+
+
+
+
+
 const move = keyframes`
   0% {
     transform: translateY(0%);
@@ -15,7 +86,7 @@ export const MainSection = styled.section<{ background?: string }>`
   ${(props) =>
     props.background &&
     css`
-      background-image: url(${props.background});
+      // background-image: url(${props.background});
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -149,36 +220,4 @@ export const Card = styled.div`
    
    
    }
-`;
-
-export const Image = styled.img`
-  max-width: 300px;
-  height: auto;
-  border-radius: 20px;
-`;
-
-export const CardTitel = styled.h3`
-  margin: 10px 0;
-  font-family: 'Roboto';
-font-size: 24px;
-text-align: center;
-padding: 5px;
-font-weight: 900;
-border-bottom: 1px solid #00baff;
-margin-bottom: 50px;
-width: 50%;
-margin: 0 auto;
- font-weight: bold;
-`;
-
-export const CardText = styled.p`
- font-family: 'Roboto';
-font-size: 14px;
-text-align: center;
-padding: 15px;
-font-weight: 600;
-margin-bottom: 50px;
-max-width: 320px;
-margin: 0 auto;
- font-weight: bold;
 `;

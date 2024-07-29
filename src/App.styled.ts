@@ -75,7 +75,7 @@ export const GlobalStyles = css`
   }
   body {
  font-family: 'Roboto', sans-serif;
-  background-color: #000;
+  background-color: #01283c;
   background-size: auto 100%;
   background-position: center center;
   background-repeat: cover;

@@ -1,6 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import bg from '../../assets/image/product-section-4_-2380x850-2.jpg';
-// Define the keyframes for the pulse animation
+
 const pulse = keyframes`
   0% {
     transform: scale(1);
@@ -15,13 +14,13 @@ const pulse = keyframes`
 
 export const VideoContainer = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   position: relative;
   overflow: hidden;
 
   video {
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: 50%;
     width: 100%;
     height: 100%;
@@ -40,7 +39,7 @@ export const VideoContainer = styled.div`
     z-index: 2;
   }
   &::after {
-  content: "";
+    content: '';
     position: absolute;
     left: 0;
     right: 0;
@@ -58,9 +57,9 @@ export const ContentOverlay = styled.div`
   color: white;
   z-index: 2;
   text-align: center;
-      transform: none;
-    opacity: 1;
-  
+  transform: none;
+  opacity: 1;
+
   h1 {
     // font-size: 3em;
     // margin-bottom: 20px;
@@ -71,41 +70,47 @@ export const ContentOverlay = styled.div`
   }
 
   @media (min-width: 768px) {
-    bottom: 6%; 
+    bottom: 6%;
     // transform: translate(-50%, -50%);
+  }
+  @media (min-width: 1439px) {
+   bottom: -1%;
   }
 `;
 
 export const TitleHome = styled.h1`
-font-family: 'Formular';
-text-align: start;
+  font-family: 'Proxima', sans-serif;
+  text-align: start;
   display: flex;
- font-weight: 100;
-    letter-spacing: -.035em;
-    margin: 0 0 .5em;
-    text-transform: uppercase;
-    font-size: 4rem;
-    line-height: 1;
+  font-weight: 100;
+  letter-spacing: -0.035em;
+  margin: 0 0 0.5em;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 1;
 
-    @media (min-width: 768px) {
-    font-size: 4.5rem;
+  @media (min-width: 767px) {
+    font-size: 3.5rem;
     max-width: 80%;
-    }
+  }
+  @media (min-width: 1439px) {
+    font-size: 4.5rem;
+  }
 `;
 
-export const TextHome = styled.p`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Right Grotesk';
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 1.1875;
-  color: #1976d2;
-  padding: 5px 20px 10px 5px;
-  text-align: center;
-  flex-direction: column;
-`;
+// export const TextHome = styled.p`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-family: 'Right Grotesk';
+//   font-weight: 900;
+//   font-size: 16px;
+//   line-height: 1.1875;
+//   color: #1976d2;
+//   padding: 5px 20px 10px 5px;
+//   text-align: center;
+//   flex-direction: column;
+// `;
 
 export const ButtonDown = styled.button`
   background-color: transparent;
@@ -115,7 +120,7 @@ export const ButtonDown = styled.button`
   transition-delay: 0.8s;
   text-align: center;
   font-weight: bold;
-  background: linear-gradient(90deg, #ff7f50, #1e90ff);
+  background: #1e90ff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -130,7 +135,7 @@ export const ArrowWrapper = styled.div`
   cubic-bezier(.175,.885,.32,1.275);
   text-align: center;
   font-weight: bold;
-  color: #ff7f50;
+  color: #fff;
 `;
 
 export const TextHomeContainer = styled.div`
@@ -138,13 +143,9 @@ export const TextHomeContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  // margin-bottom: 40px;
-  // padding-top: 30px;
-  background-image: url(${bg});
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 20vh;
 `;
 
 export const SlideContent = styled.div`

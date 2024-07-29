@@ -58,29 +58,14 @@
         "language": "Language"
     },
     "Background": {
-        "slide1Text": "A large-scale project to address the global problem of sedentary lifestyles.",
-        "slide1Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.",
-        "slide2Text": "Text for Slide 😈",
-        "slide2Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.",
-        "slide3Text": "Text for Slide 1",
-        "slide3Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.",
-        "slide4Text": "Text for Slide 2",
-        "slide4Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 2",
-        "slide5Text": "Text for Slide 3",
-        "slide5Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 3",
-        "slide6Text": "Text for Slide 4",
-        "slide6Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 4",
-        "scrollDown": "SCROLL DOWN"
+        "slide1Text": "A large-scale project to address the global problem of sedentary lifestyles."
     },
     "ContentHomePage": {
-        "mainSectionTitle": "Your Content Here",
+        "mainSectionTitle": "We are developing large-scale technology to minimise the harms of a sedentary lifestyle.",
         "mainSectionDescription": "Your description or other content here.",
-        "card1Title": "Card Title 1",
-        "card1Description": "Card description 1",
-        "card2Title": "Card Title 2",
-        "card2Description": "Card description 2",
-        "card3Title": "Card Title 3",
-        "card3Description": "Card description 3"
+        "card1Title": "A sedentary lifestyle leads to chronic pain, scoliosis and other health problems.",
+        "card2Title": "The aim is to develop technology to minimise harm from prolonged sitting.",
+        "card3Title": "We develop technology that individually adapts to the physiological needs of each user, reducing the harm of prolonged sitting."
     },
     "HomeComponent": {
         "projectTitle": "Bring a creative project to life.",

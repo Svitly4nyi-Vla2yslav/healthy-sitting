@@ -2,9 +2,9 @@ import React, { useEffect} from 'react';
 
 import Video from '../../assets/image/bg1.mp4';
 
+import { Link } from 'react-scroll';
 
-
-
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 // Import required modules
 
 import AOS from 'aos';
@@ -13,7 +13,7 @@ import 'aos/dist/aos.css';
 
 
 import { useTranslation } from 'react-i18next';
-import { ContentOverlay, TitleHome, VideoContainer } from './Background.styled';
+import { ArrowWrapper, ButtonDown, ContentOverlay, TextHomeContainer, TitleHome, VideoContainer } from './Background.styled';
 
 
 
@@ -35,14 +35,22 @@ const Background: React.FC = () => {
        <VideoContainer  style={{
        width: '100%',
       }}>
-        <video autoPlay loop muted style={{objectFit: 'cover', position: "fixed"}}>
+        <video autoPlay loop muted style={{}}>
           <source src={Video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </VideoContainer>
      <ContentOverlay>
       <TitleHome>{t("Background.slide1Text")}</TitleHome>
-
+      <TextHomeContainer>
+        <Link to="video" smooth={true} duration={1000}>
+          <ButtonDown>
+            <ArrowWrapper>
+              <KeyboardDoubleArrowDownIcon style={{ fontSize: 50 }} />
+            </ArrowWrapper>
+          </ButtonDown>
+        </Link>
+      </TextHomeContainer>
      </ContentOverlay>
     </div>
   );
