@@ -27,11 +27,29 @@ const pulse = keyframes`
 export const Wrapper = styled.section<{ background?: string }>`
 width: 100%;
 height: 100vh;
-margin: 0 auto; 
+margin: 80px auto; 
+display: block;
+margin-bottom: 490px;
+  @media (min-width: 767px) {
+margin-bottom: 390px;
+  }
+
+     @media (min-width: 1024px) {
+           display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        // align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+   }
+// 
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     align-items: center;
 ${(props) =>
     props.background &&
     css`
-    background-image: url(${props.background});
+    // background-image: url(${props.background});
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,37 +94,43 @@ export const DonatButton = styled.button`
 `;
 
 export const TitelH3 = styled.h3`
-  margin: 10px 0;
-  font-family: 'Roboto';
-font-size: 28px;
-text-align: center;
-padding: 5px;
-font-weight: 900;
-border-bottom: 1px solid #00baff;
-margin-bottom: 50px;
-width: 80%;
-margin: 0 auto;
- font-weight: bold;
+font-family: "Proxima Nova", sans-serif;
+    font-weight: 300;
+        text-align: center;
+    letter-spacing: -.035em;
+    margin: 0 0 .5em;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    line-height: 1.1;
+        color: #01cbe1;
+        border-top: 1px solid #01cbe1;
+        padding-top: 50px;
+@media (min-width: 1240px) {
+width: 100vh;
 
- @media (min-width: 1024px) {
- font-size: 48px;
- width: 100%;
- margin-bottom: 40px;
- padding-bottom: 40px;
- }
+z-index: -15;
+}
 `;
 
 export const ContainerStatistic = styled.div`
  margin: 0 auto;
+ margin-bottom: 90px;
  @media (min-width: 768px) {
 display: flex;
 width: 760px;
 height: 200px;
+
 }   
- @media (min-width: 1240px) {   
- padding: 10px;
- width: 1200px;
- height: 50vh;
+ @media (min-width: 767px) {   
+        display: flex;
+        padding: 10px;
+        width: 100vh;
+        height: 70vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        margin-bottom: 190px;
+}
 
 `;
 
@@ -121,71 +145,49 @@ export const CardStatistic = styled.div`
   padding-botton: 20px;
   max-width: 310px;
   padding: 5px;
-   background-color: rgba(249, 249, 249, 0.28);
-  backdrop-filter: blur(10px);
+ 
   border-radius: 20px;
-   border-bottom:  1px solid #00baff;
-   border-top:  1px solid #00baff;
+ 
 
-transition: box-shadow 0.9s ease,
-  color 0.9s,
-  border-bottom 0.9s,
-  border-top 0.9s,
-text-shadow 0.9s;
 
- &:hover,
-  &:focus {
-  box-shadow: 0 0 20px #00baff;
-  color: #00baff;
-  border-bottom:  4px solid #00baff;
-   border-top:  4px solid #00baff;
-  }
-
-  @media (max-width: 768px) {
-
-  }
 
    @media (min-width: 768px) {
+   
+   }
 
-    //  transition: background 1.9s ease-in-out;
 
-  &:hover,
-  &:focus {
-    // background: linear-gradient(90deg, #ff7f50, #1e90ff, #ff7f50, #1e90ff);
-    background-size: 400% 400%;
-    animation: gradientAnimation 5s ease infinite;
-  }
+
+  
 `;
 
 export const NumberLarge = styled.p`
-font-family: 'Roboto';
-  font-size: 38px;
+font-family: "Proxima Nova", sans-serif;
+  font-size: 30px;
   font-weight: bold;
-  background: linear-gradient(90deg, #ff7f50, #1e90ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
   text-align: center;
   padding : 15px;
 
     @media screen and (min-width: 1440px){
- font-size: 78px;
+ font-size: 38px;
   font-weight: bold;
 }
 `;
 
 export const TextSmoll = styled.p`
- font-family: 'Roboto';
-font-size: 10px;
+  margin: 10px 0;
+  font-family: 'Roboto';
+font-size: 24px;
 text-align: center;
-font-weight: 400;
-max-width: 320px;
+padding: 5px;
+font-weight: 900;
+border-bottom: 1px solid #00baff;
+// margin-bottom: 50px;
+width: 90%;
 margin: 0 auto;
  font-weight: bold;
 
   @media (min-width: 1240px) { 
-  font-size: 20px;
+  font-size: 27px;
   display: flex;
   padding-top: 10%;
 padding: 10px;

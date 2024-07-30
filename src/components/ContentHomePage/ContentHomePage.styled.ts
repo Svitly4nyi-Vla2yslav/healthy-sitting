@@ -6,6 +6,12 @@ margin: 0 auto;
 padding: 10px;
 height: 100%;
  justify-content: center;
+@media (min-width: 768px) {
+height: 900px;
+margin: 0 auto;
+
+
+}
 
 @media (min-width: 1240px) {
 padding: 100px;
@@ -165,29 +171,37 @@ export const ListCard = styled.div`
   max-height: 20%;
   // overflow-y: hidden;
  scrollbar-width: none;
-  padding-top: 220%;
+  // padding-top: 220%;
      
   
   
-  @media (min-width: 769px) {
+  @media (min-width: 766px) {
  width: 760px;
-    padding-top: 0;     
         display: flex;
         overflow: overlay;
-        flex-wrap: nowrap;
-        gap: 1%;
-        height: 50vh;
         margin: 0 auto;
-         padding-top: 0%;
+         display: flex;
+        margin: 0 auto;
+        gap: 2%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 65%;
+        padding-bottom: 70%;
+        max-height: 100vh;
   }
 @media (min-width: 1240px) {
 display: flex;
         width: 1240px;
         margin: 0 auto;
         gap: 2%;
-height: 90vh;
+  max-height: 140%;
 flex-direction: column;
         align-items: flex-end;
+        justify-content: flex-start;
+        align-content: center;
+        flex-wrap: nowrap;
+          margin-top: 20%;
+        padding-bottom: 5%;
 }
 
 
@@ -214,24 +228,7 @@ export const Card = styled.div`
 height: 100vh;
      transition: background 1.9s ease-in-out;
 
-  // &:hover,
-  // &:focus {
-  //   background: linear-gradient(90deg, #ff7f50, #1e90ff, #ff7f50, #1e90ff);
-  //   background-size: 400% 400%;
-  //   animation: gradientAnimation 5s ease infinite;
-  // }
 
-  // @keyframes gradientAnimation {
-  //   0% {
-  //     background-position: 0% 50%;
-  //   }
-  //   50% {
-  //     background-position: 100% 50%;
-  //   }
-  //   100% {
-  //     background-position: 0% 50%;
-  //   }
-  // }
    
    
    }
