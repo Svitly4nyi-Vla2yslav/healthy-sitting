@@ -36,7 +36,7 @@
         "differenceText3": "Attracting investment: Investors' attention is on the issue of not losing investments, while founders' attention is on attracting vital finances at any cost. And both sides are right. And the idea? Innovation? It remains unattended and is transformed according to circumstances. Solution: Create a concept where all parties calmly receive what they need."
     },
     "Header": {
-        "order": "Order",
+        "order": "DONAT",
         "home": "HOME",
         "about": "ABOUT",
         "project": "PROJECT",
@@ -68,12 +68,12 @@
         "card3Title": "We develop technology that individually adapts to the physiological needs of each user, reducing the harm of prolonged sitting."
     },
     "HomeComponent": {
-        "projectTitle": "Bring a creative project to life.",
-        "goalAmount": "OUR GOAL",
-        "currentAmount": " CURRENTLY WE HAVE",
+        "projectTitle": "A problem of planetary proportions.",
+        "goalAmount": "How many people today do you think spend more than 4 hours a day sitting? At work, at home, driving, travelling, on holiday?",
+        "currentAmount": "This is a problem that affects billions of people around the world. Prolonged sitting leads to chronic pain, scoliosis and other health problems. Sedentary lifestyles have a negative impact on people's quality of life and productivity, causing serious long-term consequences. This global problem requiresimmediate action.",
         "numberOfInvestors": "OUR INVESTORS",
         "amountToCollect": "WE HAVE TO COLLECT",
-        "orderButton": "Order"
+        "orderButton": "DONAT"
     },
     "EmailTicket": {
         "formTitle": "Need Help? Open a Ticket",
