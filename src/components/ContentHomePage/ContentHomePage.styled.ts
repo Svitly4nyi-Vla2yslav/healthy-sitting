@@ -9,7 +9,10 @@ height: 100%;
 @media (min-width: 768px) {
 height: 900px;
 margin: 0 auto;
+}
 
+@media (min-width: 1024px) {
+height: 1200px;
 
 }
 
@@ -137,7 +140,7 @@ export const VideoContainer = styled.div`
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* рівень затемнення */
-    z-index: 2;
+    z-index: 2999999;
   }
 `;
 
@@ -189,6 +192,12 @@ export const ListCard = styled.div`
         padding-bottom: 70%;
         max-height: 100vh;
   }
+         @media (min-width: 1023px) {
+          margin-top: 44%;
+        padding-top: 1%;
+         max-height: 20%;
+         padding-bottom: 60%;
+         }
 @media (min-width: 1240px) {
 display: flex;
         width: 1240px;

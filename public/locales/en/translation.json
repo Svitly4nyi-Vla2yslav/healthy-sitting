@@ -102,5 +102,15 @@
     "ErrorPage": {
         "CommingSoon": " Comming Soon ",
         "ThankYou": "Our website is currently under development. We should be finishedsoon. Thank you for your patience."
+    },
+    "ITgame": {
+        "h2": "The:",
+        "span": " 'Cura'",
+        "h2-1": "   technology",
+        "p": "A smart chair that individually adapts to the physiological needs of each user."
+    },
+    "ITswiper": {
+        "h2": "Partnership in development ",
+        "p": "Partners: Innosuisse, Swiss HealthTech Centre."
     }
 }

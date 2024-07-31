@@ -1,6 +1,6 @@
 import React, { useEffect} from 'react';
 
-import Video from '../../assets/image/bg1.mp4';
+import Video from '../../assets/image/bgVideo.webm';
 
 import { Link } from 'react-scroll';
 

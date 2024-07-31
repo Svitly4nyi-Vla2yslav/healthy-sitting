@@ -27,7 +27,7 @@ const pulse = keyframes`
 export const Wrapper = styled.section<{ background?: string }>`
 width: 100%;
 height: 100vh;
-margin: 80px auto; 
+margin: 0 auto; 
 display: block;
 margin-bottom: 490px;
   @media (min-width: 767px) {
@@ -41,11 +41,9 @@ margin-bottom: 390px;
         // align-items: center;
         justify-content: space-evenly;
         width: 100%;
+          margin-bottom: 0px;
    }
-// 
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     align-items: center;
+
 ${(props) =>
     props.background &&
     css`
