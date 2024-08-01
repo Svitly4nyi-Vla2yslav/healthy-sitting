@@ -20,7 +20,6 @@ height: 1200px;
 padding: 100px;
 gap: 19.5rem;
 padding-top: 200px;
-padding-bottom: 300px;
 flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
@@ -58,6 +57,9 @@ export const Video = styled.video`
   max-width: 300px;
   height: auto;
   border-radius: 20px;
+  @media (min-width: 1240px){
+   max-width: 600px;
+  }
 `;
 
 export const CardTitel = styled.h3`
@@ -69,9 +71,11 @@ padding: 5px;
 font-weight: 900;
 border-bottom: 1px solid #00baff;
 // margin-bottom: 50px;
-width: 90%;
+width: 100%;
 margin: 0 auto;
  font-weight: bold;
+ padding: 10px ;
+ text-align: end;
 `;
 
 export const CardText = styled.p`

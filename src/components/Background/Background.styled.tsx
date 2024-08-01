@@ -44,8 +44,8 @@ export const VideoContainer = styled.div`
     left: 0;
     right: 0;
     bottom: -1px;
-    height: 70%;
-    background: linear-gradient(to bottom, transparent, 60%, #01283c);
+   height: 100%;
+    background: linear-gradient(to bottom, transparent, 30%, #01283c);
   }
 `;
 
