@@ -54,7 +54,7 @@ z-index: -15;
 
 
 
-export const Image = styled.img`
+export const Video = styled.video`
   max-width: 300px;
   height: auto;
   border-radius: 20px;
@@ -172,45 +172,64 @@ export const ListCard = styled.div`
   display: flex;
   flex-direction: column;
   max-height: 20%;
-  // overflow-y: hidden;
+  overflow: overlay;
  scrollbar-width: none;
-  padding-top: 220%;
-     
+       padding-top: 120%;
+          margin: 0 auto;
+        gap: 2%;
+        max-height: 66%;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        align-content: center;
+        flex-wrap: nowrap;
+        margin-top: 62%;
+        padding-bottom: 9%;   
   
   
   @media (min-width: 766px) {
  width: 760px;
         display: flex;
         overflow: overlay;
-        margin: 0 auto;
-         display: flex;
-        margin: 0 auto;
+       
+          padding-top: 1%;
+          margin: 0 auto;
         gap: 2%;
+        max-height: 66%;
         flex-direction: column;
-        align-items: center;
-        margin-top: 65%;
-        padding-bottom: 70%;
-        max-height: 100vh;
+        align-items: flex-end;
+        justify-content: flex-start;
+        align-content: center;
+        flex-wrap: nowrap;
+        margin-top: 62%;
+        padding-bottom: 9%;
   }
          @media (min-width: 1023px) {
-          margin-top: 44%;
         padding-top: 1%;
-         max-height: 20%;
-         padding-bottom: 60%;
+          margin: 0 auto;
+        gap: 2%;
+        max-height: 66%;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        align-content: center;
+        flex-wrap: nowrap;
+        margin-top: 41%;
+        padding-bottom: 9%;
          }
 @media (min-width: 1240px) {
 display: flex;
         width: 1240px;
         margin: 0 auto;
         gap: 2%;
-  max-height: 140%;
-flex-direction: column;
+        max-height: 100%;
+        flex-direction: column;
         align-items: flex-end;
         justify-content: flex-start;
         align-content: center;
         flex-wrap: nowrap;
-          margin-top: 20%;
-        padding-bottom: 5%;
+        margin-top: 1%;
+        padding-bottom: 9%;
 }
 
 

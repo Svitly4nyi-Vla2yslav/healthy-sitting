@@ -32,8 +32,8 @@ const ErrorPage: React.FC = () => {
         <LanguageMenu />
         <h1 style={{ fontSize: '3.5em' }}>{t('ErrorPage.CommingSoon')}</h1>
         <p style={{ fontSize: '1.5em' }}>{t('ErrorPage.ThankYou')}</p>
-        <CountdownTimer targetDate={targetDate} />
-        <Subscribe />
+        <Subscribe /> <CountdownTimer targetDate={targetDate} />
+       
       </ContentOverlay>
     </Wrapper>
   );

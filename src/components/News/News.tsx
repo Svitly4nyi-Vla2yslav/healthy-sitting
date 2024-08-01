@@ -25,6 +25,7 @@ import {
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import OutboundIcon from '@mui/icons-material/Outbound';
+import { useMediaQuery } from 'react-responsive';
 
 const slides = [
   {
@@ -102,6 +103,14 @@ const slides = [
 ];
 
 export const News: React.FC = () => {
+  const isMobile = useMediaQuery({ query: '(max-width: 400px)' });
+  const isTablet = useMediaQuery({
+    query: '(min-width: 375px) and (max-width: 1023px)',
+  });
+  const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' });
+
+  const slidesPerView = isMobile ? 1 : isTablet ? 2 : isDesktop ? 4 : 4;
+
   return (
     <SwiperContainer>
       <TextWraper>
@@ -111,7 +120,7 @@ export const News: React.FC = () => {
         </TextPartners>
       </TextWraper>
       <Swiper
-        slidesPerView={4}
+        slidesPerView={slidesPerView}
         spaceBetween={30}
         centeredSlides={true}
         navigation={{

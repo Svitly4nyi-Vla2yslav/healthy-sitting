@@ -20,7 +20,7 @@ const HomeComponent: React.FC = () => {
   }, []);
 
   return (
-    <Wrapper style={{marginTop: 100, paddingTop: 230}}  id="/about"  data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
+    <Wrapper style={{marginTop: 100, paddingTop: 100}}  id="/about"  data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
       <ContainerStatistic data-aos="zoom-in" data-aos-delay="300">
         <TitelH3 data-aos="zoom-in" data-translate="projectTitle">
           {t('HomeComponent.projectTitle')}

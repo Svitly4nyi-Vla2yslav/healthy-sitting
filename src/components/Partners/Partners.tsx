@@ -9,6 +9,8 @@ import {
   TitelPartners,
 } from './Partners.styled';
 
+import { useMediaQuery } from 'react-responsive';
+
 const slides = [
   { id: 1, imageUrl: 'https://swiperjs.com/demos/images/nature-1.jpg' },
   { id: 2, imageUrl: 'https://swiperjs.com/demos/images/nature-2.jpg' },
@@ -22,6 +24,12 @@ const slides = [
 ];
 
 export const Partners: React.FC = () => {
+
+  const isMobile = useMediaQuery({ query: '(max-width: 375px)' });
+  const isTablet = useMediaQuery({ query: '(min-width: 375px) and (max-width: 1023px)' });
+  const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' });
+
+  const slidesPerView = isMobile ? 2 : isTablet ? 4 : isDesktop ? 7 : 7;
   return (
     <SwiperContainer>
       <TextWraper>
@@ -34,7 +42,7 @@ export const Partners: React.FC = () => {
       </TextWraper>
       <Swiper
         loop={true}
-        slidesPerView={7}
+        slidesPerView={slidesPerView}
         spaceBetween={20}
         navigation={false}
         autoplay={{

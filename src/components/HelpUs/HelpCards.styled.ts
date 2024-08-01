@@ -47,7 +47,7 @@ margin: 0 auto;
     gap: 100px;
     flex-wrap: wrap;
     align-items: center;
-     @media screen and (min-width: 769px){
+     @media screen and (min-width: 900px){
     display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -55,7 +55,13 @@ margin: 0 auto;
         gap: 1%;
 max-width: 1180px;
 margin: 0 auto;
+
      }
+
+@media screen and (min-width: 1023px){
+ display: flex;
+
+ }
 `;
 
 export const CardHelpUs = styled.li`

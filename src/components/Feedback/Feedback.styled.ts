@@ -8,6 +8,7 @@ export const SwiperContainer = styled.div`
   padding: 150px auto;
   position: relative;
   background-color: #01cbe1;
+  padding-bottom: 116vh;
 
   .swiper-slide {
   border-radius: 24px;

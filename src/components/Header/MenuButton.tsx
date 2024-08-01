@@ -45,7 +45,7 @@ export const MenuButton: React.FC = () => {
     { to: '/home', text: t('Header.home'), icon: <HomeIcon /> },
     { to: '/about', text: t('Header.about'), icon: <InfoIcon /> },
     { to: '/project', text: t('Header.project'), icon: <ProjectIcon /> },
-    { to: '/rewards', text: t('Header.rewards'), icon: <RewardsIcon /> },
+    { to: '/help', text: t('Header.rewards'), icon: <RewardsIcon /> },
     { to: '/contact', text: t('Header.contact'), icon: <ContactIcon /> },
     {
       to: '',

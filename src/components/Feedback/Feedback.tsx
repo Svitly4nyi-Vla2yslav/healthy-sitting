@@ -23,6 +23,7 @@ import {
   TextWraper,
   TitelPartners,
 } from './Feedback.styled';
+import { useMediaQuery } from 'react-responsive';
 
 const slides = [
   {
@@ -83,8 +84,17 @@ const slides = [
 ];
 
 export const Feedback: React.FC = () => {
+
+  const isMobile = useMediaQuery({ query: '(max-width: 400px)' });
+  const isTablet = useMediaQuery({
+    query: '(min-width: 400px) and (max-width: 768px)',
+  });
+  const isDesktop = useMediaQuery({ query: '(min-width: 769px)' });
+
+  const slidesPerView = isMobile ? 1 : isTablet ? 1 : isDesktop ? 3 : 3;
+
   return (
-    <SwiperContainer>
+    <SwiperContainer >
       <TextWraper>
         <TitelPartners>Feedback & support</TitelPartners>
         <TextPartners>
@@ -94,7 +104,7 @@ export const Feedback: React.FC = () => {
       </TextWraper>
       <Swiper
         style={{ margin: '0 50px' }}
-        slidesPerView={3}
+        slidesPerView={slidesPerView}
         spaceBetween={30}
         navigation={{
           prevEl: '.custom-prev',

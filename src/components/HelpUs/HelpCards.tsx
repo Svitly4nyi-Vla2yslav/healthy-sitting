@@ -31,7 +31,7 @@ const HelpCards: React.FC = () => {
   return (
     <SectionHelp id='/help'>
       <TextWrapper>
-        <TitelHelp>Lorem, ipsum.</TitelHelp>
+        <TitelHelp>Help Us</TitelHelp>
         <TextHelp>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quis
           vel odit eaque consequatur dolorum?

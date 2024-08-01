@@ -60,7 +60,7 @@ const LanguageMenu: React.FC = () => {
   };
 
   return (
-    <div style={{ marginRight: "3%" }} data-aos="fade-up">
+    <div style={{ marginRight: "1%" }} data-aos="fade-up">
       <StyledIconButton
         aria-label="language"
         id="language-menu-button"
