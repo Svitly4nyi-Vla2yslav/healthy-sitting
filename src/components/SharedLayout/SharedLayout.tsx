@@ -9,7 +9,6 @@ const SharedLayout: React.FC = () => {
   return (
     <>
       <Header />
-      {/* <Background/> */}
       <Suspense>
         <Outlet />
       </Suspense>{' '}

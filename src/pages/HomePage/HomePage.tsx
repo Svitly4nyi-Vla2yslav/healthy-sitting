@@ -6,18 +6,22 @@ import { ITgame } from '../../components/ITsection/ITgame';
 import { ITswiper } from '../../components/ITsection/ITswiper';
 import HelpCards from '../../components/HelpUs/HelpCards';
 import { Partners } from '../../components/Partners/Partners';
+import { News } from '../../components/News/News';
+import { Feedback } from '../../components/Feedback/Feedback';
 
 const Home: React.FC = () => {
   return (
     <>
       <Background />
-      <ContentHomePage/>
-      <Container>
-        <ITgame/>
-        <ITswiper/>
+      <ContentHomePage />
+      <Container  id='/project'>
+        <ITgame />
+        <ITswiper />
       </Container>
-      <HelpCards/>
-       <Partners/>
+      <HelpCards />
+      <Partners />
+      <News />
+      <Feedback />
     </>
   );
 };

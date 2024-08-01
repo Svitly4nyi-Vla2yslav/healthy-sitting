@@ -13,7 +13,7 @@ import {
 } from './Footer.styled';
 import { Link } from 'react-router-dom';
 import { ImageLogo } from '../Header/Header.styled';
-import Logo from '../../assets/image/logo-transparent-png.png';
+import Logo from '../../assets/image/logo_Systems.png';
 import {
   Facebook,
   Instagram,
@@ -32,9 +32,9 @@ const Footer: React.FC = () => {
   return (
     <FooterContainer>
       <FooterList>
-        <Link to="/home">
-          <ImageLogo src={Logo} alt="Logo" />
-        </Link>
+      <Link to="/home">
+            <ImageLogo src={Logo} alt="Logo" />
+          </Link>
         <FooterItemText data-translate="footerAdditionalText">
           {t('Footer.footerAdditionalText')}
         </FooterItemText>

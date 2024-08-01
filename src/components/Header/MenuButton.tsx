@@ -14,6 +14,9 @@ import RewardsIcon from '@mui/icons-material/CardGiftcard';
 import ContactIcon from '@mui/icons-material/ContactMail';
 import { StyledLink } from './Header.styled';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import { DonatButton } from '../ContentHomePage/HomeComponent.styled';
+import LanguageMenu from '../LanguageSelector/LanguageSelector';
 
 type Anchor = 'top';
 
@@ -44,6 +47,21 @@ export const MenuButton: React.FC = () => {
     { to: '/project', text: t('Header.project'), icon: <ProjectIcon /> },
     { to: '/rewards', text: t('Header.rewards'), icon: <RewardsIcon /> },
     { to: '/contact', text: t('Header.contact'), icon: <ContactIcon /> },
+    {
+      to: '',
+      text: t(''),
+      icon: (
+        <Link to="/contact">
+        <DonatButton
+          data-aos="fade-right"
+          style={{ margin: 0, marginRight: 10 }}
+        >
+          {t('Header.order')}
+        </DonatButton>
+      </Link>
+      ),
+    },
+    { to: '#', text: t(''), icon: <LanguageMenu /> },
   ];
 
   const list = (anchor: Anchor) => (

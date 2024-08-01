@@ -14,13 +14,13 @@ import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 import { useTranslation } from 'react-i18next';
 import { ContentOverlay } from '../../pages/HomePage/HomePage.styled';
 
-import slide1 from "../../assets/image/product-section-4_-2380x850-2-s.jpg"
-import slide2 from "../../assets/image/product-section-3_-2380x850-2-s.jpg"
-import slide3 from "../../assets/image/Terminator-banner_bg-3-small.jpg"
-import slide4 from "../../assets/image/product-section-2_-2380x850-2-s.jpg"
+import slide1 from '../../assets/image/product-section-4_-2380x850-2-s.jpg';
+import slide2 from '../../assets/image/product-section-3_-2380x850-2-s.jpg';
+import slide3 from '../../assets/image/Terminator-banner_bg-3-small.jpg';
+import slide4 from '../../assets/image/product-section-2_-2380x850-2-s.jpg';
 
 export const ITgame: React.FC = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -44,20 +44,60 @@ export const ITgame: React.FC = () => {
         className="mySwiper"
       >
         <ContentOverlay>
-          <h2>{t("ITgame.h2")}<span>{t("ITgame.span")}</span>{t("ITgame.h2-1")}</h2>
-          <p>{t("ITgame.p")}</p>
+          <h2>
+            {t('ITgame.h2')}
+            <span>{t('ITgame.span')}</span>
+            {t('ITgame.h2-1')}
+          </h2>
+          <p>{t('ITgame.p')}</p>
         </ContentOverlay>
         <SwiperSlide>
-          <img src={slide1} alt='slide1' />
+          <img
+            src={slide1}
+            alt="slide1"
+            style={{
+              backgroundSize: 'cover',
+              width: '100%',
+              objectFit: 'cover',
+              height: '60vh',
+            }}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide2} alt='slide2' />
+          <img
+            src={slide2}
+            alt="slide2"
+            style={{
+              backgroundSize: 'cover',
+              width: '100%',
+              objectFit: 'cover',
+              height: '60vh',
+            }}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide3} alt='slide3' />
+          <img
+            src={slide3}
+            alt="slide3"
+            style={{
+              backgroundSize: 'cover',
+              width: '100%',
+              objectFit: 'cover',
+              height: '60vh',
+            }}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide4} alt='slide4' />
+          <img
+            src={slide4}
+            alt="slide4"
+            style={{
+              backgroundSize: 'cover',
+              width: '100%',
+              objectFit: 'cover',
+              height: '60vh',
+            }}
+          />
         </SwiperSlide>
       </Swiper>
     </>

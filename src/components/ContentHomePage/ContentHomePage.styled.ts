@@ -174,7 +174,7 @@ export const ListCard = styled.div`
   max-height: 20%;
   // overflow-y: hidden;
  scrollbar-width: none;
-  // padding-top: 220%;
+  padding-top: 220%;
      
   
   

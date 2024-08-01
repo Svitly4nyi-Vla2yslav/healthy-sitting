@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const SwiperContainer = styled.div`
   width: 100vw;
-  height: 60vh;
+  height: 60%;
   background: white;
-  
+  margin: 0px auto;
+  padding: 150px auto;
 
   .swiper-wrapper {
     display: flex;
@@ -14,10 +15,10 @@ export const SwiperContainer = styled.div`
 
 export const TextWraper = styled.div`
 text-align: center;
-margin: 0 auto 2.5em;
+margin: 0 2.5em;
 color: #01cbe1;
 padding: 30px;
-width: 100vh
+    width: 90%;
 `;
 
 export const TitelPartners = styled.h2`
@@ -29,7 +30,7 @@ color: #01cbe1;
     text-transform: uppercase;
     font-size: 2.8rem;
     line-height: 1.1;
-    width: 100vh
+        width: 90%;
 `;
 
 export const TextPartners = styled.p`
@@ -42,7 +43,7 @@ color: #01cbe1;
     height: 100%;
     padding-top: 52px;
     line-height: 1.45;
-    width: 100vh
+     width: 90%;
 `;
 
 export const ImageContainer = styled.div`

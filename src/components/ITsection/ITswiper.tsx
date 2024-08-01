@@ -25,7 +25,12 @@ export const ITswiper: React.FC = () => {
   return (
     <>
       <Swiper
-        style={{ margin: '0 auto', width: '100%', height: '60vh' }}
+        style={{
+          margin: '0 auto',
+          width: '100%',
+          height: '60vh',
+          objectFit: 'cover',
+        }}
         spaceBetween={30}
         loop={true}
         effect={'fade'}
@@ -47,28 +52,47 @@ export const ITswiper: React.FC = () => {
           <img
             src={slide1}
             alt="slide1"
-            style={{ backgroundSize: 'cover', width: '100%' }}
+            style={{
+              backgroundSize: 'cover',
+              width: '100%',
+              objectFit: 'cover',
+            }}
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src={slide2}
             alt="slide2"
-            style={{ backgroundSize: 'cover', width: '100%', height: '60vh' }}
+            style={{
+              backgroundSize: 'cover',
+              width: '100%',
+              height: '60vh',
+              objectFit: 'cover',
+            }}
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src={slide3}
             alt="slide3"
-            style={{ backgroundSize: 'cover', width: '100%' }}
+            style={{
+              backgroundSize: 'cover',
+              width: '100%',
+              objectFit: 'cover',
+              height: '60vh',
+            }}
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src={slide4}
             alt="slide4"
-            style={{ backgroundSize: 'cover', width: '100%', height: '60vh' }}
+            style={{
+              backgroundSize: 'cover',
+              width: '100%',
+              height: '60vh',
+              objectFit: 'cover',
+            }}
           />
         </SwiperSlide>
       </Swiper>

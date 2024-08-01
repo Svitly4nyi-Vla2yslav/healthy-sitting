@@ -29,9 +29,11 @@ width: 100%;
 height: 100vh;
 margin: 0 auto; 
 display: block;
-margin-bottom: 490px;
+margin-bottom: 690px;
+// border-bottom: 1px solid #00baff;
   @media (min-width: 767px) {
 margin-bottom: 390px;
+
   }
 
      @media (min-width: 1024px) {

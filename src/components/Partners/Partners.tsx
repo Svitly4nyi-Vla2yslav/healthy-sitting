@@ -10,16 +10,16 @@ import {
 } from './Partners.styled';
 
 const slides = [
-    { id: 1, imageUrl: 'https://swiperjs.com/demos/images/nature-1.jpg' },
-    { id: 2, imageUrl: 'https://swiperjs.com/demos/images/nature-2.jpg' },
-    { id: 3, imageUrl: 'https://swiperjs.com/demos/images/nature-3.jpg' },
-    { id: 4, imageUrl: 'https://swiperjs.com/demos/images/nature-4.jpg' },
-    { id: 5, imageUrl: 'https://swiperjs.com/demos/images/nature-5.jpg' },
-    { id: 6, imageUrl: 'https://swiperjs.com/demos/images/nature-6.jpg' },
-    { id: 7, imageUrl: 'https://swiperjs.com/demos/images/nature-7.jpg' },
-    { id: 8, imageUrl: 'https://swiperjs.com/demos/images/nature-8.jpg' },
-    { id: 9, imageUrl: 'https://swiperjs.com/demos/images/nature-9.jpg' }
-  ];
+  { id: 1, imageUrl: 'https://swiperjs.com/demos/images/nature-1.jpg' },
+  { id: 2, imageUrl: 'https://swiperjs.com/demos/images/nature-2.jpg' },
+  { id: 3, imageUrl: 'https://swiperjs.com/demos/images/nature-3.jpg' },
+  { id: 4, imageUrl: 'https://swiperjs.com/demos/images/nature-4.jpg' },
+  { id: 5, imageUrl: 'https://swiperjs.com/demos/images/nature-5.jpg' },
+  { id: 6, imageUrl: 'https://swiperjs.com/demos/images/nature-6.jpg' },
+  { id: 7, imageUrl: 'https://swiperjs.com/demos/images/nature-7.jpg' },
+  { id: 8, imageUrl: 'https://swiperjs.com/demos/images/nature-8.jpg' },
+  { id: 9, imageUrl: 'https://swiperjs.com/demos/images/nature-9.jpg' },
+];
 
 export const Partners: React.FC = () => {
   return (
@@ -35,7 +35,7 @@ export const Partners: React.FC = () => {
       <Swiper
         loop={true}
         slidesPerView={7}
-        spaceBetween={30}
+        spaceBetween={20}
         navigation={false}
         autoplay={{
           delay: 1,
@@ -55,11 +55,16 @@ export const Partners: React.FC = () => {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                height: '10vh',
+                height: '20vh',
                 fontSize: 36,
+                paddingBottom: 50,
               }}
             >
-               <img src={slide.imageUrl} alt={`Slide ${slide.id}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img
+                src={slide.imageUrl}
+                alt={`Slide ${slide.id}`}
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
             </SwiperSlide>
           ))
         )}

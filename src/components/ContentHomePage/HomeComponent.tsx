@@ -4,7 +4,7 @@ import {
   NumberLarge,
   TitelH3,
   Wrapper,
-  TextSmoll
+  TextSmoll,
 } from './HomeComponent.styled';
 
 import AOS from 'aos';
@@ -20,7 +20,7 @@ const HomeComponent: React.FC = () => {
   }, []);
 
   return (
-    <Wrapper data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
+    <Wrapper style={{marginTop: 100, paddingTop: 230}}  id="/about"  data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
       <ContainerStatistic data-aos="zoom-in" data-aos-delay="300">
         <TitelH3 data-aos="zoom-in" data-translate="projectTitle">
           {t('HomeComponent.projectTitle')}
@@ -34,16 +34,17 @@ const HomeComponent: React.FC = () => {
           {t('HomeComponent.currentAmount')}
         </TextSmoll>
       </ContainerStatistic>
-  <SwiperCub/>
+      <SwiperCub />
     </Wrapper>
   );
 };
 
 export default HomeComponent;
- 
 
-{/* <Link to={'/contact'}>
+{
+  /* <Link to={'/contact'}>
         <DonatButton data-translate="orderButton">
           {t('HomeComponent.orderButton')}
         </DonatButton>
-      </Link> */}
+      </Link> */
+}

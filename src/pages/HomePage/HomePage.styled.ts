@@ -9,6 +9,7 @@ export const SwipperWrapper = styled.div`
 export const Container = styled.div`
 display: flex;
 flex-direction: column;
+padding-top: 250px;
 gap: 5px;
   margin-top: 500px ;
  @media (min-width: 1024px) {

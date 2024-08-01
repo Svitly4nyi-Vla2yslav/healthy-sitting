@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import example from '../../assets/image/Terminator-product-section_8-2380x850-3.jpg';
 
 export const FooterContainer = styled.div`
 border-top: 1px solid #00baff;
@@ -7,7 +6,6 @@ padding: 0 ;
 margin: 0 auto;
 width: 100%;
 height: 100%;
-background-image: url(${example});
  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -33,11 +31,6 @@ font-size: 20px;
 text-align: start;
 font-weight: bold;
   font-weight: bold;
-  background: linear-gradient(90deg, #ff7f50, #1e90ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
 transition: shadow 0.9s ease,
   color 0.9s,
 text-shadow 0.9s;
@@ -58,11 +51,7 @@ text-shadow 0.9s;
 export const FooterItemText = styled.p`
 text-align: center;
   font-weight: bold;
-  background: linear-gradient(90deg, #ff7f50, #1e90ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+
   padding-bottom: 10px;
 `;
 

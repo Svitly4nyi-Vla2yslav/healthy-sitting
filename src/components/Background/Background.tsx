@@ -26,7 +26,7 @@ const Background: React.FC = () => {
   }, []);
 
   return (
-    <div
+    <div  id='/home' 
       data-aos="fade-right"
       data-aos-offset="300"
       data-aos-easing="ease-in-sine"

@@ -29,7 +29,7 @@ import {
 
 const HelpCards: React.FC = () => {
   return (
-    <SectionHelp>
+    <SectionHelp id='/help'>
       <TextWrapper>
         <TitelHelp>Lorem, ipsum.</TitelHelp>
         <TextHelp>

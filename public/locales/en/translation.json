@@ -36,11 +36,12 @@
         "differenceText3": "Attracting investment: Investors' attention is on the issue of not losing investments, while founders' attention is on attracting vital finances at any cost. And both sides are right. And the idea? Innovation? It remains unattended and is transformed according to circumstances. Solution: Create a concept where all parties calmly receive what they need."
     },
     "Header": {
+        "header": "HEADER",
         "order": "DONAT",
         "home": "HOME",
-        "about": "ABOUT",
+        "about": "PROBLEM",
         "project": "PROJECT",
-        "rewards": "REWARDS",
+        "rewards": "HELP",
         "contact": "CONTACT"
     },
     "MenuButton": {

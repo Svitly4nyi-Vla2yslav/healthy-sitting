@@ -47,7 +47,7 @@ margin: 0 auto;
     gap: 100px;
     flex-wrap: wrap;
     align-items: center;
-     @media screen and (min-width: 768px){
+     @media screen and (min-width: 769px){
     display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -61,7 +61,7 @@ margin: 0 auto;
 export const CardHelpUs = styled.li`
 position: relative;
     display: flex;
-    padding: 100px 10px 10px;
+    padding: 70px 10px 10px;
     background: #f2f5f6;
     margin: 0 auto;
     flex-direction: column;
@@ -69,7 +69,7 @@ position: relative;
     align-items: center;
     border-radius: 10px;
     max-width: 370px;
-    height: 70vh;
+    height: 64vh;
       transition: box-shadow 0.3s ease; /* Додаємо плавний перехід для тіні */
 
   &:hover,
@@ -108,7 +108,7 @@ export const CardText = styled.p`
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 50px 25px 25px;
+    padding: 20px 25px 25px;
     color: #003755;
      border-radius: 10px;
 font-family: "Proxima Nova", sans-serif;
