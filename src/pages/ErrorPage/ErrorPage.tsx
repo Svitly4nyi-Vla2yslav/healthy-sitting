@@ -4,7 +4,7 @@ import {
   ContentOverlay,
   VideoContainer,
 } from '../../components/ContentHomePage/ContentHomePage.styled';
-import Video from '../../assets/image/3249672-uhd_3840_2160_25fps.mp4';
+import Video from '../../assets/image/3249672-uhd_3840_2160_25fps.webm';
 import { useTranslation } from 'react-i18next';
 import CountdownTimer from '../../components/Timer/CountdownTimer';
 import Subscribe from '../../components/EmailTicket/Subscribe';

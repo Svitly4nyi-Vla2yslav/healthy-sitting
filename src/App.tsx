@@ -1,12 +1,12 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import SharedLayout from './components/SharedLayout/SharedLayout';
-import ProjectPage from './pages/ProjectPage/ProjectPage';
+// import ProjectPage from './pages/ProjectPage/ProjectPage';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 import { AppWrapper } from './App.styled';
 import Home from './pages/HomePage/HomePage';
-import RewardsPage from './pages/RewardsPage/RewardsPage';
+// import RewardsPage from './pages/RewardsPage/RewardsPage';
 import ContactPage from './pages/ContactPage/ContactPage';
-import AboutUs from './pages/AboutUs/AboutUs';
+// import AboutUs from './pages/AboutUs/AboutUs';
 // import Background from './components/Background/Background';
 
 const App: React.FC = () => {
@@ -16,9 +16,9 @@ const App: React.FC = () => {
         <Route path="/" element={<Navigate to="*" />} />
         <Route path="/" element={<SharedLayout />}>
           <Route path="home" element={<Home />} />
-          <Route path="about" element={<AboutUs />} />
-          <Route path="project" element={<ProjectPage />} />
-          <Route path="rewards" element={<RewardsPage />} />
+          {/* <Route path="about" element={<AboutUs />} /> */}
+          {/* <Route path="project" element={<ProjectPage />} /> */}
+          {/* <Route path="rewards" element={<RewardsPage />} /> */}
           <Route path="contact" element={<ContactPage />} />
         </Route>
         <Route path="*" element={<ErrorPage />} />
