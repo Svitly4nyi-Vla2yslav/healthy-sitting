@@ -1,1 +1,0 @@
-import{j as r}from"./index-f4768723.js";import{a as e,C as s,B as t,T as o}from"./ProjectPage.styled-6062efbe.js";const i=()=>r.jsx(e,{children:r.jsx(s,{children:r.jsx(t,{children:r.jsx(o,{children:"Projects "})})})});export{i as default};
