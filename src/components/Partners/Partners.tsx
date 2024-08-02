@@ -23,7 +23,7 @@ const slides = [
   { id: 9, imageUrl: 'https://swiperjs.com/demos/images/nature-9.jpg' },
 ];
 
-export const Partners: React.FC = () => {
+const Partners: React.FC = () => {
 
   const isMobile = useMediaQuery({ query: '(max-width: 375px)' });
   const isTablet = useMediaQuery({ query: '(min-width: 375px) and (max-width: 1023px)' });
@@ -80,3 +80,4 @@ export const Partners: React.FC = () => {
     </SwiperContainer>
   );
 };
+export default Partners;

@@ -19,7 +19,7 @@ import slide2 from '../../assets/image/partners/SHTC.png';
 import slide3 from '../../assets/image/partners/Innosuisse-1200x936.png';
 import slide4 from '../../assets/image/partners/4.png';
 
-export const ITswiper: React.FC = () => {
+const ITswiper: React.FC = () => {
   const { t } = useTranslation();
 
   return (
@@ -99,3 +99,4 @@ export const ITswiper: React.FC = () => {
     </>
   );
 };
+export default ITswiper;

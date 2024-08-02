@@ -158,4 +158,7 @@ export const GlobalStyles = css`
   }
 }
  
+
+
+
 `;

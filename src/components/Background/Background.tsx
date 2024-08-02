@@ -27,9 +27,9 @@ const Background: React.FC = () => {
 
   return (
     <div  id='/home' 
-      data-aos="fade-right"
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine"
+      // data-aos="fade-right"
+      // data-aos-offset="300"
+      // data-aos-easing="ease-in-sine"
       style={{ marginTop: 76 }}
     >
        <VideoContainer  style={{

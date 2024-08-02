@@ -17,7 +17,7 @@ import { DonatButton } from '../ContentHomePage/HomeComponent.styled';
 import LanguageMenu from '../LanguageSelector/LanguageSelector';
 import { Link } from 'react-router-dom';
 
-export const Header: React.FC = () => {
+const Header: React.FC = () => {
   const { t } = useTranslation();
   const isMobile = useMediaQuery({ query: '(max-width: 882px)' });
   const location = useLocation(); 
@@ -132,3 +132,4 @@ export const Header: React.FC = () => {
     </HeaderContainer>
   );
 };
+export default Header;

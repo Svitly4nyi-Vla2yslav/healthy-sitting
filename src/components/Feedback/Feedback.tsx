@@ -83,7 +83,7 @@ const slides = [
   },
 ];
 
-export const Feedback: React.FC = () => {
+const Feedback: React.FC = () => {
 
   const isMobile = useMediaQuery({ query: '(max-width: 400px)' });
   const isTablet = useMediaQuery({
@@ -164,3 +164,4 @@ export const Feedback: React.FC = () => {
     </SwiperContainer>
   );
 };
+export default Feedback;

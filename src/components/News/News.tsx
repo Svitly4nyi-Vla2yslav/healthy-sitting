@@ -102,7 +102,7 @@ const slides = [
   },
 ];
 
-export const News: React.FC = () => {
+const News: React.FC = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 400px)' });
   const isTablet = useMediaQuery({
     query: '(min-width: 375px) and (max-width: 1023px)',
@@ -189,3 +189,4 @@ export const News: React.FC = () => {
     </SwiperContainer>
   );
 };
+export default News;

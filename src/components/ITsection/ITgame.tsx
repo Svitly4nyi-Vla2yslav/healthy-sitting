@@ -19,7 +19,7 @@ import slide2 from '../../assets/image/product-section-3_-2380x850-2-s.jpg';
 import slide3 from '../../assets/image/Terminator-banner_bg-3-small.jpg';
 import slide4 from '../../assets/image/product-section-2_-2380x850-2-s.jpg';
 
-export const ITgame: React.FC = () => {
+const ITgame: React.FC = () => {
   const { t } = useTranslation();
 
   return (
@@ -103,3 +103,4 @@ export const ITgame: React.FC = () => {
     </>
   );
 };
+ export default ITgame;
