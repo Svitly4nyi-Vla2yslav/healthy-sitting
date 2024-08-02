@@ -1,8 +1,9 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 import React from 'react';
-const Footer = React.lazy(() => import('../Footer/Footer'));
-const Header = React.lazy(() => import('../Header/Header'));
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
+// import { Background } from '../Background/Background';
 
 const SharedLayout: React.FC = () => {
   return (
