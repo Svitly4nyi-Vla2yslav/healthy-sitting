@@ -3,11 +3,15 @@ import SharedLayout from './components/SharedLayout/SharedLayout';
 // import ProjectPage from './pages/ProjectPage/ProjectPage';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 import { AppWrapper } from './App.styled';
-import Home from './pages/HomePage/HomePage';
+import React from 'react';
+// import Home from './pages/HomePage/HomePage';
 // import RewardsPage from './pages/RewardsPage/RewardsPage';
-import ContactPage from './pages/ContactPage/ContactPage';
+// import ContactPage from './pages/ContactPage/ContactPage';
 // import AboutUs from './pages/AboutUs/AboutUs';
 // import Background from './components/Background/Background';
+const Home = React.lazy(() => import('./pages/HomePage/HomePage'));
+const ContactPage = React.lazy(() => import('./pages/ContactPage/ContactPage'));
+
 
 const App: React.FC = () => {
   return (
