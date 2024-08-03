@@ -1,0 +1,1 @@
+import{t as r,v as t,j as a}from"./index-e5b61c4a.js";var e={},i=t;Object.defineProperty(e,"__esModule",{value:!0});var o=e.default=void 0,u=i(r()),l=a;o=e.default=(0,u.default)((0,l.jsx)("path",{d:"M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12s4.48 10 10 10 10-4.48 10-10m-10 1H8v-2h4V8l4 4-4 4z"}),"ArrowCircleRight");export{o as d};
