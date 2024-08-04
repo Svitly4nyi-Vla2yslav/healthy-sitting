@@ -43,7 +43,7 @@ export const StyledLink = styled(ScrollLink)`
 
 export const IconWrapper = styled.div`
   position: fixed;
-  background-color: #01cbe1;
+  background-color: #01283c;
   left: 0px;
   top: 0px;
 
@@ -67,6 +67,7 @@ export const ButtonMenuContainer = styled.div`
 
 export const ImageLogo = styled.img`
   width: 200px;
+  height:88px;
   transition: color 0.3s, filter 0.3s;
 
     @media screen and (max-width: 882px){
@@ -75,8 +76,8 @@ export const ImageLogo = styled.img`
 
   &:hover,
   &:focus {
-    color: #1976d2;
-    filter: drop-shadow(0 0 5px #1976d2);
+    color: #01cbe1;
+    filter: drop-shadow(0 0 5px #01cbe1);
   }
 `;
 

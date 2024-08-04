@@ -86,10 +86,14 @@ export const DonatButton = styled.button`
     outline: none;
   }
 
-  @media (min-width: 1024px) {
-  display: flex;
-  margin-top: 50px;
-   padding: 15px 30px;
+  @media (min-width: 769px) {
+position: absolute;
+           top: 110%;
+        left: 85%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
   }
 `;
 
