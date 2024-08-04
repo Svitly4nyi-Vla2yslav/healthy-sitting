@@ -14,10 +14,10 @@ import { ContentOverlay } from '../../pages/HomePage/HomePage.styled';
 
 import { useTranslation } from 'react-i18next';
 
-import slide1 from '../../assets/image/partners/SHTC_Logo_RGB.jpg';
-import slide2 from '../../assets/image/partners/SHTC.png';
-import slide3 from '../../assets/image/partners/Innosuisse-1200x936.png';
-import slide4 from '../../assets/image/partners/4.png';
+import slide1 from '../../assets/image/partners/SHTC_Logo_RGB.webp';
+import slide2 from '../../assets/image/partners/SHTC.webp';
+import slide3 from '../../assets/image/partners/Innosuisse-1200x936.webp';
+import slide4 from '../../assets/image/partners/4.webp';
 
 const ITswiper: React.FC = () => {
   const { t } = useTranslation();

@@ -14,10 +14,10 @@ import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 import { useTranslation } from 'react-i18next';
 import { ContentOverlay } from '../../pages/HomePage/HomePage.styled';
 
-import slide1 from '../../assets/image/product-section-4_-2380x850-2-s.jpg';
-import slide2 from '../../assets/image/product-section-3_-2380x850-2-s.jpg';
-import slide3 from '../../assets/image/Terminator-banner_bg-3-small.jpg';
-import slide4 from '../../assets/image/product-section-2_-2380x850-2-s.jpg';
+import slide1 from '../../assets/image/product-section-4_-2380x850-2-s.webp';
+import slide2 from '../../assets/image/product-section-3_-2380x850-2-s.webp';
+import slide3 from '../../assets/image/Terminator-banner_bg-3-small.webp';
+import slide4 from '../../assets/image/product-section-2_-2380x850-2-s.webp';
 
 const ITgame: React.FC = () => {
   const { t } = useTranslation();

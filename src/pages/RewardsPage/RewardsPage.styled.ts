@@ -1,5 +1,5 @@
 // import styled from "styled-components";
-// import example from "../../assets/image/product-section-4_-2380x850-2.jpg"
+// import example from "../../assets/image/product-section-4_-2380x850-2.webp"
 
 
 

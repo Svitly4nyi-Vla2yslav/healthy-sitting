@@ -17,7 +17,7 @@ import {
 
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
-import Help1 from "../../assets/image/example.png"
+import Help1 from "../../assets/image/example.webp"
 
 import {
   LinkedIn,

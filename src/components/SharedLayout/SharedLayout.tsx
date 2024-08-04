@@ -11,7 +11,7 @@ const SharedLayout: React.FC = () => {
       <Header />
       <Suspense>
         <Outlet />
-      </Suspense>{' '}
+      </Suspense>
       <Footer />
     </>
   );

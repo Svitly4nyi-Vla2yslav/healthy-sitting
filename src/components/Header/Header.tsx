@@ -10,7 +10,7 @@ import {
   StyledLink,
   ImageLogo,
 } from './Header.styled';
-import Logo from '../../assets/image/logo_Systems.png';
+import Logo from '../../assets/image/logo_Systems.webp';
 import { useMediaQuery } from 'react-responsive';
 import { MenuButton } from './MenuButton';
 import { DonatButton } from '../ContentHomePage/HomeComponent.styled';

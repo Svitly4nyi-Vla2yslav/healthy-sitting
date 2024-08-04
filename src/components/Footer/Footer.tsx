@@ -13,7 +13,7 @@ import {
 } from './Footer.styled';
 import { Link } from 'react-router-dom';
 import { ImageLogo } from '../Header/Header.styled';
-import Logo from '../../assets/image/logo_Systems.png';
+import Logo from '../../assets/image/logo_Systems.webp';
 import {
   Facebook,
   Instagram,

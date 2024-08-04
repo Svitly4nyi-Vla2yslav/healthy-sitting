@@ -12,8 +12,8 @@ import {
   WrapperEmail,
   WrapperSocial,
 } from './OurContacts.styled';
-import Maks from '../../assets/image/Maksim.png';
-import Logo from '../../assets/image/logo_Systems.png';
+import Maks from '../../assets/image/Maksim.webp';
+import Logo from '../../assets/image/logo_Systems.webp';
 import {
   LinkedIn,
   Instagram,
