@@ -1,4 +1,4 @@
-import{s as t,G as s,j as e}from"./index-e5b61c4a.js";import{S as m,A as d,P as g,a as l}from"./autoplay-5dc22bda.js";const c=t.div`
+import{s as t,G as s,j as e}from"./index-e5e17d59.js";import{S as m,A as d,P as g,a as l}from"./autoplay-27767852.js";const c=t.div`
   width: 100vw;
   height: 60%;
   background: white;

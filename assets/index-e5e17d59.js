@@ -354,7 +354,7 @@ justify-content: flex-end;
   }
 `,eI=ie.div`
   position: fixed;
-  background-color: #01cbe1;
+  background-color: #01283c;
   left: 0px;
   top: 0px;
 
@@ -374,6 +374,7 @@ justify-content: flex-end;
   }
 `;const Yx=ie.img`
   width: 200px;
+  height:88px;
   transition: color 0.3s, filter 0.3s;
 
     @media screen and (max-width: 882px){
@@ -382,8 +383,8 @@ justify-content: flex-end;
 
   &:hover,
   &:focus {
-    color: #1976d2;
-    filter: drop-shadow(0 0 5px #1976d2);
+    color: #01cbe1;
+    filter: drop-shadow(0 0 5px #01cbe1);
   }
 `,Gx="/assets/logo_Systems-68d6587b.png";function Ir(e){if(typeof e!="object"||e===null)return!1;const t=Object.getPrototypeOf(e);return(t===null||t===Object.prototype||Object.getPrototypeOf(t)===null)&&!(Symbol.toStringTag in e)&&!(Symbol.iterator in e)}function Qx(e){if(!Ir(e))return e;const t={};return Object.keys(e).forEach(n=>{t[n]=Qx(e[n])}),t}function Qn(e,t,n={clone:!0}){const r=n.clone?N({},e):e;return Ir(e)&&Ir(t)&&Object.keys(t).forEach(o=>{Ir(t[o])&&Object.prototype.hasOwnProperty.call(e,o)&&Ir(e[o])?r[o]=Qn(e[o],t[o],n):n.clone?r[o]=Ir(t[o])?Qx(t[o]):t[o]:r[o]=t[o]}),r}const tI=Object.freeze(Object.defineProperty({__proto__:null,default:Qn,isPlainObject:Ir},Symbol.toStringTag,{value:"Module"}));function ls(e){let t="https://mui.com/production-error/?code="+e;for(let n=1;n<arguments.length;n+=1)t+="&args[]="+encodeURIComponent(arguments[n]);return"Minified MUI error #"+e+"; visit "+t+" for the full message."}const nI=Object.freeze(Object.defineProperty({__proto__:null,default:ls},Symbol.toStringTag,{value:"Module"}));var Xx={exports:{}},Re={};/**
  * @license React
@@ -550,10 +551,14 @@ ${e=>e.background&&xc`
     outline: none;
   }
 
-  @media (min-width: 1024px) {
-  display: flex;
-  margin-top: 50px;
-   padding: 15px 30px;
+  @media (min-width: 769px) {
+position: absolute;
+           top: 110%;
+        left: 85%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
   }
 `,A8=ie.h3`
 font-family: "Proxima Nova", sans-serif;
@@ -1160,4 +1165,4 @@ text-align: start;
   // font-weight: bold;
   color: #ff4141;
 
-`,P8=()=>(k.useEffect(()=>{gS.fire({icon:"error",title:"Oops...",text:"Something went wrong!",background:"rgb(255 5 5 / 57%)",backdrop:"blur(10px)",color:"#FFFFFF",confirmButtonColor:"#4EE1A0",iconColor:"#4EE1A0",timer:1e4})},[]),null),T8=()=>{const{t:e}=vs(),[t,n]=y8("xkgwgjzn"),[r,o]=k.useState({name:"",email:""}),[i,a]=k.useState({name:"",email:""}),s=f=>{const{name:p,value:h}=f.target;o({...r,[p]:h})},l=()=>{let f={name:"",email:""},p=!0;return r.name.trim()||(f.name=e("Subscribe.nameError"),p=!1),r.email.trim()?/\S+@\S+\.\S+/.test(r.email)||(f.email=e("Subscribe.emailInvalid"),p=!1):(f.email=e("Subscribe.emailError"),p=!1),a(f),p},c=async f=>{f.preventDefault(),l()&&await n(f)};return k.useEffect(()=>{Gh.init({duration:3e3})},[]),t.succeeded?R.jsx(b8,{}):R.jsxs(k8,{"data-aos":"zoom-in","data-aos-delay":"100",children:[R.jsx(x8,{"data-translate":!0,children:e("Subscribe.subscribeTitle")}),R.jsxs(E8,{name:"subscribe",method:"POST","data-netlify":"true",onSubmit:c,children:[R.jsx("input",{type:"hidden",name:"form-name",value:"subscribe"}),R.jsxs(s1,{children:[R.jsx(l1,{type:"text",name:"name",value:r.name,onChange:s,placeholder:e("Subscribe.namePlaceholder")}),i.name&&R.jsx(Sl,{children:i.name}),R.jsx(a1,{prefix:"Name",field:"name",errors:t.errors})]}),R.jsxs(s1,{children:[R.jsx(l1,{type:"email",name:"email",value:r.email,onChange:s,placeholder:e("Subscribe.emailPlaceholder")}),i.email&&R.jsx(Sl,{children:i.email}),R.jsx(a1,{prefix:"Email",field:"email",errors:t.errors})]}),R.jsx(C8,{"data-translate":!0,type:"submit",disabled:t.submitting,children:t.submitting?e("Subscribe.sending"):e("Subscribe.subscribeButton")}),t.submitting&&R.jsx(Sl,{"data-translate":!0,children:e("Subscribe.sending")}),t.errors&&(Array.isArray(t.errors)?t.errors.length>0?R.jsx(Sl,{"data-translate":!0,children:e("Subscribe.error")}):null:R.jsx(P8,{}))]}),R.jsx(S8,{"data-translate":!0,children:e("Subscribe.noSpam")})]})},O8=()=>{const{t:e}=vs(),t=new Date("2024-08-08T23:59:59");return R.jsxs(aj,{style:{height:"100%"},children:[R.jsx(rz,{style:{width:"100%",position:"fixed"},children:R.jsxs("video",{autoPlay:!0,loop:!0,muted:!0,style:{objectFit:"cover",position:"fixed"},children:[R.jsx("source",{src:iz,type:"video/mp4"}),"Your browser does not support the video tag."]})}),R.jsxs(oz,{style:{marginTop:10},children:[R.jsx(zm,{}),R.jsx("h1",{style:{fontSize:"3.5em"},children:e("ErrorPage.CommingSoon")}),R.jsx("p",{style:{fontSize:"1.5em"},children:e("ErrorPage.ThankYou")}),R.jsx(T8,{})," ",R.jsx(vz,{targetDate:t})]})]})},$8=me.lazy(()=>Zb(()=>import("./HomePage-9f2e473c.js").then(e=>e.H),[])),R8=me.lazy(()=>Zb(()=>import("./ContactPage-52f50762.js"),[])),I8=()=>R.jsx(P$,{children:R.jsxs(uO,{children:[R.jsx(Yo,{path:"/",element:R.jsx(aO,{to:"*"})}),R.jsxs(Yo,{path:"/",element:R.jsx(tz,{}),children:[R.jsx(Yo,{path:"home",element:R.jsx($8,{})}),R.jsx(Yo,{path:"contact",element:R.jsx(R8,{})})]}),R.jsx(Yo,{path:"*",element:R.jsx(O8,{})})]})});mp.createRoot(document.getElementById("root")).render(R.jsxs(me.StrictMode,{children:[R.jsx(Jb,{styles:T$}),R.jsx(gO,{basename:"/",children:R.jsx(I8,{})})]}));export{Gh as A,C8 as B,M8 as C,cA as D,pA as E,x8 as F,VA as G,l1 as I,U8 as L,b8 as M,N8 as N,me as R,T8 as S,W8 as T,B8 as V,y8 as W,hA as Y,Zb as _,S8 as a,K8 as b,q8 as c,Sl as d,a1 as e,Y8 as f,P8 as g,aj as h,A8 as i,R as j,j8 as k,D8 as l,z8 as m,ku as n,F8 as o,V8 as p,H8 as q,k as r,ie as s,qi as t,vs as u,Xr as v,tm as w,qx as x,fA as y,dA as z};
+`,P8=()=>(k.useEffect(()=>{gS.fire({icon:"error",title:"Oops...",text:"Something went wrong!",background:"rgb(255 5 5 / 57%)",backdrop:"blur(10px)",color:"#FFFFFF",confirmButtonColor:"#4EE1A0",iconColor:"#4EE1A0",timer:1e4})},[]),null),T8=()=>{const{t:e}=vs(),[t,n]=y8("xkgwgjzn"),[r,o]=k.useState({name:"",email:""}),[i,a]=k.useState({name:"",email:""}),s=f=>{const{name:p,value:h}=f.target;o({...r,[p]:h})},l=()=>{let f={name:"",email:""},p=!0;return r.name.trim()||(f.name=e("Subscribe.nameError"),p=!1),r.email.trim()?/\S+@\S+\.\S+/.test(r.email)||(f.email=e("Subscribe.emailInvalid"),p=!1):(f.email=e("Subscribe.emailError"),p=!1),a(f),p},c=async f=>{f.preventDefault(),l()&&await n(f)};return k.useEffect(()=>{Gh.init({duration:3e3})},[]),t.succeeded?R.jsx(b8,{}):R.jsxs(k8,{"data-aos":"zoom-in","data-aos-delay":"100",children:[R.jsx(x8,{"data-translate":!0,children:e("Subscribe.subscribeTitle")}),R.jsxs(E8,{name:"subscribe",method:"POST","data-netlify":"true",onSubmit:c,children:[R.jsx("input",{type:"hidden",name:"form-name",value:"subscribe"}),R.jsxs(s1,{children:[R.jsx(l1,{type:"text",name:"name",value:r.name,onChange:s,placeholder:e("Subscribe.namePlaceholder")}),i.name&&R.jsx(Sl,{children:i.name}),R.jsx(a1,{prefix:"Name",field:"name",errors:t.errors})]}),R.jsxs(s1,{children:[R.jsx(l1,{type:"email",name:"email",value:r.email,onChange:s,placeholder:e("Subscribe.emailPlaceholder")}),i.email&&R.jsx(Sl,{children:i.email}),R.jsx(a1,{prefix:"Email",field:"email",errors:t.errors})]}),R.jsx(C8,{"data-translate":!0,type:"submit",disabled:t.submitting,children:t.submitting?e("Subscribe.sending"):e("Subscribe.subscribeButton")}),t.submitting&&R.jsx(Sl,{"data-translate":!0,children:e("Subscribe.sending")}),t.errors&&(Array.isArray(t.errors)?t.errors.length>0?R.jsx(Sl,{"data-translate":!0,children:e("Subscribe.error")}):null:R.jsx(P8,{}))]}),R.jsx(S8,{"data-translate":!0,children:e("Subscribe.noSpam")})]})},O8=()=>{const{t:e}=vs(),t=new Date("2024-08-08T23:59:59");return R.jsxs(aj,{style:{height:"100%"},children:[R.jsx(rz,{style:{width:"100%",position:"fixed"},children:R.jsxs("video",{autoPlay:!0,loop:!0,muted:!0,style:{objectFit:"cover",position:"fixed"},children:[R.jsx("source",{src:iz,type:"video/mp4"}),"Your browser does not support the video tag."]})}),R.jsxs(oz,{style:{marginTop:10},children:[R.jsx(zm,{}),R.jsx("h1",{style:{fontSize:"3.5em"},children:e("ErrorPage.CommingSoon")}),R.jsx("p",{style:{fontSize:"1.5em"},children:e("ErrorPage.ThankYou")}),R.jsx(T8,{})," ",R.jsx(vz,{targetDate:t})]})]})},$8=me.lazy(()=>Zb(()=>import("./HomePage-c1b154fc.js").then(e=>e.H),[])),R8=me.lazy(()=>Zb(()=>import("./ContactPage-9015b1f4.js"),[])),I8=()=>R.jsx(P$,{children:R.jsxs(uO,{children:[R.jsx(Yo,{path:"/",element:R.jsx(aO,{to:"*"})}),R.jsxs(Yo,{path:"/",element:R.jsx(tz,{}),children:[R.jsx(Yo,{path:"home",element:R.jsx($8,{})}),R.jsx(Yo,{path:"contact",element:R.jsx(R8,{})})]}),R.jsx(Yo,{path:"*",element:R.jsx(O8,{})})]})});mp.createRoot(document.getElementById("root")).render(R.jsxs(me.StrictMode,{children:[R.jsx(Jb,{styles:T$}),R.jsx(gO,{basename:"/",children:R.jsx(I8,{})})]}));export{Gh as A,C8 as B,M8 as C,cA as D,pA as E,x8 as F,VA as G,l1 as I,U8 as L,b8 as M,N8 as N,me as R,T8 as S,W8 as T,B8 as V,y8 as W,hA as Y,Zb as _,S8 as a,K8 as b,q8 as c,Sl as d,a1 as e,Y8 as f,P8 as g,aj as h,A8 as i,R as j,j8 as k,D8 as l,z8 as m,ku as n,F8 as o,V8 as p,H8 as q,k as r,ie as s,qi as t,vs as u,Xr as v,tm as w,qx as x,fA as y,dA as z};

@@ -1,4 +1,4 @@
-import{s as t,G as a,j as e}from"./index-e5b61c4a.js";import{S as l,P as h,A as c,a as p}from"./autoplay-5dc22bda.js";/* empty css               */import{N as x}from"./navigation-44b22e3d.js";import{d as u}from"./ArrowCircleRight-bbb1b9df.js";import{d as m}from"./ArrowCircleLeft-1cfd6b04.js";const g=t.div`
+import{s as t,G as a,j as e}from"./index-e5e17d59.js";import{S as l,P as h,A as c,a as p}from"./autoplay-27767852.js";/* empty css               */import{N as x}from"./navigation-35df1408.js";import{d as u}from"./ArrowCircleRight-6587d279.js";import{d as m}from"./ArrowCircleLeft-f8d3dd80.js";const g=t.div`
   width: 100vw;
   height: 100vh;
   margin: 0 auto;

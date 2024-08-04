@@ -1,4 +1,4 @@
-import{s as x,u as k,W as E,r as o,A as b,j as e,M as v,T as S,F as y,a as F,b as C,c,I as d,d as l,e as u,f as w,B as A,g as M,S as P}from"./index-e5b61c4a.js";const D="/assets/product-section-2_-2380x850-2-18a0aab3.jpg",I=x.div`
+import{s as x,u as k,W as E,r as o,A as b,j as e,M as v,T as S,F as y,a as F,b as C,c,I as d,d as l,e as u,f as w,B as A,g as M,S as P}from"./index-e5e17d59.js";const D="/assets/product-section-2_-2380x850-2-18a0aab3.jpg",I=x.div`
 //  background-image: url(${D});
    width: 100%;
   background-repeat: no-repeat;
