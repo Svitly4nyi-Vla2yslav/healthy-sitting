@@ -309,6 +309,10 @@ justify-content: flex-end;
   &:focus {
     color: #00baff;
   }
+
+    @media screen and (min-width: 882px){
+top: 0px;
+}
 `;se.div`
   :where(.css-dev-only-do-not-override-m4timi).ant-menu-inline-collapsed {
     width: 50px;
