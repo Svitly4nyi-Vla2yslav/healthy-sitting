@@ -17,10 +17,10 @@ import cub5 from '../../assets/image/11zon_compressed/cub6_7_11zon.webp';
 import cub6 from '../../assets/image/11zon_compressed/cub5_6_11zon.webp';
 import cub7 from '../../assets/image/11zon_compressed/cub4_5_11zon.webp';
 
-// 
+//
 export const SwiperCub: React.FC = () => {
   return (
-    <div style={{transitionTimingFunction:"linear"}}>
+    <div style={{ transitionTimingFunction: 'linear' }}>
       <Swiper
         style={{
           width: 380,
@@ -47,6 +47,7 @@ export const SwiperCub: React.FC = () => {
       >
         <SwiperSlide>
           <img
+            loading="lazy"
             src={cub1}
             alt="cub1"
             style={{ width: 380, height: 380, objectFit: 'cover' }}
@@ -54,6 +55,7 @@ export const SwiperCub: React.FC = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
+            loading="lazy"
             src={cub2}
             alt="cub2"
             style={{ width: 380, height: 380, objectFit: 'cover' }}
@@ -61,6 +63,7 @@ export const SwiperCub: React.FC = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
+            loading="lazy"
             src={cub3}
             alt="cub3"
             style={{ width: 380, height: 380, objectFit: 'cover' }}
@@ -68,6 +71,7 @@ export const SwiperCub: React.FC = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
+            loading="lazy"
             src={cub4}
             alt="cub4"
             style={{ width: 380, height: 380, objectFit: 'cover' }}
@@ -75,6 +79,7 @@ export const SwiperCub: React.FC = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
+            loading="lazy"
             src={cub5}
             alt="cub5"
             style={{ width: 380, height: 380, objectFit: 'cover' }}
@@ -82,6 +87,7 @@ export const SwiperCub: React.FC = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
+            loading="lazy"
             src={cub6}
             alt="cub6"
             style={{ width: 380, height: 380, objectFit: 'cover' }}
@@ -89,6 +95,7 @@ export const SwiperCub: React.FC = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
+            loading="lazy"
             src={cub7}
             alt="cub7"
             style={{ width: 380, height: 380, objectFit: 'cover' }}

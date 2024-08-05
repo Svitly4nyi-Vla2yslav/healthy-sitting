@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
     <FooterContainer>
       <FooterList>
       <Link to="/home">
-            <ImageLogo src={Logo} alt="Logo" />
+            <ImageLogo src={Logo} alt="Logo"  loading="lazy"/>
           </Link>
         <FooterItemText data-translate="footerAdditionalText">
           {t('Footer.footerAdditionalText')}

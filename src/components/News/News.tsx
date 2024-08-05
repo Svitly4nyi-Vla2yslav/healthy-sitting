@@ -134,7 +134,7 @@ const News: React.FC = () => {
           <SwiperSlide key={slide.id} style={{}}>
             <SlideContainer>
               <SlideLink href={slide.link}>
-                <SlideBackground $backgroundimage={slide.imageUrl} />
+                <SlideBackground $backgroundimage={slide.imageUrl}/>
                 <SlideContent
                   style={{
                     color: '#ccc',

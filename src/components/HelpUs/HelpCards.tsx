@@ -39,7 +39,7 @@ const HelpCards: React.FC = () => {
       </TextWrapper>
       <CardContainer>
         <CardHelpUs>
-          <Image src={Help1} />
+          <Image src={Help1}  loading="lazy"/>
           <CardTitel>Help Us</CardTitel>
           <CardText>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis,
@@ -65,7 +65,7 @@ const HelpCards: React.FC = () => {
           </IconWrapper>
         </CardHelpUs>
         <CardHelpUs>
-          <Image src={Help1} />
+          <Image src={Help1}  loading="lazy"/>
           <CardTitel>Help Us</CardTitel>
           <CardText>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis,
@@ -81,7 +81,7 @@ const HelpCards: React.FC = () => {
           </IconWrapper>
         </CardHelpUs>
         <CardHelpUs>
-          <Image src={Help1} />
+          <Image src={Help1}  loading="lazy"/>
           <CardTitel>Help Us</CardTitel>
           <CardText>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis,

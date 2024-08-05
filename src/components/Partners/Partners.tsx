@@ -68,7 +68,7 @@ const Partners: React.FC = () => {
                 paddingBottom: 50,
               }}
             >
-              <img
+              <img  loading="lazy"
                 src={slide.imageUrl}
                 alt={`Slide ${slide.id}`}
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}

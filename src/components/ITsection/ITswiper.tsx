@@ -49,7 +49,7 @@ const ITswiper: React.FC = () => {
           <p>{t('ITswiper.p')}</p>
         </ContentOverlay>
         <SwiperSlide>
-          <img
+          <img loading="lazy"
             src={slide1}
             alt="slide1"
             style={{
@@ -60,7 +60,7 @@ const ITswiper: React.FC = () => {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <img
+          <img loading="lazy"
             src={slide2}
             alt="slide2"
             style={{
@@ -72,7 +72,7 @@ const ITswiper: React.FC = () => {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <img
+          <img loading="lazy"
             src={slide3}
             alt="slide3"
             style={{
@@ -84,7 +84,7 @@ const ITswiper: React.FC = () => {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <img
+          <img loading="lazy"
             src={slide4}
             alt="slide4"
             style={{
