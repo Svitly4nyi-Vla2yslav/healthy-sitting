@@ -51,6 +51,10 @@ export const IconWrapper = styled.div`
   &:focus {
     color: #00baff;
   }
+
+    @media screen and (min-width: 882px){
+top: 0px;
+}
 `;
 
 export const ButtonMenuContainer = styled.div`
