@@ -45,7 +45,7 @@ export const IconWrapper = styled.div`
   position: fixed;
   background-color: #01283c;
   left: 0px;
-  top: 0px;
+  top: -12px;
 
   &:hover,
   &:focus {

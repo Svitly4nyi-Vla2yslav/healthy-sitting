@@ -20,7 +20,7 @@ import cub7 from '../../assets/image/11zon_compressed/cub4_5_11zon.webp';
 // 
 export const SwiperCub: React.FC = () => {
   return (
-    <>
+    <div style={{transitionTimingFunction:"linear"}}>
       <Swiper
         style={{
           width: 380,
@@ -37,10 +37,10 @@ export const SwiperCub: React.FC = () => {
           shadowScale: 0.94,
         }}
         autoplay={{
-          delay: 2000,
+          delay: 1,
           disableOnInteraction: false,
         }}
-        speed={2000}
+        speed={4000}
         pagination={false}
         modules={[Autoplay, EffectCube, Pagination]}
         className="mySwiper"
@@ -95,6 +95,6 @@ export const SwiperCub: React.FC = () => {
           />
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 };
