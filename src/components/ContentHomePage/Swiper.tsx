@@ -20,7 +20,7 @@ import cub7 from '../../assets/image/11zon_compressed/cub4_5_11zon.webp';
 //
 export const SwiperCub: React.FC = () => {
   return (
-    <div style={{ transitionTimingFunction: 'linear' }}>
+    <div style={{ transitionTimingFunction: 'linear', marginLeft: 45 }}>
       <Swiper
         style={{
           width: 380,

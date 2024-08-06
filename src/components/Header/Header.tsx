@@ -62,14 +62,14 @@ const Header: React.FC = () => {
             </Link>
             {!isContactPage && (
               <>
-                <Link to="/contact">
+                <a href='https://gofund.me/0c957ce8'>
                   <DonatButton
                     data-aos="fade-right"
                     style={{ margin: 0, marginRight: 10 }}
                   >
                     {t('Header.order')}
                   </DonatButton>
-                </Link>
+                </a>
 
                 <StyledLink
                   to="/home"
