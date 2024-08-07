@@ -18,6 +18,7 @@ import slide1 from '../../assets/image/product-section-4_-2380x850-2-s.webp';
 import slide2 from '../../assets/image/product-section-3_-2380x850-2-s.webp';
 import slide3 from '../../assets/image/Terminator-banner_bg-3-small.webp';
 import slide4 from '../../assets/image/product-section-2_-2380x850-2-s.webp';
+import { Link } from 'react-router-dom';
 
 const ITgame: React.FC = () => {
   const { t } = useTranslation();
@@ -44,12 +45,13 @@ const ITgame: React.FC = () => {
         className="mySwiper"
       >
         <ContentOverlay>
+        <Link to='/project'>
           <h2>
             {t('ITgame.h2')}
             <span>{t('ITgame.span')}</span>
             {t('ITgame.h2-1')}
           </h2>
-          <p>{t('ITgame.p')}</p>
+          <p>{t('ITgame.p')}</p></Link>
         </ContentOverlay>
         <SwiperSlide>
           <img loading="lazy"

@@ -11,7 +11,9 @@ import React from 'react';
 // import Background from './components/Background/Background';
 const Home = React.lazy(() => import('./pages/HomePage/HomePage'));
 const ContactPage = React.lazy(() => import('./pages/ContactPage/ContactPage'));
-
+const ProjectPage = React.lazy(() => import('./pages/ProjectPage/ProjectPage'));
+// const RewardsPage = React.lazy(() => import('./pages/RewardsPage/RewardsPage'));
+// const AboutUs = React.lazy(() => import('./pages/AboutUs/AboutUs'));
 
 const App: React.FC = () => {
   return (
@@ -21,7 +23,7 @@ const App: React.FC = () => {
         <Route path="/" element={<SharedLayout />}>
           <Route path="home" element={<Home />} />
           {/* <Route path="about" element={<AboutUs />} /> */}
-          {/* <Route path="project" element={<ProjectPage />} /> */}
+          <Route path="project" element={<ProjectPage />} />
           {/* <Route path="rewards" element={<RewardsPage />} /> */}
           <Route path="contact" element={<ContactPage />} />
         </Route>
