@@ -52,13 +52,13 @@ export const MenuButton: React.FC = () => {
       text: t(''),
       icon: (
         <Link to="/contact">
-        <DonatButton
-          data-aos="fade-right"
-          style={{ margin: 0, marginRight: 10 }}
-        >
-          {t('Header.order')}
-        </DonatButton>
-      </Link>
+          <DonatButton
+            data-aos="fade-right"
+            style={{ margin: 0, marginRight: 10 }}
+          >
+            {t('Header.order')}
+          </DonatButton>
+        </Link>
       ),
     },
     { to: '#', text: t(''), icon: <LanguageMenu /> },
