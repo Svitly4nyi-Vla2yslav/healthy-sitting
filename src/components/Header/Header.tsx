@@ -20,12 +20,11 @@ import { Link } from 'react-router-dom';
 const Header: React.FC = () => {
   const { t } = useTranslation();
   const isMobile = useMediaQuery({ query: '(max-width: 882px)' });
-  const location = useLocation(); 
+  const location = useLocation();
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
-  
   const isContactPage = location.pathname === '/contact';
 
   return (
@@ -62,7 +61,7 @@ const Header: React.FC = () => {
             </Link>
             {!isContactPage && (
               <>
-                <a href='https://gofund.me/0c957ce8'>
+                <a href="https://gofund.me/0c957ce8">
                   <DonatButton
                     data-aos="fade-right"
                     style={{ margin: 0, marginRight: 10 }}
