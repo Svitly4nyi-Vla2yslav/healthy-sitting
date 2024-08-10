@@ -4,6 +4,10 @@ import svgr from 'vite-plugin-svgr';
 import viteCompression from 'vite-plugin-compression';
 
 export default defineConfig({
+  server: {
+    port: 5173, // Переконайтесь, що порт тут правильний
+    host: '0.0.0.0',
+  },
   plugins: [
     react(),
     svgr(),
