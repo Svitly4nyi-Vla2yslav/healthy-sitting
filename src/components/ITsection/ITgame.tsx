@@ -45,16 +45,18 @@ const ITgame: React.FC = () => {
         className="mySwiper"
       >
         <ContentOverlay>
-        <Link to='/project'>
-          <h2>
-            {t('ITgame.h2')}
-            <span>{t('ITgame.span')}</span>
-            {t('ITgame.h2-1')}
-          </h2>
-          <p>{t('ITgame.p')}</p></Link>
+          <Link to="/project">
+            <h2>
+              {t('ITgame.h2')}
+              <span>{t('ITgame.span')}</span>
+              {t('ITgame.h2-1')}
+            </h2>
+            <p>{t('ITgame.p')}</p>
+          </Link>
         </ContentOverlay>
         <SwiperSlide>
-          <img loading="lazy"
+          <img
+            loading="lazy"
             src={slide1}
             alt="slide1"
             style={{
@@ -66,7 +68,8 @@ const ITgame: React.FC = () => {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <img loading="lazy"
+          <img
+            loading="lazy"
             src={slide2}
             alt="slide2"
             style={{
@@ -78,7 +81,8 @@ const ITgame: React.FC = () => {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <img loading="lazy"
+          <img
+            loading="lazy"
             src={slide3}
             alt="slide3"
             style={{
@@ -90,7 +94,8 @@ const ITgame: React.FC = () => {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <img loading="lazy"
+          <img
+            loading="lazy"
             src={slide4}
             alt="slide4"
             style={{
@@ -105,4 +110,4 @@ const ITgame: React.FC = () => {
     </>
   );
 };
- export default ITgame;
+export default ITgame;
