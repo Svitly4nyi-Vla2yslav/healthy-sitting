@@ -32,4 +32,4 @@ jobs:
         run: |
           echo "$SSH_PRIVATE_KEY" > private_key.pem
           chmod 600 private_key.pem
-          rsync -avz -e "ssh -i private_key.pem -o StrictHostKeyChecking=no" ./dist/ root@angelsystems.ch:/path/to/deploy/
+          rsync -avz -e "ssh -i private_key.pem -o StrictHostKeyChecking=no" ./dist/ root@185.230.64.226:/path/to/deploy/
