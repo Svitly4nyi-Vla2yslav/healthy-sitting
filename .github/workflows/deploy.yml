@@ -1,11 +1,10 @@
-name: Build and deploy
+name: Build and deploy to GitHub Pages
 
 on:
   push:
     branches: [main]
-
 env:
-  VITE_API_TEST: ${{ secrets.VITE_API_TEST }}
+  VITE_API_TEST: ${{secrets.VITE_API_TEST}}
 
 jobs:
   build-and-deploy:
@@ -20,16 +19,8 @@ jobs:
           npm run build
           cp ./dist/index.html ./dist/404.html
 
-      - name: Deploy to GitHub Pages 🚀
+      - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
           branch: gh-pages
           folder: dist
-
-      - name: Deploy to Remote Server 🌐
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        run: |
-          echo "$SSH_PRIVATE_KEY" > /tmp/private_key.pem
-          chmod 600 /tmp/private_key.pem
-          rsync -avz -e "ssh -i /tmp/private_key.pem -o StrictHostKeyChecking=no" ./dist/ root@185.230.64.226:/path/to/deploy/
