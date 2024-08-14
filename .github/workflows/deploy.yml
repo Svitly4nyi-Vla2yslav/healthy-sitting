@@ -20,7 +20,6 @@ jobs:
           npm run build
           cp ./dist/index.html ./dist/404.html
 
-
       - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
@@ -31,11 +30,6 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         run: |
-          echo "$SSH_PRIVATE_KEY" > /tmp/private_key.pem
+          printf "%s" "$SSH_PRIVATE_KEY" > /tmp/private_key.pem
           chmod 600 /tmp/private_key.pem
           rsync -avz -e "ssh -i /tmp/private_key.pem -o StrictHostKeyChecking=no" ./dist/ root@185.230.64.226:/path/to/deploy/
-
-
-
-
-          
