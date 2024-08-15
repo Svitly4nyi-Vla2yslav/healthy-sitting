@@ -1,4 +1,4 @@
-import{n as t,a as n,j as e}from"./home-page-97b9b6d1.js";import"./react-vendor-e6423c57.js";const r="/assets/Terminator-product-section_8-2380x850-3-9ab058dd.webp",o=t.div`
+import{n as t,a as n,j as e}from"./home-page-66336761.js";import"./react-vendor-742c876a.js";const r="/assets/Terminator-product-section_8-2380x850-3-9ab058dd.webp",o=t.div`
  background-image: url(${r});
    width: 100%;
   height: 100vh;
