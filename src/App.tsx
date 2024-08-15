@@ -18,17 +18,21 @@ const ProjectPage = React.lazy(() => import('./pages/ProjectPage/ProjectPage'));
 const App: React.FC = () => {
   return (
     <AppWrapper>
-      <Routes>
-        <Route path="/" element={<Navigate to="home" />} />
-        <Route path="/" element={<SharedLayout />}>
-          <Route path="home" element={<Home />} />
-          {/* <Route path="about" element={<AboutUs />} /> */}
-          <Route path="project" element={<ProjectPage />} />
-          {/* <Route path="rewards" element={<RewardsPage />} /> */}
-          <Route path="contact" element={<ContactPage />} />
-        </Route>
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
+        <Routes>
+          {/* Основний редирект на /home */}
+          <Route path="/" element={<Navigate to="/home" />} />
+
+          {/* SharedLayout обгортає всі підшляхи */}
+          <Route path="/" element={<SharedLayout />}>
+            <Route path="/home" element={<Home />} />
+            <Route path="/project" element={<ProjectPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            {/* Можна додати інші маршрути тут */}
+          </Route>
+
+          {/* Обробка невизначених маршрутів */}
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
     </AppWrapper>
   );
 };
