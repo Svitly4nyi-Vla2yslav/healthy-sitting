@@ -12,7 +12,7 @@ import LanguageMenu from '../../components/LanguageSelector/LanguageSelector';
 
 const ErrorPage: React.FC = () => {
   const { t } = useTranslation();
-  const targetDate = new Date('2024-08-19T23:59:59');
+  const targetDate = new Date('2024-08-15T23:59:59');
   return (
     <Wrapper
       style={{
