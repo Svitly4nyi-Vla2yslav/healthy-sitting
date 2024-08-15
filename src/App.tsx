@@ -19,7 +19,7 @@ const App: React.FC = () => {
   return (
     <AppWrapper>
       <Routes>
-        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/" element={<Navigate to="home" />} />
         <Route path="/" element={<SharedLayout />}>
           <Route path="home" element={<Home />} />
           {/* <Route path="about" element={<AboutUs />} /> */}
@@ -27,7 +27,7 @@ const App: React.FC = () => {
           {/* <Route path="rewards" element={<RewardsPage />} /> */}
           <Route path="contact" element={<ContactPage />} />
         </Route>
-        <Route path="home" element={<ErrorPage />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </AppWrapper>
   );
