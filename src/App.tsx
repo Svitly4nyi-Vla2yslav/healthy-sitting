@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import SharedLayout from './components/SharedLayout/SharedLayout';
 // import ProjectPage from './pages/ProjectPage/ProjectPage';
-import ErrorPage from './pages/ErrorPage/ErrorPage';
+// import ErrorPage from './pages/ErrorPage/ErrorPage';
 import { AppWrapper } from './App.styled';
 import React from 'react';
 // import Home from './pages/HomePage/HomePage';
@@ -27,7 +27,7 @@ const App: React.FC = () => {
           {/* <Route path="rewards" element={<RewardsPage />} /> */}
           <Route path="contact" element={<ContactPage />} />
         </Route>
-        <Route path="*" element={<ErrorPage />} />
+        {/* <Route path="*" element={<ErrorPage />} /> */}
       </Routes>
     </AppWrapper>
   );
