@@ -19,7 +19,7 @@ const App: React.FC = () => {
   return (
     <AppWrapper>
           <Routes>
-        <Route path="/" element={<Navigate to="home" />} />
+        <Route path="/" element={<Navigate to="*" />} />
         <Route path="/" element={<SharedLayout />}>
           <Route path="home" element={<Home />} />
           {/* <Route path="about" element={<AboutUs />} /> */}
