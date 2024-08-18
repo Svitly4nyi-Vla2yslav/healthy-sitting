@@ -60,14 +60,6 @@ export const ContentOverlay = styled.div`
   transform: none;
   opacity: 1;
 
-  h1 {
-    // font-size: 3em;
-    // margin-bottom: 20px;
-  }
-
-  p {
-    // font-size: 1.5em;
-  }
 
   @media (min-width: 768px) {
     bottom: 6%;
