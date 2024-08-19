@@ -7,7 +7,7 @@ export const ContainerProject = styled.div`
   height: 100vh;
 
 margin : 0 auto;
-  margin-top: 90px;
+  margin-top: 76px;
 `
 
 export const Container = styled.div`
@@ -42,14 +42,14 @@ export const Container = styled.div`
     left: 0;
     right: 0;
     bottom: -1px;
-   height: 50%;
+   height: 60%;
     background: linear-gradient(to bottom,
      transparent, 15%, #01283c);
   }
 `;
 export const Block = styled.div`
   position: absolute;
-  bottom: 7%;
+  bottom: 1%;
   left: 4%;
   transform: translate(-50%, -50%);
   color: white;
@@ -60,11 +60,11 @@ export const Block = styled.div`
 
 
   @media (min-width: 768px) {
-    bottom: 16%;
+    bottom: 2%;
     // transform: translate(-50%, -50%);
   }
   @media (min-width: 1439px) {
-   bottom: 16%;
+   bottom: 6%;
   }
 `;
 export const Title = styled.h1`

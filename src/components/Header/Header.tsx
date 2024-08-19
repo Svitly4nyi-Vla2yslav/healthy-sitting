@@ -26,7 +26,7 @@ const Header: React.FC = () => {
   }, []);
 
   const isContactPage = location.pathname === '/contact';
-
+  const isProjectPage = location.pathname === '/project';
   return (
     <HeaderContainer style={{ position: 'fixed', top: 0 }}>
       <Navigation>
@@ -59,7 +59,7 @@ const Header: React.FC = () => {
             >
               {t('Header.home')}
             </Link>
-            {!isContactPage && (
+            {!isContactPage && !isProjectPage && (
               <>
                 <a href="https://gofund.me/0c957ce8">
                   <DonatButton
@@ -88,15 +88,24 @@ const Header: React.FC = () => {
                 >
                   {t('Header.about')}
                 </StyledLink>
-                <StyledLink
+                <Link
                   to="/project"
-                  smooth={true}
-                  duration={1000}
                   data-aos="fade-down"
                   data-aos-delay="500"
+                  style={{
+                    fontFamily: 'Right Grotesk',
+                    fontWeight: 600,
+                    fontSize: 20,
+                    lineHeight: '119%',
+                    color: '#1976d2',
+                    textAlign: 'start',
+                    padding: '12px 16px',
+                    width: '40%',
+                    // paddingRight: "30%"
+                  }}
                 >
                   {t('Header.project')}
-                </StyledLink>
+                </Link>
                 <StyledLink
                   to="/help"
                   smooth={true}
