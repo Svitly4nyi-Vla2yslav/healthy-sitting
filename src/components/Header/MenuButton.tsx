@@ -43,22 +43,22 @@ export const MenuButton: React.FC = () => {
 
   const links = [
     { to: '/home', text: t('Header.home'), icon: <HomeIcon /> },
-    { to: '/about', text: t('Header.about'), icon: <InfoIcon /> },
+    // { to: '/about', text: t('Header.about'), icon: <InfoIcon /> },
     { to: '/project', text: t('Header.project'), icon: <ProjectIcon /> },
-    { to: '/help', text: t('Header.rewards'), icon: <RewardsIcon /> },
+    // { to: '/help', text: t('Header.rewards'), icon: <RewardsIcon /> },
     { to: '/contact', text: t('Header.contact'), icon: <ContactIcon /> },
     {
       to: '',
       text: t(''),
       icon: (
-        <Link to="/contact">
+        <a href="https://gofund.me/0c957ce8">
           <DonatButton
             data-aos="fade-right"
             style={{ margin: 0, marginRight: 10 }}
           >
             {t('Header.order')}
           </DonatButton>
-        </Link>
+        </a>
       ),
     },
     { to: '#', text: t(''), icon: <LanguageMenu /> },
@@ -85,9 +85,9 @@ export const MenuButton: React.FC = () => {
               <ListItemIcon style={{ color: '#00baff' }}>
                 {link.icon}
               </ListItemIcon>
-              <StyledLink to={link.to} data-translate={link.text}>
+              <Link to={link.to} data-translate={link.text}>
                 {link.text}
-              </StyledLink>
+              </Link>
             </ListItemButton>
           </ListItem>
         ))}

@@ -3,11 +3,11 @@ import styled from '@emotion/styled';
 
 
 export const ContainerProject = styled.div`
-   width: 100%;
-  height: 100vh;
+  //  width: 100%;
+  // height: 100vh;
 
-margin : 0 auto;
-  margin-top: 76px;
+margin: 0 auto;
+margin-top: 76px;
 `
 
 export const Container = styled.div`
@@ -74,7 +74,7 @@ export const Title = styled.h1`
   display: flex;
   font-weight: 100;
   letter-spacing: -0.035em;
-  margin: 0 0 0.5em;
+  margin: 0 auto;
   text-transform: uppercase;
   font-size: 2.5rem;
   line-height: 1;
@@ -107,3 +107,191 @@ export const StyledLink = styled(Link)`
   text-fill-color: transparent;
   }
 `;
+
+export const SectionProject = styled.div`
+//  width: 100%;
+//   height: 100vh;
+margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+`;
+
+export const TitleAdaptation = styled.h2`
+font-family: "Proxima Nova", sans-serif;
+    font-weight: 300;
+    letter-spacing: -.035em;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    color: #01cbe1;
+    position: relative;
+    padding-top: 20px;
+
+    &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: currentcolor;
+    width: 110px;
+}
+`;
+
+export const TextAdaptation = styled.p`
+font-size: 18px;
+line-height: 1.4;
+color: #fff;
+font-family: "Proxima Nova", sans-serif;
+`;
+
+export const TitleOptimisation = styled.h2`
+font-family: "Proxima Nova", sans-serif;
+    font-weight: 300;
+    letter-spacing: -.035em;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    color: #01cbe1;
+    position: relative;
+    padding-top: 20px;
+    text-align: end;
+
+       &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 60%;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: currentcolor;
+    width: 110px;
+}
+`;
+
+export const TextOptimisation = styled.p`
+font-size: 18px;
+line-height: 1.4;
+color: #fff;
+font-family: "Proxima Nova", sans-serif;
+text-align: end;
+`;
+
+export const InnovationSection = styled.section`
+background: #ffffff;
+`;
+
+export const InnovationTitle = styled.h2`
+font-family: "Proxima Nova", sans-serif;
+    font-weight: 300;
+    letter-spacing: -.035em;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    color: #01cbe1;
+    position: relative;
+    padding-top: 20px;
+    text-align: center;
+
+       &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30%;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: currentcolor;
+    width: 110px;
+    text-align: center;
+}
+`;
+
+export const InnovationText = styled.p`
+font-size: 18px;
+line-height: 1.4;
+color: #000;
+font-family: "Proxima Nova", sans-serif;
+text-align: center;
+`;
+
+export const TitleUnique = styled.h3`
+font-family: "Proxima Nova", sans-serif;
+    font-weight: 300;
+    letter-spacing: -.035em;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    color: #01cbe1;
+    position: relative;
+    padding-top: 20px;
+
+       &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: currentcolor;
+    width: 110px;
+}
+`;
+
+export const TextUnique = styled.p`
+font-size: 18px;
+line-height: 1.4;
+color: #000;
+font-family: "Proxima Nova", sans-serif;
+`;
+
+export const TitleLargeScale = styled.h3`
+font-family: "Proxima Nova", sans-serif;
+    font-weight: 300;
+    letter-spacing: -.035em;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    color: #01cbe1;
+    position: relative;
+    padding-top: 20px;
+    text-align: end;
+
+       &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 60%;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: currentcolor;
+    width: 110px;
+}
+`;
+
+export const TextLargeScale = styled.p`
+font-size: 18px;
+line-height: 1.4;
+color: #000;
+font-family: "Proxima Nova", sans-serif;
+`;
+
+export const TextBoltLargeScale = styled.p`
+color: #000;
+`;
+
+export const TextLargeScaleBig = styled.p`
+color: #000;
+`;
+
+
+
+
