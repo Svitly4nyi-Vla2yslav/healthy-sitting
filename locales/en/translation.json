@@ -115,6 +115,18 @@
         "p": "Partners: Innosuisse, Swiss HealthTech Centre."
     },
     "Project":{
-        "TitleH1": "We're not made for sitting, but if we do, we do it wisely."
+        "TitleH1": "We're not made for sitting, but if we do, we do it wisely.",
+        "AdaptationH2": "Individual adaptation",
+        "AdaptationP" : "The technology offers a unique solution that fully adapts to the physiological characteristics of each user. Using advanced data analysis algorithms, Cura monitors the current state of your body and automatically adapts to your needs, providing optimal support and comfort.",
+        "OptimisationH2" : "Optimising a sedentary lifestyle",
+        "OptimisationP" : "Real-time technology analyses your posture and activity, adjusting support for your spine and other vulnerable body parts. This helps prevent the development of pain and discomfort",
+        "InnovationH2" : "Innovative monitoring system",
+        "InnovationP" : "A key feature of Cura is to constantly monitor the condition of your body. The system collects data about your posture, activity and general health to personalise support. This allows the system to be ready for your needs before the first contact, maximising comfort and minimising harm.",
+        "UniqueH3" : "Unique Cura technology ",
+        "UniqueP" : "Cura doesn't just adapt to individual needs, it actively interacts with your body to help it return to its natural, native position. The technology incorporates personalised adaptation, continuous real-time monitoring and consideration of physical needs, providing comprehensive support and assistance in recovery.",
+        "LargeScaleH3": "Cura's scalable and versatile technology:",
+        "LargeScaleP" : "Our technology is not just a smart chair, but a versatile solution that can be integrated into a wide variety of environments. Whether you are at home, in the office, in the car or on a plane, Cura provides constant comfort and support, adapting to your physiological needs. ",
+        "BoltLargeScale": "This technology goes beyond standard solutions, offering a comprehensive approach to maintaining health and wellbeing that can be applied to a wide variety of situations and conditions. Cura is a step forward in creating an environment that cares for you anywhere, anytime.",
+        "LargeScaleBig" : "If we're gonna sit, let's do it wisely."
     }
 }
