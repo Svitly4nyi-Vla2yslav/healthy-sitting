@@ -8,6 +8,14 @@ export const ContainerProject = styled.div`
 
 margin: 0 auto;
 margin-top: 76px;
+
+  @media (min-width: 768px) {
+padding: 0, 30px, 0, 30px;
+  }
+  @media (min-width: 1439px) {
+padding: 0, 80px, 0, 80px;
+  }
+
 `
 
 export const Container = styled.div`
@@ -110,13 +118,26 @@ export const StyledLink = styled(Link)`
 
 export const SectionProject = styled.div`
 //  width: 100%;
-//   height: 100vh;
+ 
 margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 40px;
     padding-bottom: 40px;
 
+      @media (min-width: 768px) {
+padding-left: 30px;
+padding-right: 30px;
+  }
+
+    @media (min-width: 1024px) {
+    height: 90vh;
+  } 
+
+  @media (min-width: 1439px) {
+padding-left: 90px;
+padding-right: 90px;
+  }
 `;
 
 export const TitleAdaptation = styled.h2`
@@ -129,6 +150,7 @@ font-family: "Proxima Nova", sans-serif;
     color: #01cbe1;
     position: relative;
     padding-top: 20px;
+    max-width: 450px;
 
     &::before {
     content: "";
@@ -136,11 +158,22 @@ font-family: "Proxima Nova", sans-serif;
     top: 0;
     left: 0;
     display: block;
-    width: 60px;
     height: 2px;
     background: currentcolor;
-    width: 110px;
+    width: 60%;
 }
+
+@media (min-width: 768px) {
+font-size: 3.9rem;
+  }
+
+@media (min-width: 1024px) {
+  padding-bottom: 30px;
+  } 
+
+@media (min-width: 1439px) {
+
+  }
 `;
 
 export const TextAdaptation = styled.p`
@@ -148,6 +181,23 @@ font-size: 18px;
 line-height: 1.4;
 color: #fff;
 font-family: "Proxima Nova", sans-serif;
+    max-width: 450px;
+
+@media (min-width: 768px) {
+
+  }
+
+@media (min-width: 1024px) {
+font-size: 20px;
+  line-height: 1.6;
+  } 
+
+@media (min-width: 1439px) {
+font-size: 24px;
+line-height: 1.7;
+ max-width: 650px;
+  }
+
 `;
 
 export const TitleOptimisation = styled.h2`
@@ -161,18 +211,31 @@ font-family: "Proxima Nova", sans-serif;
     position: relative;
     padding-top: 20px;
     text-align: end;
+    max-width: 450px;
+
 
        &::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 60%;
+    right: 0;
     display: block;
-    width: 60px;
     height: 2px;
     background: currentcolor;
-    width: 110px;
+    width: 60%;
 }
+
+@media (min-width: 768px) {
+font-size: 3.9rem;
+  }
+
+@media (min-width: 1024px) {
+  padding-bottom: 30px;
+  } 
+
+@media (min-width: 1439px) {
+
+  }
 `;
 
 export const TextOptimisation = styled.p`
@@ -181,10 +244,39 @@ line-height: 1.4;
 color: #fff;
 font-family: "Proxima Nova", sans-serif;
 text-align: end;
+max-width: 450px;
+
+@media (min-width: 768px) {
+
+  }
+
+@media (min-width: 1024px) {
+font-size: 20px;
+  line-height: 1.6;
+  } 
+
+@media (min-width: 1439px) {
+font-size: 24px;
+line-height: 1.7;
+ max-width: 650px;
+  }
+
 `;
 
 export const InnovationSection = styled.section`
 background: #ffffff;
+
+@media (min-width: 768px) {
+
+  }
+
+@media (min-width: 1024px) {
+  
+  } 
+
+@media (min-width: 1439px) {
+
+  }
 `;
 
 export const InnovationTitle = styled.h2`
@@ -203,14 +295,25 @@ font-family: "Proxima Nova", sans-serif;
     content: "";
     position: absolute;
     top: 0;
-    left: 30%;
+    left: 0;
     display: block;
-    width: 60px;
+    width: 100%;
     height: 2px;
     background: currentcolor;
-    width: 110px;
     text-align: center;
 }
+
+@media (min-width: 768px) {
+font-size: 4.1rem;
+  }
+
+@media (min-width: 1024px) {
+  padding-bottom: 30px;
+  } 
+
+@media (min-width: 1439px) {
+
+  }
 `;
 
 export const InnovationText = styled.p`
@@ -219,6 +322,21 @@ line-height: 1.4;
 color: #000;
 font-family: "Proxima Nova", sans-serif;
 text-align: center;
+
+@media (min-width: 768px) {
+
+  }
+
+@media (min-width: 1024px) {
+font-size: 20px;
+  line-height: 1.6;
+  } 
+
+@media (min-width: 1439px) {
+font-size: 24px;
+line-height: 1.7;
+ max-width: 650px;
+  }
 `;
 
 export const TitleUnique = styled.h3`
@@ -231,18 +349,32 @@ font-family: "Proxima Nova", sans-serif;
     color: #01cbe1;
     position: relative;
     padding-top: 20px;
+    max-width: 450px;
+    text-align: end;
+
 
        &::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     display: block;
-    width: 60px;
+    width: 60%;
     height: 2px;
     background: currentcolor;
-    width: 110px;
 }
+
+@media (min-width: 768px) {
+font-size: 3.9rem;
+  }
+
+@media (min-width: 1024px) {
+  padding-bottom: 30px;
+  } 
+
+@media (min-width: 1439px) {
+
+  }
 `;
 
 export const TextUnique = styled.p`
@@ -250,6 +382,23 @@ font-size: 18px;
 line-height: 1.4;
 color: #000;
 font-family: "Proxima Nova", sans-serif;
+    max-width: 450px;
+    text-align: end;
+
+@media (min-width: 768px) {
+
+  }
+
+@media (min-width: 1024px) {
+font-size: 20px;
+  line-height: 1.6;
+  } 
+
+@media (min-width: 1439px) {
+font-size: 24px;
+line-height: 1.7;
+ max-width: 650px;
+  }
 `;
 
 export const TitleLargeScale = styled.h3`
@@ -262,19 +411,32 @@ font-family: "Proxima Nova", sans-serif;
     color: #01cbe1;
     position: relative;
     padding-top: 20px;
-    text-align: end;
+    text-align: center;
+    // max-width: 450px;
+
 
        &::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 60%;
+    left: 0;
     display: block;
-    width: 60px;
+    width: 100%;
     height: 2px;
     background: currentcolor;
-    width: 110px;
 }
+
+@media (min-width: 768px) {
+font-size: 3.9rem;
+  }
+
+@media (min-width: 1024px) {
+  padding-bottom: 30px;
+  } 
+
+@media (min-width: 1439px) {
+
+  }
 `;
 
 export const TextLargeScale = styled.p`
@@ -282,16 +444,98 @@ font-size: 18px;
 line-height: 1.4;
 color: #000;
 font-family: "Proxima Nova", sans-serif;
+text-align: center;
+
+@media (min-width: 768px) {
+
+  }
+
+@media (min-width: 1024px) {
+font-size: 20px;
+  line-height: 1.6;
+  } 
+
+@media (min-width: 1439px) {
+font-size: 24px;
+line-height: 1.7;
+ max-width: 650px;
+  }
+
 `;
 
 export const TextBoltLargeScale = styled.p`
+font-size: 18px;
+line-height: 1.4;
 color: #000;
+font-family: "Proxima Nova", sans-serif;
+font-weight: 800;
+text-align: center;
+  
+@media (min-width: 768px) {
+
+  }
+
+@media (min-width: 1024px) {
+font-size: 20px;
+  line-height: 1.6;
+  } 
+
+@media (min-width: 1439px) {
+font-size: 24px;
+line-height: 1.7;
+ max-width: 650px;
+  }
+
 `;
 
 export const TextLargeScaleBig = styled.p`
+font-size: 20px;
+line-height: 1.4;
 color: #000;
+font-family: "Proxima Nova", sans-serif;
+font-weight: 900;
+text-decoration: underline;
+text-align: center;
+
+@media (min-width: 768px) {
+
+  }
+
+@media (min-width: 1024px) {
+font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+  } 
+
+@media (min-width: 1439px) {
+font-size: 24px;
+line-height: 1.7;
+ max-width: 650px;
+ text-align: center;
+  }
 `;
 
+export const WrapperText = styled.div`
+width: 100%;
+margin: 0 auto;
+display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 
+@media (min-width: 768px) {
 
+  }
 
+@media (min-width: 1024px) {
+  
+  } 
+
+@media (min-width: 1439px) {
+
+  }
+
+`;
+
+export const VideoSchadow = styled.div`
+
+`;
