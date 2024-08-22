@@ -1,6 +1,6 @@
 import styled, { css, keyframes } from "styled-components";
 
-const gradientAnimation = keyframes`
+export const gradientAnimation = keyframes`
   0% {
     background-position: 0% 50%;
   }
@@ -12,7 +12,7 @@ const gradientAnimation = keyframes`
   }
 `;
 
-const pulse = keyframes`
+export const pulse = keyframes`
   0% {
     transform: scale(1);
   }

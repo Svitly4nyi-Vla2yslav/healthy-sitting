@@ -3,6 +3,7 @@ import {
   Block,
   Container,
   ContainerProject,
+  ImageUnique,
   InnovationSection,
   InnovationText,
   InnovationTitle,
@@ -18,7 +19,6 @@ import {
   TitleLargeScale,
   TitleOptimisation,
   TitleUnique,
-  VideoSchadow,
   WrapperText,
 } from './ProjectPage.styled';
 import Dekstop from '../../assets/video/project-dekstop.mp4';
@@ -27,6 +27,8 @@ import Mobile from '../../assets/video/project-mobile.mp4';
 import VideoFirst from '../../assets/video/painBack.webm';
 import VideoSecond from '../../assets/video/technology.webm';
 import VideoThird from '../../assets/video/project-innovation.webm';
+
+import Unique from '../../assets/image/Unique.png';
 
 import { useTranslation } from 'react-i18next';
 import { useMediaQuery } from 'react-responsive';
@@ -92,22 +94,34 @@ const ProjectPage: React.FC = () => {
         >
           <InnovationTitle>{t('Project.InnovationH2')}</InnovationTitle>
           <InnovationText>{t('Project.InnovationP')}</InnovationText>
-          <VideoSchadow>
-            <Video
-              style={{ paddingTop: 80 }}
-              src={VideoThird}
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
-          </VideoSchadow>
+
+          <Video
+            style={{ paddingTop: 80 }}
+            src={VideoThird}
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
         </SectionProject>
-        <SectionProject>
+        <SectionProject
+          style={{
+            display: 'flex',
+            flexDirection: 'row-reverse',
+            flexWrap: 'nowrap',
+            marginTop: 80,
+            alignItems: 'center',
+          }}
+        >
           <WrapperText style={{ alignItems: 'flex-end', paddingTop: 80 }}>
             <TitleUnique>{t('Project.UniqueH3')}</TitleUnique>
             <TextUnique>{t('Project.UniqueP')}</TextUnique>{' '}
           </WrapperText>
+          {!isTablet ? (
+            <ImageUnique src={Unique} alt="Unique" />
+          ) : (
+            <div style={{ display: 'none' }}></div>
+          )}
         </SectionProject>
         <SectionProject>
           <WrapperText style={{ alignItems: 'center', maxWidth: 1000 }}>

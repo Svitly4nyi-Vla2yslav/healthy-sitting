@@ -135,8 +135,8 @@ padding-right: 30px;
   } 
 
   @media (min-width: 1439px) {
-padding-left: 90px;
-padding-right: 90px;
+padding-left: 190px;
+padding-right: 190px;
   }
 `;
 
@@ -536,6 +536,8 @@ display: flex;
 
 `;
 
-export const VideoSchadow = styled.div`
-
+export const ImageUnique = styled.img`
+max-width: 400px;
+height: 400px;
+border-radius: 10px;
 `;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { gradientAnimation, pulse } from "../ContentHomePage/HomeComponent.styled";
 
 export const SectionHelp = styled.section`
 width: 100%;
@@ -85,17 +86,42 @@ position: relative;
   }
 `;
 
-export const Image = styled.img`
+export const Image = styled.div`
 position: absolute;
-    top: -85px;
-    left: 50%;
-    overflow: hidden;
-    margin: 0 0 0 -75px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: #f2f5f6;
+top: -85px;
+left: 50%;
+overflow: hidden;
+margin: 0 0 0 -75px;
+font-size: 8.2rem;
+color: #fff;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+background: #f2f5f6;
+ background: linear-gradient(45deg, #ff7f50, #1e90ff, #ff7f50, #1e90ff);
+  background-size: 400% 400%;
+  border: none;
+  // border-radius: 30px;
+  cursor: pointer;
+//  margin: 0 auto;
+  // margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  animation: ${gradientAnimation} 10s ease infinite;
+
+  &:hover {
+    animation: ${pulse} 0.6s infinite;
+    background-position: 100% 0;
+    box-shadow: 0 0 20px rgba(0, 186, 255, 0.7);
+  }
+
+  &:focus {
+    outline: none;
+  }
 `;
+
+
 
 export const CardTitel = styled.h3`
 vertical-align: inherit;
@@ -103,10 +129,17 @@ font-family: "Proxima Nova", sans-serif;
     font-weight: 300;
     letter-spacing: -.035em;
     text-transform: uppercase;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     line-height: 1.15;
     text-align: center;
     color: #01cbe1;
+    padding-top: 5%;
+
+   span {
+   color: red;
+   display: inline-block;
+    animation: ${pulse} 0.6s infinite;
+  }
 `;
 
 export const CardText = styled.p`
@@ -119,6 +152,9 @@ export const CardText = styled.p`
      border-radius: 10px;
 font-family: "Proxima Nova", sans-serif;
     font-weight: 300;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 10%;
 `;
 
 export const IconWrapper = styled.a`
@@ -128,16 +164,33 @@ flex-direction: row;
     align-items: center;
    justify-content: center;
    gap: 7%;
-   border-top: 1px solid  #01cbe1;
-   border-radius: 5px;
    padding: 10px;
    width: 80%;
-         transition: box-shadow 0.3s ease; /* Додаємо плавний перехід для тіні */
+    margin-top: 15%;
 
+  transition: box-shadow 0.3s ease; /* Додаємо плавний перехід для тіні */
+
+  button,
+  img {
+  font-family: "Proxima Nova", sans-serif;
+    font-weight: 700;
+  width: 50%;
+  border: 1px solid #01cbe1;
+  border-radius: 18px;
+  overflow: hidden;
+  height: 7vh;
+  object-fit: cover;
+   text-transform: uppercase;
+  //  background: #fff;
+
+      transition: box-shadow 0.6s ease; 
   &:hover,
   &:focus {
-    box-shadow: 0 -4px 20px rgba(1, 203, 225, 0.5); 
-    outline: none; 
+   background-position: 100% 0;
+    box-shadow: 0 0 20px rgba(0, 186, 255, 0.7);
+  }
+
+  
   }
 `;
 export const IconText = styled.p`
