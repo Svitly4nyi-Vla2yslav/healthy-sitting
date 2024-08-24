@@ -1,122 +1,200 @@
 {
-    "AboutUs": {
-      "title": "Conveyor de Innovación",
-      "problemTitle": "EL PROBLEMA: Nuestro mundo pierde hasta el 70% de ideas y soluciones innovadoras que ni siquiera sobreviven hasta la prueba de concepto",
+  "AboutUs": {
+      "title": "Innovación Conveyor",
+      "problemTitle": "EL PROBLEMA: Nuestro mundo pierde hasta el 70% de ideas y soluciones innovadoras que ni siquiera sobreviven a la prueba de concepto",
       "problemText1": "Dificultades psicológicas en diferentes niveles: Barreras y dimensiones psicológicas internas y externas",
       "problemText2": "Desafíos multidisciplinarios: Falta de experiencia en áreas clave, marketing, legal, finanzas. La falta de competencias es una barrera para los innovadores.",
-      "problemText3": "Bloqueo conceptual: El largo y difícil camino desde la concepción de la idea hasta la prueba de concepto crea desafíos serios.",
+      "problemText3": "Embrollo conceptual: El largo y difícil camino desde la concepción de la idea hasta la prueba de concepto, creando serios desafíos.",
       "solutionTitle": "Solución",
-      "solutionStrong": "Conveyor de Innovación Angelical \"AIC\":",
-      "solutionText": "Una plataforma diseñada para acumular y probar innovaciones en la etapa Pre-seed lo más rápido posible. Por un lado, la solución es individualizada y, al mismo tiempo, se aplica el principio de la cinta transportadora.",
+      "solutionStrong": "Conveyor de Innovación Angélica 'AIC':",
+      "solutionText": "Una plataforma diseñada para acumular y probar innovaciones en la etapa Pre-semilla lo más rápido posible. Por un lado, la solución está individualizada y al mismo tiempo se aplica el principio de la cinta transportadora.",
       "solutionPoint1": "Creación de un entorno psicológicamente seguro",
       "solutionPoint2": "Plantillas adaptadas",
-      "solutionPoint3": "Apoyo completo",
+      "solutionPoint3": "Soporte completo",
       "solutionPoint4": "Prueba de concepto rápida",
       "solutionPoint5": "Filtrado innovador",
       "solutionPoint6": "Análisis rápido y profundo",
-      "solutionPoint7": "Integración en el ADN de una startup",
+      "solutionPoint7": "Incorporación en el ADN de una startup",
       "featuresTitle": "PRODUCTO Y CARACTERÍSTICAS",
-      "featuresText1": "Presentación de la idea: El innovador presenta la idea en la plataforma usando plantillas personalizadas en un entorno psicológicamente seguro.",
-      "featuresText2": "Validación de innovación ultrarrápida: Después de firmar el NDA y la presentación adaptativa, la innovación se somete a una rápida validación y filtrado.",
-      "featuresText3": "Validación completa y profunda: Una vez validado el concepto, se realiza un análisis exhaustivo de la innovación y se prepara un informe final.",
+      "featuresText1": "Presentación de la idea: El innovador presenta la idea en la plataforma utilizando plantillas personalizadas en un entorno psicológicamente seguro.",
+      "featuresText2": "Validación de innovación ultrarrápida: Después de firmar el NDA y la presentación adaptativa, la innovación se somete a una validación y filtrado rápidos en la línea de producción.",
+      "featuresText3": "Validación completa y profunda: Una vez validado el concepto, se lleva a cabo un análisis exhaustivo de la innovación y se prepara un informe final.",
       "featuresText4": "Evaluación multinivel: La información se envía a departamentos especializados para una evaluación integral",
-      "featuresText5": "Seguridad psicológica + Enfoque de cinta transportadora = “AIC”",
-      "benefitsTitle": "VENTAJAS PARA INNOVADORES",
-      "benefitsText1": "Confort psicológico: Los innovadores tendrán acceso a un entorno psicológicamente seguro donde se tienen en cuenta sus necesidades emocionales y se reducen los niveles de estrés al presentar sus ideas, permitiéndoles concentrarse en la innovación.",
-      "benefitsText2": "Optimización acelerada de procesos y recursos: Con la validación de innovación ultrarrápida y plantillas integradas para presentaciones y videos, los innovadores ahorran tiempo y recursos al obtener acceso rápido para evaluar sus ideas y posibles inversores.",
-      "benefitsText3": "Apoyo y desarrollo efectivos: Los innovadores pueden concentrarse tanto como sea posible en sus soluciones innovadoras. La empresa matriz se encargará de los asuntos procedimentales.",
-      "customerSegmentsTitle": "SEGMENTOS DE CLIENTES \"AIC\"",
-      "customerText1": "Innovadores principiantes: Personas que están intentando crear startups o proyectos innovadores por primera vez.",
+      "featuresText5": "Seguridad psicológica + Enfoque en cinta transportadora = 'AIC'",
+      "benefitsTitle": "BENEFICIOS para innovadores",
+      "benefitsText1": "Comodidad psicológica: Los innovadores tendrán acceso a un entorno psicológicamente seguro donde se tendrán en cuenta sus necesidades emocionales y se reducirán los niveles de estrés al presentar sus ideas, permitiéndoles centrarse en la innovación",
+      "benefitsText2": "Optimización acelerada de procesos y recursos: Con la validación ultrarrápida de la innovación y las plantillas integradas para presentaciones y videos, los innovadores ahorran tiempo y recursos al obtener un acceso rápido para evaluar sus ideas y posibles inversores.",
+      "benefitsText3": "Soporte y desarrollo efectivos: Los innovadores pueden concentrarse al máximo en sus soluciones innovadoras. La empresa matriz se encargará de los asuntos procedimentales.",
+      "customerSegmentsTitle": "SEGMENTOS DE CLIENTES 'AIC'",
+      "customerText1": "Innovadores principiantes: Personas que intentan por primera vez crear startups o proyectos innovadores.",
       "customerText2": "Investigadores: Profesionales de la ciencia y la investigación interesados en comercializar su investigación.",
       "customerText3": "Innovadores experimentados: Personas con experiencia en el desarrollo e implementación de proyectos innovadores, que buscan apoyo y nuevas oportunidades.",
-      "searchTitle": "BUSCAR INNOVACIONES EN EL MUNDO",
-      "differenceTitle": "QUÉ NOS HACE DIFERENTES",
-      "differenceText1": "Concepto innovador: Trabajamos con la etapa más temprana de una idea. Desde el momento en que apareció por primera vez al innovador. Nuestro concepto nos permite trabajar en las etapas más tempranas e identificar las soluciones más innovadoras.",
-      "differenceText2": "Concepto innovador para crear futuras empresas: Desarrollamos y completamos la creación de \"Reinventing Organizations\" basado en el principio de participación compartida, responsabilidad e ingresos entre todos los empleados, desde la alta dirección hasta los trabajadores de primera línea, y esto es fundamentalmente diferente de los existentes.",
-      "differenceText3": "Atraer inversiones: La atención de los inversores se centra en el problema de no perder inversiones, mientras que la atención de los fundadores se centra en atraer finanzas vitales a cualquier costo. Y ambas partes tienen razón. ¿Y la idea? ¿Innovación? Permanece sin atención y se transforma según las circunstancias. Solución: Crear un concepto donde todas las partes reciban tranquilamente lo que necesitan."
-    },
-    "Header": {
-        "order": "Ordenar",
-        "home": "INICIO",
-        "about": "ACERCA DE",
-        "project": "PROYECTOS",
-        "rewards": "RECOMPENSAS",
-        "contact": "CONTACTO"
-      },
-      "MenuButton": {
-        "menu": "Menú"
-      },
-      "Footer": {
-        "footerAdditionalText": "Texto adicional del pie de página",
-        "usefulLinks": "Enlaces útiles",
-        "blog": "Blog",
-        "projects": "Proyectos",
-        "contactUs": "Contáctanos",
-        "socialMedia": "REDES SOCIALES"
-      },
-      "LanguageSelector": {
-        "language": "Idioma"
-      },
-      "Background": {
-    "slide1Text": "Texto para la diapositiva 🤖",
-    "slide1Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.",
-    "slide2Text": "Texto para la diapositiva 😈",
-    "slide2Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.",
-    "slide3Text": "Texto para la diapositiva 1",
-    "slide3Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus.",
-    "slide4Text": "Texto para la diapositiva 2",
-    "slide4Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 2",
-    "slide5Text": "Texto para la diapositiva 3",
-    "slide5Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 3",
-    "slide6Text": "Texto para la diapositiva 4",
-    "slide6Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, accusamus. 4",
-    "scrollDown": "DESPLAZAR HACIA ABAJO"
+      "searchTitle": "BÚSQUEDA de innovaciones en el mundo",
+      "differenceTitle": "LO QUE nos diferencia",
+      "differenceText1": "Concepto innovador: Trabajamos con la etapa más temprana de una idea. Desde el momento en que apareció por primera vez para el innovador. Nuestro concepto nos permite trabajar en las etapas más tempranas e identificar las soluciones más innovadoras.",
+      "differenceText2": "Concepto innovador para crear empresas futuras: Desarrollamos y completamos la creación de 'Organizaciones Reinventadas' basadas en el principio de compartir participación, responsabilidad e ingresos entre todos los empleados, desde la alta dirección hasta los trabajadores de primera línea, y esto es fundamentalmente diferente de las existentes.",
+      "differenceText3": "Atracción de inversiones: La atención de los inversores se centra en no perder inversiones, mientras que la atención de los fundadores se centra en atraer financiamiento vital a cualquier costo. ¿Y la idea? ¿La innovación? Queda desatendida y se transforma según las circunstancias. Solución: Crear un concepto donde todas las partes reciban tranquilamente lo que necesitan."
+  },
+  "Header": {
+      "header": "ENCABEZADO",
+      "order": "DONAR",
+      "home": "INICIO",
+      "about": "PROBLEMA",
+      "project": "PROYECTO",
+      "rewards": "AYUDA",
+      "contact": "CONTACTO"
+  },
+  "MenuButton": {
+      "menu": "Menú"
+  },
+  "Footer": {
+      "footerAdditionalText": "Innovación Conveyor",
+      "usefulLinks": "Enlaces útiles",
+      "blog": "Blog",
+      "projects": "Proyectos",
+      "contactUs": "Contáctenos",
+      "socialMedia": "REDES SOCIALES"
+  },
+  "LanguageSelector": {
+      "language": "Idioma"
+  },
+  "Background": {
+      "slide1Text": "Un proyecto a gran escala para abordar el problema global del estilo de vida sedentario."
   },
   "ContentHomePage": {
-    "mainSectionTitle": "Tu contenido aquí",
-    "mainSectionDescription": "Tu descripción u otro contenido aquí.",
-    "card1Title": "Título de la tarjeta 1",
-    "card1Description": "Descripción de la tarjeta 1",
-    "card2Title": "Título de la tarjeta 2",
-    "card2Description": "Descripción de la tarjeta 2",
-    "card3Title": "Título de la tarjeta 3",
-    "card3Description": "Descripción de la tarjeta 3"
+      "mainSectionTitle": "Estamos desarrollando tecnología a gran escala para minimizar los daños de un estilo de vida sedentario.",
+      "mainSectionDescription": "Tu descripción u otro contenido aquí.",
+      "card1Title": "Un estilo de vida sedentario conduce a dolor crónico, escoliosis y otros problemas de salud.",
+      "card2Title": "El objetivo es desarrollar tecnología para minimizar el daño de estar sentado por períodos prolongados.",
+      "card3Title": "Desarrollamos tecnología que se adapta individualmente a las necesidades fisiológicas de cada usuario, reduciendo el daño de estar sentado por períodos prolongados."
   },
   "HomeComponent": {
-    "projectTitle": "Lleva un proyecto creativo a la vida.",
-    "goalAmount": "NUESTRO OBJETIVO",
-    "currentAmount": "ACTUALMENTE TENEMOS",
-    "numberOfInvestors": "NUESTROS INVERSIONISTAS",
-    "amountToCollect": "TENEMOS QUE RECOGER",
-    "orderButton": "Ordenar"
+      "projectTitle": "Un problema de proporciones planetarias.",
+      "goalAmount": "¿Cuántas personas crees que hoy en día pasan más de 4 horas al día sentadas? ¿En el trabajo, en casa, conduciendo, viajando, de vacaciones?",
+      "currentAmount": "Este es un problema que afecta a miles de millones de personas en todo el mundo. Estar sentado por períodos prolongados lleva a dolor crónico, escoliosis y otros problemas de salud. Los estilos de vida sedentarios tienen un impacto negativo en la calidad de vida y productividad de las personas, causando graves consecuencias a largo plazo. Este problema global requiere una acción inmediata.",
+      "numberOfInvestors": "NUESTROS INVERSORES",
+      "amountToCollect": "TENEMOS QUE RECOLECTAR",
+      "orderButton": "DONAR"
   },
   "EmailTicket": {
-    "formTitle": "¿Necesitas ayuda? Abre un ticket",
-    "formDescription": "Nuestro equipo de soporte se pondrá en contacto contigo lo antes posible por correo electrónico.",
-    "namePlaceholder": "Tu Nombre",
-    "emailPlaceholder": "Tu Correo Electrónico",
-    "messagePlaceholder": "Introduce tu Mensaje",
-    "submitButton": "Enviar Ticket",
-    "sending": "Enviando...",
-    "error": "Se produjo un error al enviar el formulario."
+      "formTitle": "¿Necesitas ayuda? Abre un Ticket",
+      "formDescription": "Nuestro equipo de soporte te responderá lo antes posible por correo electrónico.",
+      "namePlaceholder": "Tu nombre",
+      "emailPlaceholder": "Tu correo electrónico",
+      "messagePlaceholder": "Ingresa tu mensaje",
+      "submitButton": "Enviar Ticket",
+      "sending": "Enviando...",
+      "error": "Ocurrió un error al enviar el formulario."
   },
   "Subscribe": {
-    "subscribeTitle": "Suscríbete para recibir actualizaciones futuras",
-    "namePlaceholder": "Tu Nombre",
-    "emailPlaceholder": "Tu Correo Electrónico",
-    "subscribeButton": "Suscribirse",
-    "sending": "Enviando...",
-    "error": "Se produjo un error al enviar el formulario.",
-    "noSpam": "No garantizamos spam, así que por favor no envíes correo basura."
+      "subscribeTitle": "Suscríbete para recibir futuras actualizaciones",
+      "namePlaceholder": "Tu nombre",
+      "emailPlaceholder": "Tu correo electrónico",
+      "subscribeButton": "Suscribirse",
+      "sending": "Enviando...",
+      "error": "Ocurrió un error al enviar el formulario.",
+      "noSpam": "Garantizado sin spam, así que no envíes correos electrónicos no deseados."
   },
   "OurContacts": {
-    "founderName": "Maksym Morenets",
-    "founderPosition": "Fundador de Angel Systems",
-    "socialMedia": "REDES SOCIALES"
+      "founderName": "Maksym Morenets",
+      "founderPosition": "Fundador de Angel Systems",
+      "socialMedia": "REDES SOCIALES"
   },
   "ErrorPage": {
-    "CommingSoon": "Próximamente",
-    "ThankYou": "Nuestro sitio web está actualmente en desarrollo. Deberíamos estar terminados pronto. Gracias por su paciencia."
-  }
-  }
-  
+      "CommingSoon": " Próximamente ",
+      "ThankYou": "Nuestro sitio web está actualmente en desarrollo. Deberíamos terminar pronto. Gracias por tu paciencia."
+  },
+  "ITgame": {
+      "h2": "La:",
+      "span": " 'Cura'",
+      "h2-1": "   tecnología",
+      "p": "Una silla inteligente que se adapta individualmente a las necesidades fisiológicas de cada usuario."
+  },
+  "ITswiper": {
+      "h2": "Colaboración en el desarrollo ",
+      "p": "Socios: Innosuisse, Swiss HealthTech Centre."
+  },
+  "Project": {
+      "TitleH1": "No estamos hechos para sentarnos, pero si lo hacemos, hagámoslo sabiamente.",
+      "AdaptationH2": "Adaptación individual",
+      "AdaptationP": "La tecnología ofrece una solución única que se adapta completamente a las características fisiológicas de cada usuario. Utilizando algoritmos avanzados de análisis de datos, Cura monitorea el estado actual de tu cuerpo y se adapta automáticamente a tus necesidades, brindando soporte y comodidad óptimos.",
+      "OptimisationH2": "Optimización de un estilo de vida sedentario",
+      "OptimisationP": "La tecnología analiza tu postura y actividad en tiempo real, ajustando el soporte para tu columna vertebral y otras partes vulnerables del cuerpo. Esto ayuda a prevenir el desarrollo de dolor y molestias.",
+      "InnovationH2": "Sistema de monitoreo innovador",
+      "InnovationP": "Una característica clave de Cura es la monitorización constante de la condición de tu cuerpo. El sistema recopila datos sobre tu postura, actividad y salud general para personalizar el soporte. Esto permite que el sistema esté preparado para tus necesidades antes del primer contacto, maximizando la comodidad y minimizando el daño.",
+      "UniqueH3": "Tecnología única de Cura ",
+      "UniqueP": "Cura no solo se adapta a las necesidades individuales, sino que interactúa activamente con tu cuerpo para ayudarlo a volver a su posición natural. La tecnología incorpora adaptación personalizada, monitoreo continuo en tiempo real y consideración de las necesidades físicas, brindando soporte integral y asistencia en la recuperación.",
+      "LargeScaleH3": "Tecnología escalable y versátil de Cura:",
+      "LargeScaleP": "Nuestra tecnología no es solo una silla inteligente, sino una solución versátil que puede integrarse en una amplia variedad de entornos. Ya sea que estés en casa, en la oficina, en el coche o en un avión, Cura proporciona comodidad y soporte constantes, adaptándose a tus necesidades fisiológicas.",
+      "BoltLargeScale": "Esta tecnología va más allá de las soluciones estándar, ofreciendo un enfoque integral para mantener la salud y el bienestar que puede aplicarse a una amplia variedad de situaciones y condiciones. Cura es un paso adelante en la creación de un entorno que cuida de ti en cualquier lugar, en cualquier momento.",
+      "LargeScaleBig": "Si vamos a sentarnos, hagámoslo sabiamente."
+  },
+  "HelpCards": {
+      "HelpH2": "Ayúdanos",
+      "HelpP": "Para llevar la tecnología a la etapa de 'lista'. Necesitamos tu apoyo",
+      "CardTitelH3": "Gracias por apoyarnos ",
+      "CardTextP": "Eres una gran persona" ,
+      "Card2TitelH3": "Necesitamos tanta información como sea posible.",
+      "Card2TextP" : "Eres una gran persona",
+      "Card3TitelH3": "Envía esto a tu empleador o al desarrollador de tu juego favorito. Quiere cuidarte.",
+      "CopySuccess": "La carta fue copiada 😉",
+      "CopyLink": " Copiar carta"
+    },
+    "Partners": {
+        "PartnersH2": "Empresas que se preocupan por la salud de sus empleados",
+        "PartnersP": "Socios externos y patrocinadores corporativos apoyan el proyecto."
+    },
+    "News": {
+        "TitelH2": "Noticias y Actualizaciones",
+        "NewsP": "Logros y desarrollos recientes del proyecto.",
+        "id-1": "Tu texto 1",
+        "id-2": "Tu texto 2",
+        "id-3": "Tu texto 3",
+        "id-4": "Tu texto 4",
+        "id-5": "Tu texto 5",
+        "id-6": "Tu texto 6",
+        "id-7": "Tu texto 7",
+        "id-8": "Tu texto 8",
+        "id-9": "Tu texto 9"
+    },
+    "Feedback": {
+        "TitelH2": "Comentarios y Apoyo",
+        "TextP": "Comentarios reales de usuarios y recomendaciones de personas y organizaciones conocidas.",
+        "id-1": {
+            "text": "John Doe, CEO de Tech Innovators",
+            "hashtag": "#CURA es una solución inteligente para todos. ¡Gracias por este gran trabajo!👏"
+        },
+        "id-2": {
+            "text": "Jane Smith, Fundadora de Startup Hub",
+            "hashtag": "#CURA está cambiando nuestras vidas. ¡Gran equipo y producto!🤩🤩🤩"
+        },
+        "id-3": {
+            "text": "Alice Johnson, Emprendedora tecnológica",
+            "hashtag": "#CURA ayuda a las personas todos los días. ¡Bravo por esta innovación!👏🫡"
+        },
+        "id-4": {
+            "text": "Michael Brown, Inversor en Future Ventures",
+            "hashtag": "#CURA es increíble. ¡Excelente trabajo y potencial!😻"
+        },
+        "id-5": {
+            "text": "Emily Davis, CEO de Smart Solutions",
+            "hashtag": "#CURA es un cambio radical. ¡Equipo increíble!💙💛"
+        },
+        "id-6": {
+            "text": "Daniel Wilson, Cofundador de NextGen Startups",
+            "hashtag": "#Sillas CURA son asombrosas. ¡Gracias por la calidad!"
+        },
+        "id-7": {
+            "text": "Sophia Miller, Emprendedora en serie",
+            "hashtag": "#CURA es una idea brillante. ¡Gran producto y servicio!😉"
+        },
+        "id-8": {
+            "text": "James Anderson, Inversor en tecnología",
+            "hashtag": "#CURA mejora la comodidad. ¡Gran innovación para todos!"
+        },
+        "id-9": {
+            "text": "Linda Martinez, Fundadora de Wellness Tech",
+            "hashtag": "#CURA es una gran idea para oficinas. ¡Gracias por su trabajo!"
+        }
+    }
+}

@@ -48,7 +48,7 @@
         "menu": "Menu"
     },
     "Footer": {
-        "footerAdditionalText": "Footer additional text",
+        "footerAdditionalText": "Innovation Conveyor",
         "usefulLinks": "Useful Links",
         "blog": "Blog",
         "projects": "Projects",
@@ -133,11 +133,68 @@
         "HelpH2": "Help Us",
         "HelpP": "In order to get the technology to the ‘ready’ stage. We need your support",
         "CardTitelH3": "Thank you for supporting us ",
-        "CardTextP" : "You're a mega man" ,
+        "CardTextP": "You're a mega man",
         "Card2TitelH3": "We need as much information as possible.",
-        "Card2TextP" : "You're a mega man",
+        "Card2TextP": "You're a mega man",
         "Card3TitelH3": "send this to your employer or the developer of your favourite game. He wants to take care of you.",
         "CopySuccess": "The letter was copied 😉",
         "CopyLink": " Copy Letter"
+    },
+    "Partners": {
+        "PartnersH2": "Companies that care about the health of their employees",
+        "PartnersP": "  External partners and corporate donors supporting the project."
+    },
+    "News": {
+        "TitelH2": "News & Updates",
+        "NewsP": " Recent achievements and developments of the project.",
+        "id-1": "Your Text 1",
+        "id-2": "Your Text 2",
+        "id-3": "Your Text 3",
+        "id-4": "Your Text 4",
+        "id-5": "Your Text 5",
+        "id-6": "Your Text 6",
+        "id-7": "Your Text 7",
+        "id-8": "Your Text 8",
+        "id-9": "Your Text 9"
+    },
+    "Feedback": {
+        "TitelH2": "Feedback & support",
+        "TextP": "Real user reviews and endorsements from well-known individuals and organisations.",
+        "id-1": {
+            "text": "John Doe, CEO of Tech Innovators",
+            "hashtag": "#CURA is a smart solution for everyone. Thanks for the great work!👏"
+        },
+        "id-2": {
+            "text": "Jane Smith, Founder of Startup Hub",
+            "hashtag": "#CURA is changing our lives. Great team and product!🤩🤩🤩"
+        },
+        "id-3": {
+            "text": "Alice Johnson, Tech Entrepreneur",
+            "hashtag": "#CURA helps people every day. Bravo for such innovation!👏🫡"
+        },
+        "id-4": {
+            "text": "Michael Brown, Investor at Future Ventures",
+            "hashtag": "#CURA is awesome! Great work and potential!😻"
+        },
+        "id-5": {
+            "text": "Emily Davis, CEO of Smart Solutions",
+            "hashtag": "#CURA is a game-changer. Amazing team!💙💛"
+        },
+        "id-6": {
+            "text": "Daniel Wilson, Co-Founder of NextGen Startups",
+            "hashtag": "#CURA chairs are incredible! Thanks for the quality!"
+        },
+        "id-7": {
+            "text": "Sophia Miller, Serial Entrepreneur",
+            "hashtag": "#CURA is a brilliant idea! Excellent product and service!😉"
+        },
+        "id-8": {
+            "text": "James Anderson, Tech Investor",
+            "hashtag": "#CURA enhances comfort. Great innovation for all!"
+        },
+        "id-9": {
+            "text": "Linda Martinez, Founder of Wellness Tech",
+            "hashtag": "#CURA is a great idea for the office. Thanks for your work!"
+        }
     }
 }
