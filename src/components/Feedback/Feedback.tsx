@@ -24,67 +24,66 @@ import {
   TitelPartners,
 } from './Feedback.styled';
 import { useMediaQuery } from 'react-responsive';
+import { t } from 'i18next';
 
 const slides = [
   {
     id: 1,
-    text: 'John Doe, CEO of Tech Innovators',
+    text: t('Feedback.id-1.text'),
     data: '11.07.2024',
-    hashtag:
-      '#CURA is a smart solution for everyone. Thanks for the great work!👏',
+    hashtag: t('Feedback.id-1.hashtag'),
   },
   {
     id: 2,
-    text: 'Jane Smith, Founder of Startup Hub',
+    text: t('Feedback.id-2.text'),
     data: '14.06.2024',
-    hashtag: '#CURA is changing our lives. Great team and product!🤩🤩🤩',
+    hashtag: t('Feedback.id-2.hashtag'),
   },
   {
     id: 3,
-    text: 'Alice Johnson, Tech Entrepreneur',
+    text: t('Feedback.id-3.text'),
     data: '11.05.2024',
-    hashtag: '#CURA helps people every day. Bravo for such innovation!👏🫡',
+    hashtag: t('Feedback.id-3.hashtag'),
   },
   {
     id: 4,
-    text: 'Michael Brown, Investor at Future Ventures',
+    text: t('Feedback.id-4.text'),
     data: '18.04.2024',
-    hashtag: '#CURA is awesome! Great work and potential!😻',
+    hashtag: t('Feedback.id-4.hashtag'),
   },
   {
     id: 5,
-    text: 'Emily Davis, CEO of Smart Solutions',
+    text: t('Feedback.id-5.text'),
     data: '11.03.2024',
-    hashtag: '#CURA is a game-changer. Amazing team!💙💛',
+    hashtag: t('Feedback.id-5.hashtag'),
   },
   {
     id: 6,
-    text: 'Daniel Wilson, Co-Founder of NextGen Startups',
+    text: t('Feedback.id-6.text'),
     data: '21.02.2024',
-    hashtag: '#CURA chairs are incredible! Thanks for the quality!',
+    hashtag: t('Feedback.id-6.hashtag'),
   },
   {
     id: 7,
-    text: 'Sophia Miller, Serial Entrepreneur',
+    text: t('Feedback.id-7.text'),
     data: '21.02.2024',
-    hashtag: '#CURA is a brilliant idea! Excellent product and service!😉',
+    hashtag: t('Feedback.id-7.hashtag'),
   },
   {
     id: 8,
-    text: 'James Anderson, Tech Investor',
+    text: t('Feedback.id-8.text'),
     data: '21.02.2024',
-    hashtag: '#CURA enhances comfort. Great innovation for all!',
+    hashtag: t('Feedback.id-8.hashtag'),
   },
   {
     id: 9,
-    text: 'Linda Martinez, Founder of Wellness Tech',
+    text: t('Feedback.id-9.text'),
     data: '21.02.2024',
-    hashtag: '#CURA is a great idea for the office. Thanks for your work!',
+    hashtag: t('Feedback.id-9.hashtag'),
   },
 ];
 
 const Feedback: React.FC = () => {
-
   const isMobile = useMediaQuery({ query: '(max-width: 400px)' });
   const isTablet = useMediaQuery({
     query: '(min-width: 400px) and (max-width: 768px)',
@@ -94,13 +93,10 @@ const Feedback: React.FC = () => {
   const slidesPerView = isMobile ? 1 : isTablet ? 1 : isDesktop ? 3 : 3;
 
   return (
-    <SwiperContainer >
+    <SwiperContainer>
       <TextWraper>
-        <TitelPartners>Feedback & support</TitelPartners>
-        <TextPartners>
-          Real user reviews and endorsements from well-known individuals and
-          organisations.
-        </TextPartners>
+        <TitelPartners>{t('Feedback.TitelH2')}</TitelPartners>
+        <TextPartners>{t('Feedback.TextP')}</TextPartners>
       </TextWraper>
       <Swiper
         style={{ margin: '0 50px' }}
@@ -131,7 +127,11 @@ const Feedback: React.FC = () => {
                 {slide.hashtag}
               </SlideContent>
               <SlideContent
-                style={{ borderTop: '1px solid #01cbe1', height: '15%', marginTop: "30%" }}
+                style={{
+                  borderTop: '1px solid #01cbe1',
+                  height: '15%',
+                  marginTop: '30%',
+                }}
               >
                 {slide.text}
               </SlideContent>

@@ -168,7 +168,7 @@ flex-direction: row;
    width: 80%;
     margin-top: 15%;
 
-  transition: box-shadow 0.3s ease; /* Додаємо плавний перехід для тіні */
+  transition: box-shadow 0.3s ease; 
 
   button,
   img {

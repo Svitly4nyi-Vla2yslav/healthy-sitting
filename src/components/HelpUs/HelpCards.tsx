@@ -26,7 +26,7 @@ const HelpCards: React.FC = () => {
     navigator.clipboard
       .writeText(link)
       .then(() => {
-        alert(t('HelpCards.CopySuccess')); // Повідомлення про успішне копіювання
+        alert(t('HelpCards.CopySuccess')); 
       })
       .catch((err) => {
         console.error('Failed to copy: ', err);
@@ -46,7 +46,8 @@ const HelpCards: React.FC = () => {
         <CardHelpUs>
           <Image>1</Image>
           <CardTitel>
-            {t('HelpCards.CardTitelH3')} <br/><br/>
+            {t('HelpCards.CardTitelH3')} <br />
+            <br />
           </CardTitel>
 
           <IconWrapper href="https://www.gofundme.com/f/Angel-Systems-ch/donate?attribution_id=sl%3A265f0fa1-2e54-4bb4-9f99-ba5cc3ab04f1&utm_campaign=man_sharesheet_dash&utm_medium=customer&utm_source=copy_link&source=btn_donate">
@@ -84,11 +85,17 @@ const HelpCards: React.FC = () => {
           <CardTitel style={{ fontSize: '1.5rem' }}>
             {t('HelpCards.Card3TitelH3')}
           </CardTitel>
-          <IconWrapper> <ArrowCircleRightIcon
+          <IconWrapper>
+            {' '}
+            <ArrowCircleRightIcon
               style={{ fill: '#01cbe1', width: 34, height: 34 }}
             />
-            <button  data-aos="fade-right" onClick={() => handleCopyLink(donationLink)}>
-              {t('HelpCards.CopyLink')}<MarkAsUnreadOutlinedIcon/>
+            <button
+              data-aos="fade-right"
+              onClick={() => handleCopyLink(donationLink)}
+            >
+              {t('HelpCards.CopyLink')}
+              <MarkAsUnreadOutlinedIcon />
             </button>
           </IconWrapper>
           <CardTitel style={{ fontSize: '2.2rem' }}>

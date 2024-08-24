@@ -26,13 +26,15 @@ import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import OutboundIcon from '@mui/icons-material/Outbound';
 import { useMediaQuery } from 'react-responsive';
+import { useTranslation } from 'react-i18next';
+import { t } from 'i18next';
 
 const slides = [
   {
     id: 1,
     imageUrl: 'https://swiperjs.com/demos/images/nature-1.jpg',
     link: '*',
-    text: 'Your Text 1',
+    text: (t("News.id-1")),
     data: '11.07.2024',
     hashtag: '# hash·​tag ˈhash-ˌtag. Social Link / YouTube/ Instagram😇',
   },
@@ -40,7 +42,7 @@ const slides = [
     id: 2,
     imageUrl: 'https://swiperjs.com/demos/images/nature-2.jpg',
     link: '#',
-    text: 'Your Text 2',
+    text: (t("News.id-2")),
     data: '14.06.2024',
     hashtag: '# hash·​tag ˈhash-ˌtag. Social Link / YouTube/ Instagram😇',
   },
@@ -48,7 +50,7 @@ const slides = [
     id: 3,
     imageUrl: 'https://swiperjs.com/demos/images/nature-3.jpg',
     link: '#',
-    text: 'Your Text 3',
+    text: (t("News.id-3")),
     data: '11.05.2024',
     hashtag: '# hash·​tag ˈhash-ˌtag. Social Link / YouTube/ Instagram😇',
   },
@@ -56,7 +58,7 @@ const slides = [
     id: 4,
     imageUrl: 'https://swiperjs.com/demos/images/nature-4.jpg',
     link: '#',
-    text: 'Your Text 4',
+    text: (t("News.id-4")),
     data: '18.04.2024',
     hashtag: '# hash·​tag ˈhash-ˌtag. Social Link / YouTube/ Instagram😇',
   },
@@ -64,7 +66,7 @@ const slides = [
     id: 5,
     imageUrl: 'https://swiperjs.com/demos/images/nature-5.jpg',
     link: '#',
-    text: 'Your Text 5',
+    text: (t("News.id-5")),
     data: '11.03.2024',
     hashtag: '# hash·​tag ˈhash-ˌtag. Social Link / YouTube/ Instagram😇',
   },
@@ -72,7 +74,7 @@ const slides = [
     id: 6,
     imageUrl: 'https://swiperjs.com/demos/images/nature-6.jpg',
     link: '#',
-    text: 'Your Text 6',
+    text: (t("News.id-6")),
     data: '21.02.2024',
     hashtag: '# hash·​tag ˈhash-ˌtag. Social Link / YouTube/ Instagram😇',
   },
@@ -80,7 +82,7 @@ const slides = [
     id: 7,
     imageUrl: 'https://swiperjs.com/demos/images/nature-7.jpg',
     link: '#',
-    text: 'Your Text 7',
+    text: (t("News.id-7")),
     data: '21.02.2024',
     hashtag: '# hash·​tag ˈhash-ˌtag. Social Link / YouTube/ Instagram😇',
   },
@@ -88,7 +90,7 @@ const slides = [
     id: 8,
     imageUrl: 'https://swiperjs.com/demos/images/nature-8.jpg',
     link: '#',
-    text: 'Your Text 8',
+    text: (t("News.id-8")),
     data: '21.02.2024',
     hashtag: '# hash·​tag ˈhash-ˌtag. Social Link / YouTube/ Instagram😇',
   },
@@ -96,7 +98,7 @@ const slides = [
     id: 9,
     imageUrl: 'https://swiperjs.com/demos/images/nature-9.jpg',
     link: '#',
-    text: 'Your Text 9',
+    text: (t("News.id-9")),
     data: '21.02.2024',
     hashtag: '# hash·​tag ˈhash-ˌtag. Social Link / YouTube/ Instagram😇',
   },
@@ -110,13 +112,13 @@ const News: React.FC = () => {
   const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' });
 
   const slidesPerView = isMobile ? 1 : isTablet ? 2 : isDesktop ? 4 : 4;
-
+  const { t } = useTranslation();
   return (
     <SwiperContainer>
       <TextWraper>
-        <TitelPartners>News & Updates</TitelPartners>
+        <TitelPartners>{t("News.TitelH2")}</TitelPartners>
         <TextPartners>
-          Recent achievements and developments of the project.
+        {t("News.NewsP")}
         </TextPartners>
       </TextWraper>
       <Swiper

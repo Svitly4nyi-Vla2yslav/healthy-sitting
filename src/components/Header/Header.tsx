@@ -59,17 +59,16 @@ const Header: React.FC = () => {
             >
               {t('Header.home')}
             </Link>
+            <a href="https://gofund.me/0c957ce8">
+              <DonatButton
+                data-aos="fade-right"
+                style={{ margin: 0, marginRight: 10 }}
+              >
+                {t('Header.order')}
+              </DonatButton>
+            </a>
             {!isContactPage && !isProjectPage && (
               <>
-                <a href="https://gofund.me/0c957ce8">
-                  <DonatButton
-                    data-aos="fade-right"
-                    style={{ margin: 0, marginRight: 10 }}
-                  >
-                    {t('Header.order')}
-                  </DonatButton>
-                </a>
-
                 <StyledLink
                   to="/home"
                   smooth={true}
