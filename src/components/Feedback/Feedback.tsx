@@ -24,68 +24,68 @@ import {
   TitelPartners,
 } from './Feedback.styled';
 import { useMediaQuery } from 'react-responsive';
-import { t } from 'i18next';
-
-
-
-const slides = [
-  {
-    id: 1,
-    text: (t('Feedback.id-1.text')),
-    data: '11.07.2024',
-    hashtag: t('Feedback.id-1.hashtag'),
-  },
-  {
-    id: 2,
-    text: (t('Feedback.id-2.text')),
-    data: '14.06.2024',
-    hashtag: (t('Feedback.id-2.hashtag')),
-  },
-  {
-    id: 3,
-    text: (t('Feedback.id-3.text')),
-    data: '11.05.2024',
-    hashtag: (t('Feedback.id-3.hashtag')),
-  },
-  {
-    id: 4,
-    text: (t('Feedback.id-4.text')),
-    data: '18.04.2024',
-    hashtag: (t('Feedback.id-4.hashtag')),
-  },
-  {
-    id: 5,
-    text: (t('Feedback.id-5.text')),
-    data: '11.03.2024',
-    hashtag: (t('Feedback.id-5.hashtag')),
-  },
-  {
-    id: 6,
-    text: (t('Feedback.id-6.text')),
-    data: '21.02.2024',
-    hashtag: (t('Feedback.id-6.hashtag')),
-  },
-  {
-    id: 7,
-    text: (t('Feedback.id-7.text')),
-    data: '21.02.2024',
-    hashtag: (t('Feedback.id-7.hashtag')),
-  },
-  {
-    id: 8,
-    text: (t('Feedback.id-8.text')),
-    data: '21.02.2024',
-    hashtag: (t('Feedback.id-8.hashtag')),
-  },
-  {
-    id: 9,
-    text: (t('Feedback.id-9.text')),
-    data: '21.02.2024',
-    hashtag: (t('Feedback.id-9.hashtag')),
-  },
-];
+import { useTranslation } from 'react-i18next';
 
 const Feedback: React.FC = () => {
+  const { t } = useTranslation();
+
+  const slides = [
+    {
+      id: 1,
+      text: t('Feedback.id-1.text'),
+      data: '11.07.2024',
+      hashtag: t('Feedback.id-1.hashtag'),
+    },
+    {
+      id: 2,
+      text: t('Feedback.id-2.text'),
+      data: '14.06.2024',
+      hashtag: t('Feedback.id-2.hashtag'),
+    },
+    {
+      id: 3,
+      text: t('Feedback.id-3.text'),
+      data: '11.05.2024',
+      hashtag: t('Feedback.id-3.hashtag'),
+    },
+    {
+      id: 4,
+      text: t('Feedback.id-4.text'),
+      data: '18.04.2024',
+      hashtag: t('Feedback.id-4.hashtag'),
+    },
+    {
+      id: 5,
+      text: t('Feedback.id-5.text'),
+      data: '11.03.2024',
+      hashtag: t('Feedback.id-5.hashtag'),
+    },
+    {
+      id: 6,
+      text: t('Feedback.id-6.text'),
+      data: '21.02.2024',
+      hashtag: t('Feedback.id-6.hashtag'),
+    },
+    {
+      id: 7,
+      text: t('Feedback.id-7.text'),
+      data: '21.02.2024',
+      hashtag: t('Feedback.id-7.hashtag'),
+    },
+    {
+      id: 8,
+      text: t('Feedback.id-8.text'),
+      data: '21.02.2024',
+      hashtag: t('Feedback.id-8.hashtag'),
+    },
+    {
+      id: 9,
+      text: t('Feedback.id-9.text'),
+      data: '21.02.2024',
+      hashtag: t('Feedback.id-9.hashtag'),
+    },
+  ];
+
   const isMobile = useMediaQuery({ query: '(max-width: 400px)' });
   const isTablet = useMediaQuery({
     query: '(min-width: 400px) and (max-width: 768px)',
