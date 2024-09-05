@@ -70,7 +70,7 @@ const HelpCards: React.FC = () => {
           <Image>2</Image>
           <CardTitel>{t('HelpCards.Card2TitelH3')}</CardTitel>
           {/* <CardText>{t('HelpCards.')}</CardText> */}
-          <IconWrapper>
+          <IconWrapper href='https://gofund.me/98b00315'>
             <ArrowCircleRightIcon
               style={{ fill: '#01cbe1', width: 34, height: 34 }}
             />
