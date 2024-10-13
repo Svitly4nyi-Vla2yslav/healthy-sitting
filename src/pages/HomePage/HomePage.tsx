@@ -3,7 +3,7 @@ import { Container } from './HomePage.styled';
 
 import ContentHomePage from '../../components/ContentHomePage/ContentHomePage';
 import Background from '../../components/Background/Background';
-import HelpCards from '../../components/HelpUs/HelpCards';
+// import HelpCards from '../../components/HelpUs/HelpCards';
 import ITgame from '../../components/ITsection/ITgame';
 import ITswiper from '../../components/ITsection/ITswiper';
 import News from '../../components/News/News';
@@ -28,7 +28,7 @@ const Home: React.FC = () => {
         <ITgame />
         <ITswiper />
       </Container>
-      <HelpCards />
+      {/* <HelpCards /> */}
       <Partners />
       <News />
       <Feedback />
