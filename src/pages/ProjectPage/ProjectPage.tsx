@@ -32,7 +32,7 @@ import Unique from '../../assets/image/Unique.png';
 
 import { useTranslation } from 'react-i18next';
 import { useMediaQuery } from 'react-responsive';
-import HelpCards from '../../components/HelpUs/HelpCards';
+// import HelpCards from '../../components/HelpUs/HelpCards';
 import { Video } from '../../components/ContentHomePage/ContentHomePage.styled';
 
 const ProjectPage: React.FC = () => {
@@ -142,7 +142,7 @@ const ProjectPage: React.FC = () => {
           </WrapperText>
         </SectionProject>
       </InnovationSection>
-      <HelpCards />
+      {/* <HelpCards /> */}
     </ContainerProject>
   );
 };
