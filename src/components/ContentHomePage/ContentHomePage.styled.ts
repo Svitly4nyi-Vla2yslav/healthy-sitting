@@ -146,6 +146,20 @@ export const VideoContainer = styled.div`
     background: rgba(0, 0, 0, 0.5); /* рівень затемнення */
     z-index: 2999999;
   }
+ @media (max-width: 1023px) {
+ 
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* рівень затемнення */
+    z-index: 2999999;
+  }
+ }
+
 `;
 
 export const ContentOverlay = styled.div`
@@ -156,6 +170,7 @@ export const ContentOverlay = styled.div`
   color: white;
   z-index: 2;
   text-align: center;
+      height: 100vh;
   
   h1 {
     // font-size: 3em;

@@ -12,6 +12,13 @@ justify-content: flex-end;
     background-color:  #fff;
 `;
 
+export const HeaderWrapper = styled.div`
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+`
+
 export const Navigation = styled.nav`
   display: flex;
   justify-content: center;

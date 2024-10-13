@@ -7,12 +7,11 @@ import React from 'react';
 import Home from './pages/HomePage/HomePage';
 import ContactPage from './pages/ContactPage/ContactPage';
 
-
 const App: React.FC = () => {
   return (
     <AppWrapper>
-          <Routes>
-        <Route path="/" element={<Navigate to="/home" />} />
+      <Routes>
+        <Route path="/" element={<Navigate to="*" />} />
         <Route path="/" element={<SharedLayout />}>
           <Route path="home" element={<Home />} />
           {/* <Route path="about" element={<AboutUs />} /> */}

@@ -7,13 +7,13 @@ import {
   HeaderContainer,
   IconWrapper,
   Navigation,
-  StyledLink,
+  // StyledLink,
   ImageLogo,
 } from './Header.styled';
 import Logo from '../../assets/image/logo_Systems.webp';
 import { useMediaQuery } from 'react-responsive';
 import { MenuButton } from './MenuButton';
-import { DonatButton } from '../ContentHomePage/HomeComponent.styled';
+// import { DonatButton } from '../ContentHomePage/HomeComponent.styled';
 import LanguageMenu from '../LanguageSelector/LanguageSelector';
 import { Link } from 'react-router-dom';
 
@@ -60,16 +60,16 @@ const Header: React.FC = () => {
               {t('Header.home')}
             </Link>
             <a href="https://gofund.me/0c957ce8">
-              <DonatButton
+              {/* <DonatButton
                 data-aos="fade-right"
                 style={{ margin: 0, marginRight: 10 }}
               >
                 {t('Header.order')}
-              </DonatButton>
+              </DonatButton> */}
             </a>
             {!isContactPage && !isProjectPage && (
               <>
-                <StyledLink
+                {/* <StyledLink
                   to="/home"
                   smooth={true}
                   duration={1000}
@@ -77,8 +77,8 @@ const Header: React.FC = () => {
                   data-aos-delay="300"
                 >
                   {t('Header.header')}
-                </StyledLink>
-                <StyledLink
+                </StyledLink> */}
+                {/* <StyledLink
                   to="/about"
                   smooth={true}
                   duration={1000}
@@ -86,7 +86,7 @@ const Header: React.FC = () => {
                   data-aos-delay="400"
                 >
                   {t('Header.about')}
-                </StyledLink>
+                </StyledLink> */}
                 <Link
                   to="/project"
                   data-aos="fade-down"
@@ -105,7 +105,7 @@ const Header: React.FC = () => {
                 >
                   {t('Header.project')}
                 </Link>
-                <StyledLink
+                {/* <StyledLink
                   to="/help"
                   smooth={true}
                   duration={1000}
@@ -113,7 +113,7 @@ const Header: React.FC = () => {
                   data-aos-delay="600"
                 >
                   {t('Header.rewards')}
-                </StyledLink>
+                </StyledLink> */}
                 <Link
                   to="/contact"
                   data-aos="fade-down"

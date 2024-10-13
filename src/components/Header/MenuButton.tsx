@@ -12,7 +12,7 @@ import ProjectIcon from '@mui/icons-material/Work';
 import ContactIcon from '@mui/icons-material/ContactMail';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { DonatButton } from '../ContentHomePage/HomeComponent.styled';
+// import { DonatButton } from '../ContentHomePage/HomeComponent.styled';
 import LanguageMenu from '../LanguageSelector/LanguageSelector';
 
 type Anchor = 'top';
@@ -44,20 +44,20 @@ export const MenuButton: React.FC = () => {
     { to: '/project', text: t('Header.project'), icon: <ProjectIcon /> },
     // { to: '/help', text: t('Header.rewards'), icon: <RewardsIcon /> },
     { to: '/contact', text: t('Header.contact'), icon: <ContactIcon /> },
-    {
-      to: '',
-      text: t(''),
-      icon: (
-        <a href="https://gofund.me/0c957ce8">
-          <DonatButton
-            data-aos="fade-right"
-            style={{ margin: 0, marginRight: 10 }}
-          >
-            {t('Header.order')}
-          </DonatButton>
-        </a>
-      ),
-    },
+    // {
+    //   to: '',
+    //   text: t(''),
+    //   icon: (
+    //     // <a href="https://gofund.me/0c957ce8">
+    //     //   <DonatButton
+    //     //     data-aos="fade-right"
+    //     //     style={{ margin: 0, marginRight: 10 }}
+    //     //   >
+    //     //     {t('Header.order')}
+    //     //   </DonatButton>
+    //     // </a>
+    //   ),
+    // },
     { to: '#', text: t(''), icon: <LanguageMenu /> },
   ];
 
